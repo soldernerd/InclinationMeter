@@ -1,0 +1,359 @@
+Net,Component,Pin,PinName,Notes
+GND,J1,2,-,Battery JST negative
+GND,Q1,6,S2,FS8205A source MOSFET2
+GND,Q1,7,S2,FS8205A source MOSFET2
+GND,R_RPP,2,,Reverse polarity gate pull-down
+GND,R_CS,2,,DW01A current sense
+GND,J2,A1,GND,USB-C
+GND,J2,A12,GND,USB-C
+GND,J2,B1,GND,USB-C
+GND,J2,B12,GND,USB-C
+GND,J2,Shell,Shield,USB-C
+GND,U3,1,TEMP,TP4056 NTC disabled
+GND,U3,3,GND,TP4056
+GND,R_PROG,2,,TP4056 charge current set
+GND,U5,2,GND,LP5907 LDO
+GND,U6,2,GND,SD6210A charge pump
+GND,U1,9,VSS,PIC32
+GND,U1,25,VSS,PIC32
+GND,U1,41,VSS,PIC32
+GND,U1,20,AVSS,PIC32
+GND,U7,1,1OE,74AHCT244 always enabled
+GND,U7,10,GND,74AHCT244
+GND,U7,13,2A2,Spare input tied low
+GND,U7,15,2A3,Spare input tied low
+GND,U7,17,2A4,Spare input tied low
+GND,U7,19,2OE,74AHCT244 always enabled
+GND,U2,1,GND,RN4871
+GND,U2,2,GND,RN4871
+GND,U2,3,GND,RN4871
+GND,U2,30,GND,RN4871
+GND,U2,31,GND,RN4871
+GND,U2,33,GND,RN4871
+GND,U9,4,GND,W25Q80DV
+GND,U10,1,A0,24LC256 address
+GND,U10,2,A1,24LC256 address
+GND,U10,3,A2,24LC256 address
+GND,U10,4,VSS,24LC256
+GND,U10,7,WP,24LC256 write enable
+GND,U11,3,GND,LM35
+GND,U8,7,GND,74HC14
+GND,ENC1,C,Common,Encoder 1 common
+GND,ENC1,SW2,Common,Encoder 1 switch common
+GND,ENC2,C,Common,Encoder 2 common
+GND,ENC2,SW2,Common,Encoder 2 switch common
+GND,J8,1,GND,Expansion header GND
+GND,BZ1,-,GND,Piezo transducer ground pad
+GND,LED1,K,Cathode,Power LED
+GND,LED2,K,Cathode,Status LED
+GND,J4,8,VSS,Display
+GND,J4,10,VSSA,Display
+GND,J5,1,GND,SCL3300 FFC
+GND,J6,3,GND,PCAP04 #1 FFC
+GND,J7,3,GND,PCAP04 #2 FFC
+GND,R_CC1,2,,USB CC1 pull-down
+GND,R_CC2,2,,USB CC2 pull-down
+GND,R_USBID,2,,USB device mode
+GND,C_X1,2,,Crystal load cap OSC1
+GND,C_X2,2,,Crystal load cap OSC2
+GND,C_MCLR,2,,MCLR filter cap
+GND,C_DEC1,2,,PIC32 VDD decoupling pin 10
+GND,C_DEC2,2,,PIC32 VDD decoupling pin 26
+GND,C_DEC3,2,,PIC32 VDD decoupling pin 38
+GND,C_DEC4,2,,PIC32 VDD decoupling pin 57
+GND,C_AVDD,2,,PIC32 AVDD decoupling
+GND,C_VCAP,2,,PIC32 VCAP capacitor
+GND,C_VUSB3V3_1,2,,USB3V3 decoupling
+GND,C_VUSB3V3_2,2,,USB3V3 decoupling
+GND,C_BAT,2,,Battery rail decoupling
+GND,C_VUSB,2,,USB input decoupling
+GND,C_LDO_IN,2,,LDO input cap
+GND,C_LDO_OUT,2,,LDO output cap
+GND,C_5V_IN,2,,Charge pump input cap
+GND,C_5V_OUT,2,,Charge pump output cap
+GND,C_244,2,,74AHCT244 decoupling
+GND,C_HC14,2,,74HC14 decoupling
+GND,C_BLE,2,,RN4871 decoupling
+GND,C_BLE_BK,2,,RN4871 buck cap
+GND,C_FLASH,2,,W25Q80DV decoupling
+GND,C_EEPROM,2,,24LC256 decoupling
+GND,C_J5,2,,SCL3300 connector decoupling
+GND,C_DISP_VDD,2,,Display VDD decoupling
+GND,C_DISP_VDDA,2,,Display VDDA decoupling
+GND,C_VBAT_F,2,,VBAT sense filter cap
+GND,C_TEMP,2,,LM35 output filter cap
+GND,C_E1A,2,,Encoder 1A debounce
+GND,C_E1B,2,,Encoder 1B debounce
+GND,C_E1S,2,,Encoder 1SW debounce
+GND,C_E2A,2,,Encoder 2A debounce
+GND,C_E2B,2,,Encoder 2B debounce
+GND,C_E2S,2,,Encoder 2SW debounce
+VBAT_RAW,J1,1,+,Battery JST positive
+VBAT_RAW,Q3,2,Source,DMG2305UX reverse polarity
+VBAT,Q3,3,Drain,DMG2305UX output
+VBAT,R_DW,1,,DW01A VCC resistor high side
+VBAT,U3,5,BAT,TP4056 battery terminal
+VBAT,U5,5,IN,LP5907 LDO input
+VBAT,U6,5,VIN,SD6210A charge pump input
+VBAT,R_VBAT1,1,,Voltage divider high side
+VBAT,C_BAT,1,,Battery rail decoupling
+VBAT,C_LDO_IN,1,,LDO input cap
+VBAT,C_5V_IN,1,,Charge pump input cap
+CELL_NEG,U4,6,GND,DW01A ground
+CELL_NEG,Q1,2,S1,FS8205A source MOSFET1
+CELL_NEG,Q1,3,S1,FS8205A source MOSFET1
+CELL_NEG,C_DW,2,,DW01A decoupling
+VUSB,J2,A4,VBUS,USB-C power
+VUSB,J2,A9,VBUS,USB-C power
+VUSB,J2,B4,VBUS,USB-C power
+VUSB,J2,B9,VBUS,USB-C power
+VUSB,U3,4,VCC,TP4056 input
+VUSB,U3,8,CE,TP4056 chip enable
+VUSB,U1,34,VBUS,PIC32 USB VBUS detect
+VUSB,C_VUSB,1,,USB input decoupling
++3V3,U5,1,OUT,LP5907 output
++3V3,U1,10,VDD,PIC32
++3V3,U1,26,VDD,PIC32
++3V3,U1,38,VDD,PIC32
++3V3,U1,57,VDD,PIC32
++3V3,U1,19,AVDD,PIC32
++3V3,U6,3,EN,SD6210A enable
++3V3,U2,4,VBAT,RN4871 supply
++3V3,U2,6,VDD_IO,RN4871 I/O level
++3V3,U2,7,VDD_IO,RN4871 I/O level
++3V3,U2,17,P2_0,RN4871 app mode
++3V3,U8,14,VCC,74HC14 supply
++3V3,U9,3,/WP,W25Q80DV write protect off
++3V3,U9,7,/HOLD,W25Q80DV hold off
++3V3,U9,8,VCC,W25Q80DV supply
++3V3,U10,8,VCC,24LC256 supply
++3V3,U11,1,VS+,LM35 supply
++3V3,J3,2,VDD,ICSP header target power
++3V3,J5,2,+3.3V,SCL3300 FFC
++3V3,J6,5,+3.3V,PCAP04 #1 FFC
++3V3,J7,5,+3.3V,PCAP04 #2 FFC
++3V3,J8,2,+3.3V,Expansion header 3.3V
++3V3,R_MCLR,1,,MCLR pull-up
++3V3,R_SDA,1,,I2C1 SDA pull-up
++3V3,R_SCL,1,,I2C1 SCL pull-up
++3V3,R_SDA2,1,,I2C2 SDA pull-up
++3V3,R_SCL2,1,,I2C2 SCL pull-up
++3V3,C_LDO_OUT,1,,LDO output cap
++3V3,C_DEC1,1,,PIC32 VDD decoupling pin 10
++3V3,C_DEC2,1,,PIC32 VDD decoupling pin 26
++3V3,C_DEC3,1,,PIC32 VDD decoupling pin 38
++3V3,C_DEC4,1,,PIC32 VDD decoupling pin 57
++3V3,C_AVDD,1,,PIC32 AVDD decoupling
++3V3,C_HC14,1,,74HC14 decoupling
++3V3,C_BLE,1,,RN4871 decoupling
++3V3,C_FLASH,1,,W25Q80DV decoupling
++3V3,C_EEPROM,1,,24LC256 decoupling
++3V3,C_J5,1,,SCL3300 connector decoupling
++5V,U6,1,VOUT,SD6210A output
++5V,U7,20,VCC,74AHCT244 supply
++5V,J4,6,EXTMODE,Display tied to VDD
++5V,J4,7,VDD,Display digital supply
++5V,J4,9,VDDA,Display analog supply
++5V,J8,3,+5V,Expansion header 5V
++5V,C_5V_OUT,1,,Charge pump output cap
++5V,C_244,1,,74AHCT244 decoupling
++5V,C_DISP_VDD,1,,Display VDD decoupling
++5V,C_DISP_VDDA,1,,Display VDDA decoupling
+DW01_VCC,R_DW,2,,DW01A VCC resistor
+DW01_VCC,U4,5,VCC,DW01A power
+DW01_VCC,C_DW,1,,DW01A decoupling
+PROT_OD,U4,1,OD,DW01A overdischarge gate
+PROT_OD,Q1,4,G1,FS8205A gate MOSFET1
+PROT_OC,U4,3,OC,DW01A overcharge gate
+PROT_OC,Q1,5,G2,FS8205A gate MOSFET2
+PROT_CS,U4,2,CS,DW01A current sense
+PROT_CS,R_CS,1,,Current sense resistor
+PROT_D,Q1,1,D12,FS8205A shared drain
+PROT_D,Q1,8,D12,FS8205A shared drain
+Q3_GATE,Q3,1,Gate,DMG2305UX gate
+Q3_GATE,R_RPP,1,,Gate pull-down resistor
+USB_CC1,J2,A5,CC1,USB-C
+USB_CC1,R_CC1,1,,CC1 pull-down
+USB_CC2,J2,B5,CC2,USB-C
+USB_CC2,R_CC2,1,,CC2 pull-down
+USB_DP,J2,A6,D+,USB-C data
+USB_DP,J2,B6,D+,USB-C data
+USB_DP,R_DP,1,,USB D+ series resistor
+USB_DM,J2,A7,D-,USB-C data
+USB_DM,J2,B7,D-,USB-C data
+USB_DM,R_DM,1,,USB D- series resistor
+USB_DP_MCU,R_DP,2,,USB D+ to MCU
+USB_DP_MCU,U1,37,D+,PIC32 USB D+
+USB_DM_MCU,R_DM,2,,USB D- to MCU
+USB_DM_MCU,U1,36,D-,PIC32 USB D-
+VUSB3V3,U1,35,VUSB3V3,PIC32 USB regulator
+VUSB3V3,C_VUSB3V3_1,1,,100nF decoupling
+VUSB3V3,C_VUSB3V3_2,1,,220nF decoupling
+VCAP,U1,56,VCAP,PIC32 core voltage filter
+VCAP,C_VCAP,1,,10uF cap
+TP_PROG,U3,2,PROG,TP4056 charge current
+TP_PROG,R_PROG,1,,2.4k charge current set
+CHG_SENSE,U3,7,CHRG,TP4056 charging status
+CHG_SENSE,U1,1,RE5,PIC32 charge sense input (moved from pin 31)
+LDO_EN,U5,3,EN,LP5907 enable
+LDO_EN,U1,63,RE3,PIC32 LDO enable output
+CFLY_P,U6,6,C+,SD6210A flying cap +
+CFLY_P,C_FLY,1,,Flying capacitor
+CFLY_N,U6,4,C-,SD6210A flying cap -
+CFLY_N,C_FLY,2,,Flying capacitor
+VBAT_SENSE,R_VBAT1,2,,Divider midpoint
+VBAT_SENSE,R_VBAT2,1,,Divider midpoint
+VBAT_SENSE,C_VBAT_F,1,,ADC filter cap
+VBAT_SENSE,U1,27,AN12/RB12,PIC32 ADC input
+MCLR,U1,7,MCLR,PIC32 master clear
+MCLR,R_MCLR,2,,Pull-up resistor
+MCLR,C_MCLR,1,,Noise filter cap
+MCLR,J3,1,MCLR,ICSP header
+XTAL1,U1,39,OSC1,PIC32 crystal input
+XTAL1,Y1,1,,Crystal terminal 1
+XTAL1,C_X1,1,,Load cap OSC1
+XTAL2,U1,40,OSC2,PIC32 crystal output
+XTAL2,Y1,2,,Crystal terminal 2
+XTAL2,C_X2,1,,Load cap OSC2
+PGC,U1,17,PGEC2/RB6,PIC32 ICSP clock
+PGC,R_PGC,1,,Series protection
+PGC_HDR,R_PGC,2,,To ICSP header
+PGC_HDR,J3,5,PGC,ICSP header
+PGD,U1,18,PGED2/RB7,PIC32 ICSP data
+PGD,R_PGD,1,,Series protection
+PGD_HDR,R_PGD,2,,To ICSP header
+PGD_HDR,J3,4,PGD,ICSP header
+SPI2_SCK,U1,4,SCK2/RG6,PIC32 SPI2 clock
+SPI2_SCK,U9,6,CLK,W25Q80DV clock
+SPI2_SCK,J5,3,SCK,SCL3300 FFC
+SPI2_MOSI,U1,6,RPG8/RG8,PIC32 SPI2 MOSI (SDO2)
+SPI2_MOSI,U9,5,DI,W25Q80DV data in
+SPI2_MOSI,J5,4,MOSI,SCL3300 FFC
+SPI2_MISO,U1,5,RPG7/RG7,PIC32 SPI2 MISO (SDI2)
+SPI2_MISO,U9,2,DO,W25Q80DV data out
+SPI2_MISO,J5,5,MISO,SCL3300 FFC
+SCL_CS,U1,8,RG9,PIC32 SCL3300 chip select
+SCL_CS,J5,6,CS,SCL3300 FFC
+FLASH_CS,U1,11,RB5,PIC32 flash chip select
+FLASH_CS,U9,1,/CS,W25Q80DV chip select
+I2C_SDA,U1,43,SDA1/RD9,PIC32 I2C1 data
+I2C_SDA,U10,5,SDA,24LC256
+I2C_SDA,J6,1,SDA,PCAP04 #1 FFC
+I2C_SDA,R_SDA,2,,I2C1 pull-up resistor
+I2C_SCL,U1,44,SCL1/RD10,PIC32 I2C1 clock
+I2C_SCL,U10,6,SCL,24LC256
+I2C_SCL,J6,2,SCL,PCAP04 #1 FFC
+I2C_SCL,R_SCL,2,,I2C1 pull-up resistor
+I2C2_SDA,U1,31,SDA2/RF4,PIC32 I2C2 data
+I2C2_SDA,J7,1,SDA,PCAP04 #2 FFC
+I2C2_SDA,R_SDA2,2,,I2C2 pull-up resistor
+I2C2_SCL,U1,32,SCL2/RF5,PIC32 I2C2 clock
+I2C2_SCL,J7,2,SCL,PCAP04 #2 FFC
+I2C2_SCL,R_SCL2,2,,I2C2 pull-up resistor
+PCAP1_INT,U1,42,RD8,PIC32 PCAP04 #1 interrupt
+PCAP1_INT,J6,6,INT,PCAP04 #1 FFC
+PCAP1_RST,U1,45,RD11,PIC32 PCAP04 #1 reset
+PCAP1_RST,J6,4,RESET,PCAP04 #1 FFC
+PCAP2_INT,U1,46,RD0,PIC32 PCAP04 #2 interrupt
+PCAP2_INT,J7,6,INT,PCAP04 #2 FFC
+PCAP2_RST,U1,47,RC13,PIC32 PCAP04 #2 reset
+PCAP2_RST,J7,4,RESET,PCAP04 #2 FFC
+DISP_SCK,U1,50,SCK1/RD2,PIC32 SPI1 clock
+DISP_SCK,U7,2,1A1,74AHCT244 input
+DISP_MOSI,U1,49,RPD1/RD1,PIC32 SPI1 MOSI (SDO1)
+DISP_MOSI,U7,4,1A2,74AHCT244 input
+DISP_CS,U1,51,RD3,PIC32 display CS
+DISP_CS,U7,6,1A3,74AHCT244 input
+DISP_VCOM,U1,52,RD4,PIC32 display VCOM toggle
+DISP_VCOM,U7,8,1A4,74AHCT244 input
+DISP_ON,U1,53,RD5,PIC32 display on/off
+DISP_ON,U7,11,2A1,74AHCT244 input
+DISP_SCK_5V,U7,18,1Y1,74AHCT244 output
+DISP_SCK_5V,J4,1,SCLK,Display FPC
+DISP_MOSI_5V,U7,16,1Y2,74AHCT244 output
+DISP_MOSI_5V,J4,2,SI,Display FPC
+DISP_CS_5V,U7,14,1Y3,74AHCT244 output
+DISP_CS_5V,J4,3,SCS,Display FPC
+DISP_VCOM_5V,U7,12,1Y4,74AHCT244 output
+DISP_VCOM_5V,J4,4,EXTCOMIN,Display FPC
+DISP_ON_5V,U7,9,2Y1,74AHCT244 output
+DISP_ON_5V,J4,5,DISP,Display FPC
+BLE_TX,U1,58,RPF0/RF0,PIC32 UART1 TX
+BLE_TX,U2,21,UART_RX,RN4871 RX (PIC TX -> module RX)
+BLE_RX,U1,59,RPF1/RF1,PIC32 UART1 RX
+BLE_RX,U2,22,UART_TX,RN4871 TX (module TX -> PIC RX)
+BLE_RST,U1,60,RE0,PIC32 BLE reset output
+BLE_RST,R_BLE_RST,1,,Series resistor
+BLE_RST_MOD,R_BLE_RST,2,,To RN4871
+BLE_RST_MOD,U2,20,RST_N,RN4871 reset input
+BLE_STATUS,U1,61,RE1,PIC32 BLE status input
+BLE_STATUS,U2,11,P1_1,RN4871 status indication
+BLE_BK,U2,10,BK_IN,RN4871 buck input
+BLE_BK,C_BLE_BK,1,,10uF buck cap
+VBUS_SENSE,U1,48,RC14,PIC32 USB cable detect
+LM35_OUT,U11,2,VOUT,LM35 output
+LM35_OUT,R_TEMP,1,,Series resistor
+TEMP_SENSE,R_TEMP,2,,After series resistor
+TEMP_SENSE,C_TEMP,1,,LP filter cap
+TEMP_SENSE,U1,28,AN13/RB13,PIC32 ADC input
+ENC1_A,U8,2,1Y,74HC14 output (inverted)
+ENC1_A,U1,21,RB8,PIC32 encoder 1 A
+ENC1_B,U8,4,2Y,74HC14 output (inverted)
+ENC1_B,U1,22,RB9,PIC32 encoder 1 B
+ENC1_SW,U8,6,3Y,74HC14 output (inverted)
+ENC1_SW,U1,23,RB10,PIC32 encoder 1 SW
+ENC2_A,U8,8,4Y,74HC14 output (inverted)
+ENC2_A,U1,24,RB11,PIC32 encoder 2 A
+ENC2_B,U8,10,5Y,74HC14 output (inverted)
+ENC2_B,U1,29,RB14,PIC32 encoder 2 B
+ENC2_SW,U8,12,6Y,74HC14 output (inverted)
+ENC2_SW,U1,30,RB15,PIC32 encoder 2 SW
+ENC1_A_RAW,R_E1A,2,,After RC filter
+ENC1_A_RAW,C_E1A,1,,Debounce cap
+ENC1_A_RAW,U8,1,1A,74HC14 input
+ENC1_B_RAW,R_E1B,2,,After RC filter
+ENC1_B_RAW,C_E1B,1,,Debounce cap
+ENC1_B_RAW,U8,3,2A,74HC14 input
+ENC1_SW_RAW,R_E1S,2,,After RC filter
+ENC1_SW_RAW,C_E1S,1,,Debounce cap
+ENC1_SW_RAW,U8,5,3A,74HC14 input
+ENC2_A_RAW,R_E2A,2,,After RC filter
+ENC2_A_RAW,C_E2A,1,,Debounce cap
+ENC2_A_RAW,U8,9,4A,74HC14 input
+ENC2_B_RAW,R_E2B,2,,After RC filter
+ENC2_B_RAW,C_E2B,1,,Debounce cap
+ENC2_B_RAW,U8,11,5A,74HC14 input
+ENC2_SW_RAW,R_E2S,2,,After RC filter
+ENC2_SW_RAW,C_E2S,1,,Debounce cap
+ENC2_SW_RAW,U8,13,6A,74HC14 input
+ENC1_A_ENC,ENC1,A,Channel A,Encoder 1
+ENC1_A_ENC,R_E1A,1,,Debounce resistor
+ENC1_B_ENC,ENC1,B,Channel B,Encoder 1
+ENC1_B_ENC,R_E1B,1,,Debounce resistor
+ENC1_SW_ENC,ENC1,SW1,Switch,Encoder 1
+ENC1_SW_ENC,R_E1S,1,,Debounce resistor
+ENC2_A_ENC,ENC2,A,Channel A,Encoder 2
+ENC2_A_ENC,R_E2A,1,,Debounce resistor
+ENC2_B_ENC,ENC2,B,Channel B,Encoder 2
+ENC2_B_ENC,R_E2B,1,,Debounce resistor
+ENC2_SW_ENC,ENC2,SW1,Switch,Encoder 2
+ENC2_SW_ENC,R_E2S,1,,Debounce resistor
+EXP1,U1,16,AN0/RPB0/RB0,PIC32 expansion GPIO 1
+EXP1,J8,4,EXP1,Expansion header pin 4
+EXP2,U1,15,AN1/RPB1/RB1,PIC32 expansion GPIO 2
+EXP2,J8,5,EXP2,Expansion header pin 5
+EXP3,U1,14,AN2/RPB2/RB2,PIC32 expansion GPIO 3
+EXP3,J8,6,EXP3,Expansion header pin 6
+EXP4,U1,12,AN4/RB4,PIC32 expansion GPIO 4
+EXP4,J8,7,EXP4,Expansion header pin 7
+BUZZER,U1,13,RPB3/RB3,PIC32 OC1 PWM output (4 kHz)
+BUZZER,BZ1,+,Signal,Piezo transducer signal pad
+LED_PWR,U1,54,RD6,PIC32 power LED output
+LED_PWR,R_LED1,1,,LED current limit
+LED_PWR_A,R_LED1,2,,After resistor
+LED_PWR_A,LED1,A,Anode,Power LED green
+LED_STS,U1,55,RD7,PIC32 status LED output
+LED_STS,R_LED2,1,,LED current limit
+LED_STS_A,R_LED2,2,,After resistor
+LED_STS_A,LED2,A,Anode,Status LED blue
+GND,R_VBAT2,2,,Voltage divider low side

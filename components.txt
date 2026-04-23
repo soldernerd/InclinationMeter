@@ -1,0 +1,106 @@
+General remark:
+- Use ceramics capacitors generously, every power pin of every IC needs at least a 100nF capacitor located closely to it.
+
+Power supply:
+- Single cell LiPo, capacity TBD
+- Dual voltage: 5V for display, 3.3 volts for everything else
+- 5V converter to be designed. Possibly charge pump instead of switchmode boost converter.
+- Charging over USB, controlled by TP4056 (1A Standalone Linear Li-lon Battery Charger with Thermal Regulation in SOP-8)
+- Protection by DW01A in SOT-23-6 package (one cell li-ion / LiPo protection IC)
+- Low-dropout linear regulator: Texas LP5907, fixed 3.3V output, SOT-23-5 package (low-noise)
+  - Two instances: one for the main 3.3V rail, one dedicated to the capacitive sensor daughterboards (PCAP04) to isolate them from noise
+  - EN pin is active-high; MCU drives it active-high (high = LDO on, low = LDO off)
+- Cut-off volatage controlled by PIC (PIC uses internal voltage reference to measure battery voltage). Cut-off voltage 3.5 - 3.6V to give a bit of headroom for LDO
+- Microcontroller pins:
+	- 1 x Voltage Sense (analog input)
+	- 1 x Main LDO enable (digital output, active-high)
+	- 1 x Sensor LDO enable (digital output, active-high)
+	- 1 x Charge sense (digital input)
+
+Microcontroller:
+- PIC32MX470F512H (64 pin TQFP)
+- 8MHz crysal with PLL configured for 48MHz USB clock and 80MHz core clock
+
+Programming header:
+- Microchip ICSP interface
+- 100mil header with pinout matching PicKit programmer
+- MCLR / VDD / GND / PGD / PGC / AUX
+
+Display:
+- Sharp Memory LCD, 2.7" LS027B7DH01, 400×240 resolution
+- Needs 5V supply
+- Logic level shifting via 74AHCT1G125 or similar
+- SPI interface 
+- Microcontroller pins:
+	- 1x SCLK (digital output)
+	- 1x MOSI (digital output)
+	- No MISO?
+	- 1x Chip Select (digital output)
+	- 1x Display ON (digital output)
+	- 1x VCOM (digital output)
+
+Status LEDs:
+- 1x power on
+- 1x status
+- Microcontroller pins: 2x digital output
+
+Input device:
+- 2x Rotary encoder with push button
+- Outputs are RC-filtered and run through a 74HC14 for proper hardware debouncing
+- Push button inputs use pull-up resistors (active-low: normally high, low when pressed)
+- Quadrature outputs use pull-up resistors
+- Microcontroller pins:
+	- 6x inputs (digital input connected to interrupt-on-change)
+
+USB:
+- Directly implemented by PIC
+- USB-C connector
+- For charging, HID communication and MSD bootloader
+- Microcontroller pins:
+	- USB+ (dedicated USB pin)
+	- USB- (dedicated USB pin)
+	- USB Sense (digital input)
+
+Temperature sensor:
+- For ambient temperature sensing. Rather have but not need than need but not have.
+- Texas LM35 in SOT-23 package
+- Microcontroller pins:
+	- 1x Temperature Sense (analog input)
+
+3-axis inclinometer:
+- SCL3300 on separate, yet to be developped PCB
+- Connect via same 6-pin FFC as precision inclinometer
+- SPI interface
+- Microcontroller pins:
+	- Chip select (digital output)
+	- MOSI (digital output)
+	- MISO (digital input)
+	- SCK (digital output)
+
+Precision inclinometer:
+- 2x  PCAP04, each on a dedicated board
+- On the same I2C bus, with different I2C addresses
+- Boards already exists, connects via 6-pin FFC Flat Flexible Cable, spacing to be clarified
+- Pinout: SDA, SCL, GND, Reset, +3.3V, Interrupt
+
+Flash memory:
+- Standard SPI interface
+-  SCL, MISO, MOSI, ChipSelect
+
+EEPROM:
+- External EEPROM 24LC256
+- I2C inteface
+
+Bluetooth Low Energy (BLE)
+- RNBD451 (upgrade to RN4871)
+- Interface:
+	- UART_RX (PIC TX)
+	- UART_TX (PIC RX)
+	- Reset (GPIO output)
+	- RX_IND or status pin (GPIO input)
+
+
+
+
+
+

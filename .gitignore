@@ -1,0 +1,15 @@
+# Archive folder (old Fusion360/Eagle files, superseded libraries)
+_archive/
+
+# KiCad lock files
+*.lck
+
+# KiCad auto-backups (kept outside git — large zip files)
+KiCad/InclinationMeter-backups/
+
+# KiCad internal history (has its own git repo)
+KiCad/.history/
+
+# Python cache
+__pycache__/
+*.pyc

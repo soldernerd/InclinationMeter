@@ -1,0 +1,77 @@
+Info: Processing symbol 'BZ1:local_CPT-9019A:CPT-9019A-SMT-TR'.
+Info: Processing symbol 'R3:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'C1:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C2:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C3:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C4:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C5:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C6:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C7:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'C8:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C9:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C10:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C11:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C12:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C13:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C14:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C15:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C16:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C17:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C18:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C19:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C20:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C21:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C22:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'D1:LED_SMD:LED_0603_1608Metric'.
+Info: Processing symbol 'Q2:Package_SO:TSSOP-8_4.4x3mm_P0.65mm'.
+Info: Processing symbol 'J2:local_FTSH-107:FTSH-107-01-L-DV-K'.
+Info: Processing symbol 'D2:LED_SMD:LED_0603_1608Metric'.
+Info: Processing symbol 'R1:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R2:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'J1:Connector_FFC-FPC:Hirose_FH12-10S-0.5SH_1x10-1MP_P0.50mm_Horizontal'.
+Info: Processing symbol 'Q1:Package_TO_SOT_SMD:SOT-23'.
+Info: Processing symbol 'R4:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R5:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R6:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R7:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'U1:Package_TO_SOT_SMD:SOT-23-6'.
+Info: Processing symbol 'U2:Package_SO:SOP-8_3.9x4.9mm_P1.27mm'.
+Info: Processing symbol 'U3:Package_TO_SOT_SMD:SOT-23-5'.
+Info: Processing symbol 'U4:Package_TO_SOT_SMD:SOT-23-6'.
+Info: Processing symbol 'U5:Package_QFP:LQFP-64_10x10mm_P0.5mm'.
+Info: Processing symbol 'Y1:Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm'.
+Info: Processing symbol 'U6:Package_SO:SSOP-20_5.3x7.2mm_P0.65mm'.
+Info: Processing symbol 'U7:local_RN4871:RN4871-I_RM128'.
+Info: Processing symbol 'U8:Package_SO:TSSOP-14_4.4x5mm_P0.65mm'.
+Info: Processing symbol 'U9:Package_SO:TSSOP-8_4.4x3mm_P0.65mm'.
+Warning: No net found for component D2 pad 2 (no pin 2 in symbol).
+Warning: No net found for component U5 pad 2 (no pin 2 in symbol).
+Warning: No net found for component U5 pad 1 (no pin 1 in symbol).
+Warning: No net found for component U5 pad 51 (no pin 51 in symbol).
+Warning: No net found for component U5 pad 54 (no pin 54 in symbol).
+Warning: No net found for component U5 pad 56 (no pin 56 in symbol).
+Warning: No net found for component J1 pad MP (no pin MP in symbol).
+Warning: No net found for component U5 pad 4 (no pin 4 in symbol).
+Warning: No net found for component U5 pad 3 (no pin 3 in symbol).
+Warning: No net found for component U5 pad 59 (no pin 59 in symbol).
+Warning: No net found for component U5 pad 16 (no pin 16 in symbol).
+Warning: No net found for component U5 pad 29 (no pin 29 in symbol).
+Warning: No net found for component U5 pad 53 (no pin 53 in symbol).
+Warning: No net found for component U5 pad 5 (no pin 5 in symbol).
+Warning: No net found for component U5 pad 64 (no pin 64 in symbol).
+Warning: No net found for component U5 pad 55 (no pin 55 in symbol).
+Warning: No net found for component U5 pad 41 (no pin 41 in symbol).
+Warning: No net found for component U5 pad 58 (no pin 58 in symbol).
+Warning: No net found for component U5 pad 52 (no pin 52 in symbol).
+Warning: No net found for component J1 pad MP (no pin MP in symbol).
+Warning: No net found for component D2 pad 1 (no pin 1 in symbol).
+Warning: No net found for component D1 pad 1 (no pin 1 in symbol).
+Warning: No net found for component D1 pad 2 (no pin 2 in symbol).
+Warning: No net found for component U5 pad 40 (no pin 40 in symbol).
+Error: Cannot add U7 (footprint 'local_RN4871:RN4871-I_RM128' not found).
+Error: Cannot add U2 (footprint 'Package_SO:SOP-8_3.9x4.9mm_P1.27mm' not found).
+Error: Cannot add J2 (footprint 'local_FTSH-107:FTSH-107-01-L-DV-K' not found).
+Error: Cannot add BZ1 (footprint 'local_CPT-9019A:CPT-9019A-SMT-TR' not found).
+
+
+Info: Total warnings: 24, errors: 4.

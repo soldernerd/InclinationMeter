@@ -1,0 +1,438 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{parskip}
+
+\pgfplotsset{compat=1.18}
+\geometry{margin=2.5cm}
+
+\sisetup{
+  separate-uncertainty,
+  per-mode=symbol
+}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue
+}
+
+\title{Capacitance of a Tilted Circular Parallel-Plate Capacitor\\
+       with Application to Precision Tilt Measurement}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\bigskip
+
+% ─────────────────────────────────────────────────────────────
+\section{Problem Statement}
+% ─────────────────────────────────────────────────────────────
+
+Precision tilt sensors based on capacitive measurement exploit the
+sensitivity of capacitance to small changes in the air gap between two
+conducting plates.  In a practical instrument, a pendulum of length~$L$
+suspends one plate so that its centre-to-centre distance to a fixed
+reference plate varies with the tilt angle~$\alpha$.  When the
+instrument is tilted, the two plates are no longer parallel: they subtend
+the same angle~$\alpha$.
+
+The goal of this note is to derive a closed-form expression for the
+capacitance as a function of the tilt angle, compare it with two
+progressively cruder approximations, and invert each expression to
+obtain~$\alpha$ as a function of the measured capacitance.
+
+% ─────────────────────────────────────────────────────────────
+\section{Variable Definitions and Conventions}
+% ─────────────────────────────────────────────────────────────
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Symbol & Unit & Description \\
+\midrule
+$\alpha$ & \si{\radian} & Tilt angle; $\alpha = 0$ corresponds to parallel plates \\
+$L$      & \si{\metre}  & Pendulum length (constant) \\
+$r$      & \si{\metre}  & Radius of the circular capacitor plates (constant) \\
+$g$      & \si{\metre}  & Neutral air gap at $\alpha = 0$ (constant, $g > 0$) \\
+$d_c$    & \si{\metre}  & Centre-to-centre plate distance at angle $\alpha$ \\
+$\varepsilon_0$ & \si{\farad\per\metre} & Permittivity of free space,
+                  $\varepsilon_0 = \SI{8.854e-12}{\farad\per\metre}$ \\
+$C$      & \si{\farad}  & Total capacitance \\
+$x$      & \si{\metre}  & Signed distance from the plate centre along the tilt axis \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+By convention, $\alpha > 0$ means the pendulum swings in the positive
+$x$-direction, closing the gap on that side.  Negative values of~$\alpha$
+are equally valid and correspond to the opposite direction.
+
+% ─────────────────────────────────────────────────────────────
+\section{Geometry and Physical Limits}
+% ─────────────────────────────────────────────────────────────
+
+\subsection{Centre distance as a function of tilt}
+
+The pendulum geometry gives the centre distance
+
+\begin{equation}
+  d_c(\alpha) = g - L\sin\alpha .
+  \label{eq:dc}
+\end{equation}
+
+At $\alpha = 0$ the plates are parallel with uniform gap $g$.  For
+$\alpha \neq 0$ the plates are tilted by the same angle~$\alpha$, so the
+local gap at a signed distance~$x$ from the plate centre (measured along
+the tilt axis) is
+
+\begin{equation}
+  d(x,\alpha) = d_c(\alpha) + x\sin\alpha .
+  \label{eq:localGap}
+\end{equation}
+
+\subsection{Physical validity limit}
+
+The plates must not touch anywhere.  The smallest gap occurs at
+$x = -r$ (the trailing edge when $\alpha > 0$), so the condition
+$d(-r,\alpha) > 0$ gives
+
+\begin{equation}
+  \boxed{\alpha < \arcsin\!\left(\frac{g}{L + r}\right).}
+  \label{eq:alphaMax}
+\end{equation}
+
+
+
+% ─────────────────────────────────────────────────────────────
+\section{Exact Capacitance}
+% ─────────────────────────────────────────────────────────────
+
+\subsection{From the parallel-plate formula to an integral}
+
+The standard parallel-plate capacitor formula,
+
+\begin{equation}
+  C = \varepsilon_0 \frac{A}{d},
+  \label{eq:parallelPlate}
+\end{equation}
+
+assumes a uniform gap~$d$ over the entire plate area~$A$.  When the gap
+varies with position, equation~\eqref{eq:parallelPlate} is applied
+locally to each infinitesimal area element $\mathrm{d}A$, and the total
+capacitance is obtained by integrating the local contribution
+$\mathrm{d}C = \varepsilon_0\,\mathrm{d}A / d(x,y)$:
+
+\begin{equation}
+  C = \varepsilon_0 \iint_{\text{disk}} \frac{\mathrm{d}A}{d(x,y)}.
+  \label{eq:doubleIntegral}
+\end{equation}
+
+A double integral is required because the integration domain is a
+two-dimensional disk.  Since the gap~\eqref{eq:localGap} depends only
+on~$x$ and not on~$y$, the inner integral over~$y$ can be evaluated
+immediately.  For the circular plate of radius~$r$ the $y$-limits at
+a given~$x$ are $\pm\sqrt{r^2 - x^2}$, giving
+
+\begin{equation}
+  C(\alpha) = 2\varepsilon_0 \int_{-r}^{+r}
+              \frac{\sqrt{r^2 - x^2}}{d_c + x\sin\alpha}\,\mathrm{d}x .
+  \label{eq:singleIntegral}
+\end{equation}
+
+\subsection{Evaluation of the integral}
+
+Equation~\eqref{eq:singleIntegral} is of the standard form
+
+\begin{equation}
+  I = \int_{-r}^{+r} \frac{\sqrt{r^2 - x^2}}{a + bx}\,\mathrm{d}x
+    = \frac{\pi}{b^2}\!\left(a - \sqrt{a^2 - b^2 r^2}\right),
+    \qquad a > br,
+  \label{eq:stdIntegral}
+\end{equation}
+
+with $a = d_c$ and $b = \sin\alpha$.  Substituting and simplifying gives
+
+\begin{equation}
+  C(\alpha) = \frac{2\pi\varepsilon_0}{(\sin\alpha)^2}
+              \!\left(d_c - \sqrt{d_c^2 - r^2(\sin\alpha)^2}\right).
+  \label{eq:exactRaw}
+\end{equation}
+
+This form is indeterminate ($0/0$) at $\alpha = 0$.  Rationalising by
+multiplying numerator and denominator by
+$d_c + \sqrt{d_c^2 - r^2(\sin\alpha)^2}$ eliminates the singularity:
+
+\begin{equation}
+  \boxed{C(\alpha) = \frac{2\pi\varepsilon_0\, r^2}
+         {d_c + \sqrt{d_c^2 - r^2(\sin\alpha)^2}},}
+  \label{eq:exact}
+\end{equation}
+
+with $d_c = g - L\sin\alpha$ from equation~\eqref{eq:dc}.
+Equation~\eqref{eq:exact} is valid for all~$\alpha$ satisfying the
+physical limit~\eqref{eq:alphaMax}.
+
+\subsection{Verification at \texorpdfstring{$\alpha = 0$}{alpha = 0}}
+
+At $\alpha = 0$, $d_c \to g$ and $\sin\alpha \to 0$.  Expanding the
+square root for small $s = \sin\alpha$,
+
+\begin{equation}
+  \sqrt{d_c^2 - r^2 s^2} \approx d_c - \frac{r^2 s^2}{2 d_c},
+\end{equation}
+
+so the denominator of~\eqref{eq:exact} approaches $2d_c \to 2g$, giving
+
+\begin{equation}
+  C(0) = \frac{\pi r^2 \varepsilon_0}{g} = \varepsilon_0 \frac{A}{g},
+  \label{eq:C0}
+\end{equation}
+
+which is the standard parallel-plate result with $A = \pi r^2$. \checkmark
+
+% ─────────────────────────────────────────────────────────────
+\section{Approximate Formulae}
+% ─────────────────────────────────────────────────────────────
+
+\subsection{Approximation neglecting the tilt angle}
+
+If the plate radius~$r$ is small compared with the ratio $d_c/\sin\alpha$,
+the term $r^2(\sin\alpha)^2$ under the square root in~\eqref{eq:exact} is
+negligible.  Physically, this corresponds to treating the plates as
+parallel (using only the centre gap) while still accounting for the
+change in $d_c$ with~$\alpha$.  Setting $r\sin\alpha \approx 0$ in the
+denominator of~\eqref{eq:exact} reduces it to $2d_c$:
+
+\begin{equation}
+  \boxed{C_{\text{approx}}(\alpha) = \frac{\pi r^2 \varepsilon_0}{d_c}
+         = \frac{\pi r^2 \varepsilon_0}{g - L\sin\alpha}.}
+  \label{eq:approx}
+\end{equation}
+
+\subsection{Linear approximation}
+
+A further simplification is obtained by linearising around $\alpha = 0$.
+The sensitivity is found by differentiating~\eqref{eq:approx} with respect
+to~$C$ at the neutral point.  Both the exact and approximate formulae
+coincide at $\alpha = 0$, so their sensitivities are identical there.
+Implicit differentiation gives
+
+\begin{equation}
+  \frac{\mathrm{d}\alpha}{\mathrm{d}C}\bigg|_{\alpha=0}
+  = \frac{g^2}{\pi r^2 \varepsilon_0\, L},
+\end{equation}
+
+and the linear approximation around $\alpha = 0$, $C = C_0$ is
+
+\begin{equation}
+  \boxed{\alpha_{\text{lin}} = \frac{g^2}{\pi r^2 \varepsilon_0\, L}
+         \!\left(C - C_0\right),}
+  \label{eq:linear}
+\end{equation}
+
+with $C_0 = \pi r^2 \varepsilon_0 / g$ from equation~\eqref{eq:C0}.
+
+% ─────────────────────────────────────────────────────────────
+\section{Inversion: Solving for \texorpdfstring{$\alpha$}{alpha}}
+% ─────────────────────────────────────────────────────────────
+
+In practice, the capacitance~$C$ is the measured quantity and the tilt
+angle~$\alpha$ is the desired output.  We solve each formula for~$\alpha$.
+
+\subsection{Linear approximation}
+
+Equation~\eqref{eq:linear} is already solved for~$\alpha$:
+
+\begin{equation}
+  \alpha_{\text{lin}} = \frac{g^2}{\pi r^2 \varepsilon_0\, L}
+                        \!\left(C - C_0\right).
+  \label{eq:alphaLin}
+\end{equation}
+
+\subsection{Approximate formula}
+
+Solving~\eqref{eq:approx} for $\sin\alpha$ and applying the inverse sine:
+
+\begin{equation}
+  \boxed{\alpha_{\text{approx}} = \arcsin\!\left[\frac{1}{L}
+         \!\left(g - \frac{\pi r^2 \varepsilon_0}{C}\right)\right].}
+  \label{eq:alphaApprox}
+\end{equation}
+
+\subsection{Exact formula}
+
+Starting from~\eqref{eq:exact} and writing $s = \sin\alpha$,
+$d_c = g - Ls$, and $k = 2\pi\varepsilon_0 r^2 / C$:
+
+\begin{align}
+  d_c + \sqrt{d_c^2 - r^2 s^2} &= k \notag \\
+  \sqrt{d_c^2 - r^2 s^2}        &= k - d_c \notag \\
+  d_c^2 - r^2 s^2               &= k^2 - 2k\,d_c + d_c^2.
+\end{align}
+
+The $d_c^2$ terms cancel; substituting $d_c = g - Ls$ and collecting
+terms in~$s$ yields a quadratic:
+
+\begin{equation}
+  r^2 s^2 + 2kL\,s + (k^2 - 2kg) = 0,
+\end{equation}
+
+with solution
+
+\begin{equation}
+  s = \frac{-kL \pm \sqrt{k^2(L^2 - r^2) + 2kgr^2}}{r^2},
+  \qquad k = \frac{2\pi\varepsilon_0 r^2}{C}.
+  \label{eq:quadSol}
+\end{equation}
+
+The two roots correspond to positive and negative tilt directions.
+Only the root satisfying the physical limit~\eqref{eq:alphaMax} is
+physically meaningful, so
+
+\begin{equation}
+  \boxed{\alpha_{\text{exact}} = \arcsin\!\left(
+         \frac{-kL \pm \sqrt{k^2(L^2 - r^2) + 2kgr^2}}{r^2}
+         \right),}
+  \label{eq:alphaExact}
+\end{equation}
+
+where the sign is chosen such that $|\alpha| <
+\arcsin\!\bigl(g/(L+r)\bigr)$.
+
+% ─────────────────────────────────────────────────────────────
+\section{Numerical Example and Graphical Comparison}
+% ─────────────────────────────────────────────────────────────
+
+\subsection{Instrument parameters}
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Parameter & Value & Description \\
+\midrule
+$L$ & \SI{40}{\milli\metre} & Pendulum length \\
+$r$ & \SI{10}{\milli\metre} & Plate radius \\
+$g$ & \SI{0.1}{\milli\metre} & Neutral air gap \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+From equation~\eqref{eq:C0} the capacitance at $\alpha = 0$ is
+
+\begin{equation}
+  C_0 = \frac{\pi \times (10^{-2})^2 \times 8.854\times10^{-12}}{10^{-4}}
+      = \SI{27.82}{\pico\farad}.
+\end{equation}
+
+The physical validity limit from equation~\eqref{eq:alphaMax} is
+
+\begin{equation}
+  \alpha_{\max} = \arcsin\!\left(\frac{0.1}{50}\right)
+                = \arcsin(0.002) \approx \SI{412.5}{\arcsecond}
+                \approx \SI{2000}{\micro\metre\per\metre}.
+\end{equation}
+
+\subsection{Comparison of the three models}
+
+Figure~\ref{fig:comparison} shows $C$ as a function of~$\alpha$ for the
+exact formula~\eqref{eq:exact}, the tilt-neglecting
+approximation~\eqref{eq:approx}, and the linear
+approximation~\eqref{eq:linear} over 70\,\% of the valid range.  A
+secondary axis expresses the angle in \si{\micro\metre\per\metre}
+(slope units used in metrology), related to arc seconds by
+$1'' \approx 4.848\;\si{\micro\metre\per\metre}$.
+
+\begin{figure}[ht]
+\centering
+\pgfplotstableread{capdata.dat}{\capdata}
+\begin{tikzpicture}
+\begin{axis}[
+  width  = 0.85\textwidth,
+  height = 7.5cm,
+  xlabel = {Tilt angle $\alpha$ (arc seconds)},
+  ylabel = {Capacitance $C$ (pF)},
+  xmin = -300, xmax = 300,
+  xtick distance = 100,
+  grid = both,
+  grid style = {line width=0.3pt, draw=gray!30},
+  legend pos = north west,
+  legend style = {font=\small},
+  tick label style = {font=\small},
+  label style = {font=\small},
+  % Secondary x-axis (µm/m = arcsec * 4.8481)
+  extra x ticks = {-288.77, -192.51, -96.26, 0, 96.26, 192.51, 288.77},
+  extra x tick labels = {$-1400$, $-933$, $-467$, $0$, $467$, $933$, $1400$},
+  extra x tick style = {
+    xticklabel style = {yshift=0.65cm, font=\small},
+    tick style = {yshift=0.4cm},
+    grid = none,
+  },
+]
+\addplot[blue,   thick,              ] table[x=arcsec, y=Cexact  ]{\capdata};
+\addplot[teal,   thick, dashed,      ] table[x=arcsec, y=Capprox ]{\capdata};
+\addplot[orange, thick, dotted, very thick] table[x=arcsec, y=Clinear ]{\capdata};
+\legend{Exact \eqref{eq:exact},
+        Approximate \eqref{eq:approx},
+        Linear \eqref{eq:linear}}
+\end{axis}
+% µm/m label above the plot
+\node at (7.2, 7.85) [font=\small] {Tilt (\si{\micro\metre\per\metre})};
+\end{tikzpicture}
+\caption{Capacitance versus tilt angle for the three models.
+         Instrument parameters: $L=\SI{40}{\milli\metre}$,
+         $r=\SI{10}{\milli\metre}$, $g=\SI{0.1}{\milli\metre}$.
+         The plot covers 70\,\% of the physical validity range.
+         The exact and approximate curves are nearly indistinguishable
+         at this scale, confirming that the tilt correction is negligible
+         for these dimensions.  The linear model diverges noticeably
+         toward the edges of the range.}
+\label{fig:comparison}
+\end{figure}
+
+% ─────────────────────────────────────────────────────────────
+\section{Summary}
+% ─────────────────────────────────────────────────────────────
+
+Starting from the parallel-plate capacitance formula, three expressions
+for the capacitance of a pendulum-coupled circular capacitor have been
+derived and compared.
+
+\begin{enumerate}
+
+  \item \textbf{Exact formula} (eq.~\ref{eq:exact}): valid for all
+        angles within the physical limit~\eqref{eq:alphaMax}; accounts
+        fully for both the change in centre gap and the angular tilt of
+        the plates.
+
+  \item \textbf{Approximate formula} (eq.~\ref{eq:approx}): treats the
+        plates as parallel using only the centre gap; accurate when
+        $r\sin\alpha \ll d_c$.  For the example parameters the error is
+        negligible across the entire operating range.
+
+  \item \textbf{Linear approximation} (eq.~\ref{eq:linear}): a
+        first-order Taylor expansion around $\alpha = 0$; valid only for
+        small deviations from the neutral position.
+
+\end{enumerate}
+
+Each formula has been inverted analytically to yield $\alpha$ as a
+function of~$C$ (equations~\ref{eq:alphaExact},
+\ref{eq:alphaApprox}, \ref{eq:alphaLin}).  The exact inversion requires
+solving a quadratic in $\sin\alpha$; both roots are real and correspond
+to tilt in opposite directions, and the physically valid root is selected
+by the limit~\eqref{eq:alphaMax}.
+
+
+\end{document}

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "sldrnrd")(type "KiCad")(uri "${KIPRJMOD}/../../sldrnrd_kicad_lib/sldrnrd.pretty")(options "")(descr "sldrnrd component footprint library"))
+)
