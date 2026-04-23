@@ -11,21 +11,21 @@ The instrument combines a MEMS 3-axis inclinometer (Murata SCL3300) with a high-
 | Parameter | Value |
 |---|---|
 | MCU | STM32G0B1RET6 (Cortex-M0+, 64 MHz, 512 KB flash) |
-| Display | Sharp LS027B7DH01, 2.7", 400�240 monochrome |
+| Display | Sharp LS027B7DH01, 2.7", 400x240 monochrome |
 | Connectivity | Bluetooth LE 5.0 (Microchip RN4871) |
-| USB | USB-C Full Speed — charging + HID + DFU bootloader |
+| USB | USB-C Full Speed - charging + HID + DFU bootloader |
 | Battery | 1S LiPo 1000 mAh, ~20 h runtime |
 | Supply | 3.3 V main rail, 5 V display rail |
-| MEMS range | �90� |
-| Pendulum range | �1 mm/m |
-| Pendulum resolution | ~0.001 �m/m |
+| MEMS range | +/-90 deg |
+| Pendulum range | +/-1 mm/m |
+| Pendulum resolution | ~0.001 um/m |
 
 ### Physical Architecture
 
 Three PCBs:
-- **Main board** — MCU, power management, display, BLE, user interface
-- **SCL3300 daughter board** — 3-axis MEMS inclinometer, mounted to cast iron base
-- **PCAP04 daughter boards �2** — capacitive pendulum readout, one per axis
+- **Main board** - MCU, power management, display, BLE, user interface
+- **SCL3300 daughter board** - 3-axis MEMS inclinometer, mounted to cast iron base
+- **PCAP04 daughter boards x2** - capacitive pendulum readout, one per axis
 
 ## Repository Structure
 
@@ -42,8 +42,8 @@ All symbols and footprints use [sldrnrd_kicad_lib](https://github.com/soldernerd
 
 ```
 EmbeddedSystems/
-├── InclinationMeter/   ← this repo
-└── sldrnrd_kicad_lib/  ← library repo
+├── InclinationMeter/   ← this repo
+└── sldrnrd_kicad_lib/  ← library repo
 ```
 
 ## Firmware
@@ -52,4 +52,4 @@ Developed with STM32CubeIDE. Firmware update via USB DFU bootloader (no external
 
 ## Status
 
-Hardware design in progress — schematic phase.
+Hardware design in progress - schematic phase.
