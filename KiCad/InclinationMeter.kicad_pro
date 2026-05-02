@@ -224,7 +224,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "0.1"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -629,13 +629,34 @@
       {
         "filename": "InclinationMeter.kicad_sch",
         "name": "InclinationMeter",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "7d35597c-fbf9-4ce7-8410-0e7922679ea3"
       }
     ],
-    "used_designators": "",
+    "used_designators": "C40,U12",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "7d35597c-fbf9-4ce7-8410-0e7922679ea3",
+      "InclinationMeter"
+    ],
+    [
+      "3915638a-476b-497c-b542-644dae2fb89a",
+      "Power Supply"
+    ],
+    [
+      "c7060150-8e88-4322-90f4-a2380d2eedad",
+      "MCU — STM32G0B1"
+    ],
+    [
+      "e3bfb176-0916-4121-bce2-c51ac090cbf3",
+      "UI & Peripherals"
+    ],
+    [
+      "7286337d-4cd5-4f95-b550-04c2e962fc51",
+      "Connectors"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {

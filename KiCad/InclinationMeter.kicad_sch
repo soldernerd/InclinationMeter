@@ -78,97 +78,7 @@
 		)
 	)
 	(sheet
-		(at 200 60)
-		(size 65 30)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "4848d4bf-fae6-4df1-b286-debb6680ae70")
-		(property "Sheetname" "Display"
-			(at 200 59.238 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "display.kicad_sch"
-			(at 200 90.762 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "InclinationMeter"
-				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 30 110)
-		(size 65 30)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "4b75ec67-7647-47ca-94b9-785c61c5e8aa")
-		(property "Sheetname" "Bluetooth"
-			(at 30 109.238 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "ble.kicad_sch"
-			(at 30 140.762 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "InclinationMeter"
-				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 115 110)
 		(size 65 30)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -183,7 +93,7 @@
 		)
 		(uuid "7286337d-4cd5-4f95-b550-04c2e962fc51")
 		(property "Sheetname" "Connectors"
-			(at 115 109.238 0)
+			(at 30 109.238 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -194,7 +104,7 @@
 			)
 		)
 		(property "Sheetfile" "connectors.kicad_sch"
-			(at 115 140.762 0)
+			(at 30 140.762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -297,7 +207,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3"
-					(page "7")
+					(page "5")
 				)
 			)
 		)
