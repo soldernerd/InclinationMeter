@@ -117,7 +117,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3"
-					(page "6")
+					(page "5")
 				)
 			)
 		)
@@ -137,7 +137,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "c7060150-8e88-4322-90f4-a2380d2eedad")
-		(property "Sheetname" "MCU — STM32G0B1"
+		(property "Sheetname" "MCU & BLE"
 			(at 115 59.238 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -207,7 +207,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3"
-					(page "5")
+					(page "4")
 				)
 			)
 		)

@@ -1,8 +1,9 @@
 # Precision Electronic Level Instrument — Hardware Design Specification
 
-**Document version:** 0.2  
+**Document version:** 0.3  
 **Status:** Draft  
-**Date:** April 2026
+**Date:** May 2026  
+**Schematic reference:** KiCad commit 03fac10 (finalized)
 
 ---
 
@@ -35,7 +36,7 @@ The cast iron base (~150×40mm) provides the precision reference surface. The pl
 | USB | USB-C, Full Speed (charging + HID + MSD bootloader) |
 | Battery | 1S LiPo, 1000 mAh |
 | Battery life | ~20 hours at 30 mA average |
-| Supply voltage | 3.3V (main rail), 5V (display only) |
+| Supply voltage | 3.3V (main rail), 3.3V (sensor rail), 5V (buzzer only) |
 
 ---
 
@@ -46,33 +47,35 @@ The cast iron base (~150×40mm) provides the precision reference surface. The pl
 ```
 1S LiPo 1000mAh (JST-PH 2.0mm)
     │
-    ├── Reverse polarity protection (DMG2305UX P-MOSFET + 100kΩ)
+    ├── Reverse polarity protection (Q1 DMG2305UX P-MOSFET)
     │
-    ├── TP4056 (USB-C charging, CC/CV, 500mA charge current)
-    │       └── DW01A + FS8205A (cell protection)
+    ├── U1 TP4056 (USB-C charging, CC/CV, 500mA charge current)
+    │       └── Q2 FS8205A (cell protection FET)
     │
-    ├── LP5907MFX-3.3 LDO #1 (U5) → 3.3V rail (STM32, RN4871, display logic, EEPROM, etc.)
-    │       └── Enable pin controlled by STM32 PC0 (active high)
+    ├── U2 LP5907MFX-3.3 LDO → 3V3 rail (MCU, RN4871, display logic, EEPROM, buzzer buffer)
+    │       └── Enable pin controlled by STM32 PB9 (3V3_EN, active-high)
     │
-    ├── LP5907MFX-3.3 LDO #2 (U5B) → 3.3V_DBOARD rail (SCL3300, PCAP04 #1, PCAP04 #2)
-    │       └── Enable tied to VIN (always on when main power present)
+    ├── U4 LP5907MFX-3.3 LDO → 3V3_Sensors rail (SCL3300, PCAP04 #1, PCAP04 #2)
+    │       └── Enable controlled by LDO_EN (power-sheet sequencing logic)
     │
-    └── SD6210A charge pump → 5V rail (display VDD/VDDA only)
+    └── U5 SD6210A boost converter → 5V0 rail (buzzer BZ1 only, via U8 74AHCT244)
+            └── Enable controlled by STM32 PB8 (5V_EN, active-high)
 ```
 
 ### 2.2 Component Details
 
-| Function | Part | Package | JLCPCB # | Notes |
-|---|---|---|---|---|
-| LiPo cell | 1S, 1000mAh, JST-PH | Flat pouch | — | Source separately |
-| Battery connector | JST-PH 2.0mm 2-pin | Through-hole | — | Mark polarity on silkscreen |
-| Reverse polarity | DMG2305UX | SOT-23 | C144153 | P-channel MOSFET, gate pull-down 100kΩ |
-| Charger | TP4056 | SOP-8 | C382139 | RPROG = 2.4kΩ → 500mA charge current |
-| Cell protection | DW01A | SOT-23-6 | C85680 | Over/under voltage + short circuit |
-| Protection FETs | FS8205A | TSSOP-8 | C14212 | Dual N-channel, driven by DW01A |
-| 3.3V LDO (U5) | LP5907MFX-3.3/NOPB | SOT-23-5 | C80670 | 250mA, 150mV dropout, ultra low noise — main rail, EN controlled by STM32 PC0 |
-| 3.3V_DBOARD LDO (U5B) | LP5907MFX-3.3/NOPB | SOT-23-5 | C80670 | 250mA, 150mV dropout, ultra low noise — daughter boards only, EN tied to VIN |
-| 5V charge pump | SD6210A | SOT-23-6 | C250809 | 2.8–5V in, regulated 5V out, 250mA |
+| Ref | Function | Part | Package | JLCPCB # | Notes |
+|---|---|---|---|---|---|
+| J2 | USB-C + battery charge input | USB-C receptacle | SMD | C165948 | CC1/CC2: 5.1 kΩ to GND |
+| Q1 | Reverse polarity | DMG2305UX | SOT-23 | C144153 | P-channel MOSFET |
+| U1 | LiPo charger | TP4056 | SOP-8 | C382139 | RPROG = 2 kΩ (R3 ‖ R5) → ~500 mA |
+| Q2 | Cell protection FET | FS8205A | TSSOP-8 | C14212 | Dual N-channel |
+| U2 | 3V3 LDO — main rail | LP5907MFX-3.3/NOPB | SOT-23-5 | C80670 | 250 mA; EN = PB9 |
+| U4 | 3V3_Sensors LDO — sensor rail | LP5907MFX-3.3/NOPB | SOT-23-5 | C80670 | 250 mA; EN = LDO_EN (power-sheet logic) |
+| U5 | 5 V boost converter | SD6210A | SOT-23-6 | C250809 | 2.8–5 V in, 5 V/250 mA out; EN = PB8 |
+| Q3 | Charging control | AO3400A | SOT-23 | C20917 | N-ch MOSFET; controls TP4056 charge enable path |
+| Q4 | Sense-divider isolation | AO3400A | SOT-23 | C20917 | N-ch MOSFET; disconnects BATTERY_SENSE divider lower leg in off-state to prevent battery drain |
+| D1–D4 | Schottky diodes | BAT54WS | SOD-323 | — | Present in schematic; verify placement in power sheet |
 
 ### 2.3 Battery Cutoff
 
@@ -83,10 +86,13 @@ The cast iron base (~150×40mm) provides the precision reference surface. The pl
 
 ### 2.4 Vbat Measurement
 
-Resistor divider to scale 4.2V max down to STM32 ADC range (3.3V):
-- R1 = 100kΩ (high side, battery to divider)
-- R2 = 390kΩ (low side, divider to GND)
-- Scale factor: 390/(100+390) = 0.796 → 4.2V × 0.796 = 3.34V max → within 3.3V ADC range
+Resistor divider on BAT+ → BATTERY_SENSE → PB14 (ADC_IN):
+
+- R9 = 100 kΩ (high side, BAT+ to divider node)
+- R6 = 33 kΩ (low side, divider node to Q4 drain → GND)
+- Q4 (AO3400A, N-ch) in the lower leg disconnects the divider during off-state to prevent battery drain
+- Scale factor: 33/(100+33) = 0.248 → 4.2 V × 0.248 = 1.04 V max ADC input (within 3.3 V ADC range)
+- Software ADC reference: VREF+ = 3.3 V
 
 ### 2.5 USB-C Connector
 
@@ -112,37 +118,42 @@ Every power pin of every IC must have a 100nF ceramic capacitor placed as close 
 
 ### 3.2 Clock
 
-- External crystal: 8 MHz, ±20 ppm, SMD 5032 package (Yangxing X50328MSB2GI, JLCPCB C115962)
-- Load capacitors: 33 pF NP0 (0603). Crystal CL = 20 pF, C_stray ≈ 3 pF → C_load = 2×(20−3) = 34 pF → 33 pF (nearest E12)
-- PLL configuration: HSE 8 MHz, M=1, N=16, R=2 → SYSCLK = 64 MHz
+- Main crystal: 8 MHz, ±20 ppm, SMD 5032 package (Yangxing X50328MSB2GI, JLCPCB C115962)
+- Main crystal load caps: 33 pF NP0 (0603). Crystal CL = 20 pF, C_stray ≈ 3 pF → C_load = 2×(20−3) = 34 pF → 33 pF (nearest E12)
+- Main crystal pins: PF0-OSC_IN (pin 10), PF1-OSC_OUT (pin 11)
+- PLL configuration: HSE 8 MHz → SYSCLK = 64 MHz
 - USB clock: HSI48 internal RC + CRS locked to USB SOF packets → 48 MHz (no crystal required for USB)
-- Crystal pins: PF0-OSC_IN (pin 10), PF1-OSC_OUT (pin 11)
+- **RTC crystal (Y1):** 32.768 kHz, standard RTC crystal, on PC14 (OSC32_IN, pin 4) and PC15 (OSC32_OUT, pin 5)
+  > **Note:** PC14/PC15 are also used for PCAP04 #2 SCL/SDA and the ~{RST} signal respectively. See open items.
 
-### 3.3 Debug / Programming Interface (SWD)
+### 3.3 Debug / Programming Interface
 
-**Samtec FTSH-107-01-L-DV-K** — SMD, 14-pin 2×7, 1.27 mm pitch, keyed shroud. JLCPCB: C5307809. Compatible with STLINK-V3MINIE:
+**J4 — 2×7, 50 mil (1.27 mm) pitch SMD header**, compatible with STLINK-V3MINIE.
 
-| STDC14 Pin | Signal | Notes |
-|---|---|---|
-| 1 | VCC | +3V3 target power sense |
-| 2 | SWDIO | PA13 (pin 45), via R_SWDIO (100 Ω) |
-| 3 | GND | Ground |
-| 4 | SWCLK | PA14 (pin 46), via R_SWCLK (100 Ω) |
-| 5 | GND | Ground |
-| 6 | SWO | NC (Cortex-M0+ has no ITM) |
-| 7 | NC | No connect |
-| 8 | NC | No connect |
-| 9 | GND | Ground |
-| 10 | NRST | PF2 (pin 12), reset signal |
-| 11–14 | GND/NC | Ground / No connect |
+| J4 Position | Signal | Net | Notes |
+|---|---|---|---|
+| 1 | VCC | 3V3 | Target voltage sense for STLINK |
+| 2 | SWDIO | SWDIO | SWD data — see note below |
+| 3 | GND | GND | |
+| 4 | SWCLK | SWCLK | SWD clock — see note below |
+| 5 | GND | GND | |
+| 6 | SWO | SWO | Cortex-M0+ has no ITM; SWO not functional |
+| 7 | NC | — | |
+| 8 | ~{RST} | ~{RST} | Reset signal → PC15 |
+| 9 | GND | GND | |
+| 10 | DEBUG_UART_MCU_TO_PC | — | PD9 (UART TX from MCU) |
+| 11 | DEBUG_UART_PC_TO_MCU | — | PD8 (UART RX to MCU) |
+| 12–14 | GND / NC | — | |
+
+> **SWD pin note:** Standard SWD pins on STM32G0B1 are PA13 (SWDIO) and PA14 (SWCLK). In this design, PA13/PA14 are used for PCAP04 #1 P3/P2 GPIO. The `SWDIO` and `SWCLK` nets on J4 appear connected to PA8/PB15 in the schematic. This is a known conflict requiring clarification: either PA13/PA14 must be routed to J4 for SWD to function, or SWD and PCAP04_1 P2/P3 cannot be used simultaneously. See Netlist.md open items.
 
 ### 3.4 Reset
 
-10 kΩ pull-up on NRST to +3V3. 100 nF capacitor to GND for noise filtering.
+NRST (pin 12) has a decoupling capacitor to GND. The `~{RST}` signal from J4 routes to PC15 — see Netlist.md open item 2.
 
 ### 3.5 BOOT0 / DFU Bootloader
 
-PA14 doubles as BOOT0. A 10 kΩ pull-down resistor (R_BOOT0) holds BOOT0 LOW for normal boot from flash. To activate the STM32 ROM DFU bootloader, pull BOOT0 HIGH before or during reset — the device enumerates as a USB DFU device and accepts firmware via `dfu-util` or STM32CubeProgrammer. No SPI flash required.
+PA14 doubles as BOOT0 on STM32G0B1. A pull-down resistor holds BOOT0 LOW for normal boot. To activate the ROM DFU bootloader, pull BOOT0 HIGH before reset — the device enumerates as a USB DFU device. No SPI flash required.
 
 ---
 
@@ -150,77 +161,102 @@ PA14 doubles as BOOT0. A 10 kΩ pull-down resistor (R_BOOT0) holds BOOT0 LOW for
 
 ### 4.1 Summary Table
 
-| Function | Signal | Direction | STM32 Pin | Notes |
-|---|---|---|---|---|
-| **Power** | | | | |
-| Battery voltage sense | VBAT_SENSE | Analog in | PB0 (pin 27), ADC_IN8 | Via resistor divider |
-| LDO enable | LDO_EN | Digital out | PC0 (pin 13) | Active high to enable LP5907 |
-| Charge sense | CHG_SENSE | Digital in | PA9 (pin 37) | TP4056 CHRG pin, low = charging |
-| **SPI1 — Display** | | | | |
-| Display SCK | DISP_SCK | SPI out | PA5 (pin 22), SPI1_SCK AF0 | |
-| Display MOSI | DISP_MOSI | SPI out | PA7 (pin 24), SPI1_MOSI AF0 | Write-only, no MISO |
-| Display CS | DISP_CS | Digital out | PA4 (pin 21) | Active HIGH |
-| Display ON/OFF | DISP_ON | Digital out | PA8 (pin 36) | High = display on |
-| Display VCOM | DISP_VCOM | Digital out | PA6 (pin 23), TIM3_CH1 AF1 | Toggle ~30 Hz, hardware or GPIO |
-| **SPI2 — SCL3300** | | | | |
-| SPI2 SCK | SPI2_SCK | SPI out | PB13 (pin 33), SPI2_SCK AF0 | |
-| SPI2 MOSI | SPI2_MOSI | SPI out | PB15 (pin 35), SPI2_MOSI AF0 | |
-| SPI2 MISO | SPI2_MISO | SPI in | PB14 (pin 34), SPI2_MISO AF0 | |
-| SCL3300 CS | SCL_CS | Digital out | PB12 (pin 32) | Active low |
-| **I2C1 — PCAP04 #1 + EEPROM** | | | | |
-| I2C1 SDA | I2C_SDA | I2C | PB9 (pin 63), I2C1_SDA AF6 | 4.7 kΩ pull-up to 3.3V |
-| I2C1 SCL | I2C_SCL | I2C | PB8 (pin 62), I2C1_SCL AF6 | 4.7 kΩ pull-up to 3.3V |
-| **I2C2 — PCAP04 #2** | | | | |
-| I2C2 SDA | I2C2_SDA | I2C | PB11 (pin 31), I2C2_SDA AF6 | 4.7 kΩ pull-up to 3.3V |
-| I2C2 SCL | I2C2_SCL | I2C | PB10 (pin 30), I2C2_SCL AF6 | 4.7 kΩ pull-up to 3.3V |
-| **I2C GPIO — PCAP04 control** | | | | |
-| PCAP04 #1 interrupt | PCAP1_INT | Digital in | PC6 (pin 38), EXTI6 | Active low |
-| PCAP04 #2 interrupt | PCAP2_INT | Digital in | PC7 (pin 39), EXTI7 | Active low |
-| PCAP04 #1 reset | PCAP1_RST | Digital out | PC9 (pin 49) | Active low |
-| PCAP04 #2 reset | PCAP2_RST | Digital out | PD0 (pin 50) | Active low |
-| **USART1 — RN4871 BLE** | | | | |
-| BLE TX | BLE_TX | UART out | PB6 (pin 60), USART1_TX AF0 | STM32 TX → module RX |
-| BLE RX | BLE_RX | UART in | PB7 (pin 61), USART1_RX AF0 | Module TX → STM32 RX |
-| BLE reset | BLE_RST | Digital out | PA15 (pin 47) | Active low |
-| BLE status | BLE_STATUS | Digital in | PC8 (pin 48) | RX_IND / status pin |
-| **USB** | | | | |
-| USB D+ | USB_DP | Dedicated | PA12 (pin 44) | Via 22 Ω series resistor |
-| USB D− | USB_DM | Dedicated | PA11 (pin 43) | Via 22 Ω series resistor |
-| USB sense | VBUS_SENSE | Digital in | PA10 (pin 42) | Detect USB connection (optional) |
-| **Rotary encoders** | | | | |
-| Encoder 1 A | ENC1_A | Digital in | PA0 (pin 17), EXTI0 | RC filter + 74HC14 |
-| Encoder 1 B | ENC1_B | Digital in | PA1 (pin 18), EXTI1 | RC filter + 74HC14 |
-| Encoder 1 SW | ENC1_SW | Digital in | PA2 (pin 19), EXTI2 | RC filter + 74HC14 |
-| Encoder 2 A | ENC2_A | Digital in | PA3 (pin 20), EXTI3 | RC filter + 74HC14 |
-| Encoder 2 B | ENC2_B | Digital in | PC4 (pin 25), EXTI4 | RC filter + 74HC14 |
-| Encoder 2 SW | ENC2_SW | Digital in | PC5 (pin 26), EXTI5 | RC filter + 74HC14 |
-| **Temperature sensor** | | | | |
-| LM35 output | TEMP_SENSE | Analog in | PB1 (pin 28), ADC_IN9 | Via 100 Ω + 10 nF LP filter |
-| **Buzzer** | | | | |
-| Buzzer PWM | BUZZER | Digital out | PB3 (pin 57), TIM1_CH2 AF1 | Direct drive, no transistor |
-| **Status LEDs** | | | | |
-| Power LED | LED_PWR | Digital out | PC1 (pin 14) | Via 330 Ω series resistor |
-| Status LED | LED_STS | Digital out | PC2 (pin 15) | Via 330 Ω series resistor |
-| **SWD debug** | | | | |
-| SWD data | SWDIO | Dedicated | PA13 (pin 45) | 100 Ω series to J3 header |
-| SWD clock | SWCLK | Dedicated | PA14 (pin 46) | 100 Ω series to J3 header; 10 k pull-down |
+All assignments verified from KiCad/mcu.kicad_sch global label coordinates. See Netlist.md §5 for full analysis and footnotes.
 
-**Total GPIO/AF used: 46 of 64 pins. Spare GPIO pins: 18.**
+| Function | Signal | Direction | STM32 Pin (phys.) | Net name |
+|---|---|---|---|---|
+| **Power control** | | | | |
+| 3.3 V main LDO enable | 3V3_EN | Out | PB9 (63) | 3V3_EN |
+| 5 V boost enable | 5V_EN | Out | PB8 (62) | 5V_EN |
+| Charge enable (active-low) | ~{CHARGE_EN} | Out | PB7 (61) | ~{CHARGE_EN} |
+| Battery voltage sense | BATTERY_SENSE | ADC in | PB14 (34) | BATTERY_SENSE |
+| Charge status sense | CHARGE_SENSE | In | PC4 (25) | CHARGE_SENSE |
+| Standby sense | STANDBY_SENSE | In | PC5 (26) | STANDBY_SENSE |
+| USB VBUS sense | VBUS_SENSE | In | PC7 (39) | VBUS_SENSE |
+| **SPI — SCL3300 inclinometer** | | | | |
+| SCK | SCL3300_SCK | SPI out | PB5 (59) | SCL3300_SCK |
+| MOSI | SCL3300_MOSI | SPI out | PB3 (57) | SCL3300_MOSI |
+| MISO | SCL3300_MISO | SPI in | PB4 (58) | SCL3300_MISO |
+| CS (active-low) | SCL3300_CS | Out | PB6 (60) | SCL3300_CS |
+| **I2C — PCAP04 #1** | | | | |
+| SCL | PCAP04_1_SCL | I2C out | PC8 (48) | PCAP04_1_SCL |
+| SDA | PCAP04_1_SDA | I2C bidir | PA15 (47) | PCAP04_1_SDA |
+| Interrupt | PCAP04_1_INT | In | PA12 (44) | PCAP04_1_INT |
+| GPIO P2 (optional) | PCAP04_1_P2 | Bidir | PA14 (46) | PCAP04_1_P2 |
+| GPIO P3 (optional) | PCAP04_1_P3 | Bidir | PA13 (45) | PCAP04_1_P3 |
+| **I2C — PCAP04 #2** | | | | |
+| SCL | PCAP04_2_SCL | I2C out | PC14 (4) | PCAP04_2_SCL |
+| SDA | PCAP04_2_SDA | I2C bidir | PC13 (3) | PCAP04_2_SDA |
+| Interrupt | PCAP04_2_INT | In | PC10 (64) | PCAP04_2_INT |
+| GPIO P2 (optional) | PCAP04_2_P2 | Bidir | PC11 (1) | PCAP04_2_P2 |
+| GPIO P3 (optional) | PCAP04_2_P3 | Bidir | PC12 (2) | PCAP04_2_P3 |
+| **I2C — EEPROM (U10)** | | | | |
+| SCL | EEPROM_SCL | I2C out | PA4 (21) | EEPROM_SCL |
+| SDA | EEPROM_SDA | I2C bidir | PA3 (20) | EEPROM_SDA |
+| **SPI — Display (LS027B7DH01)** | | | | |
+| SCK | DISP_SCK | SPI out | PB10 (30) | DISP_SCK |
+| MOSI (SI) | DISP_MOSI | SPI out | PB0 (27) | DISP_MOSI |
+| CS (SCS, active-high) | DISP_CS | Out | PB11 (31) | DISP_CS |
+| VCOM toggle | DISP_VCOM | Out | PB1 (28) | DISP_VCOM |
+| Display on/off | DISP_ON | Out | PB2 (29) | DISP_ON |
+| **USART2 — RN4871 BLE** | | | | |
+| TX (MCU→BLE) | BLE_UART_MCU_TO_BLE | Out | PD6 (56) | BLE_UART_MCU_TO_BLE |
+| RX (BLE→MCU) | BLE_UART_BLE_TO_MCU | In | PD5 (55) | BLE_UART_BLE_TO_MCU |
+| Reset (active-low) | ~{BLE_RST} | Out | PD4 (54) | ~{BLE_RST} |
+| GPIO P0_2 (optional) | BLE_P0_2 | Bidir | PD2 (52) | BLE_P0_2 |
+| GPIO P1_6 (optional) | BLE_P1_6 | Bidir | PD3 (53) | BLE_P1_6 |
+| GPIO P1_7 (optional) | BLE_P1_7 | Bidir | PD0 (50) | BLE_P1_7 |
+| GPIO P2_0 (optional) | BLE_P2_0 | Bidir | PC9 (49) | BLE_P2_0 |
+| GPIO P3_6 (optional) | BLE_P3_6 | Bidir | PD1 (51) | BLE_P3_6 |
+| **Debug UART (J4)** | | | | |
+| TX (MCU→PC) | DEBUG_UART_MCU_TO_PC | Out | PD9 (41) | DEBUG_UART_MCU_TO_PC |
+| RX (PC→MCU) | DEBUG_UART_PC_TO_MCU | In | PD8 (40) | DEBUG_UART_PC_TO_MCU |
+| **USB FS** | | | | |
+| D+ | USB_D+ | Bidir | PA9 (37) | USB_D+ |
+| D− | USB_D- | Bidir | PC6 (38) | USB_D- |
+| **Rotary encoder 1** | | | | |
+| Channel A | ENC_1A | In | PA1 (18) | ENC_1A |
+| Channel B | ENC_1B | In | PA2 (19) | ENC_1B |
+| Push-button (active-low) | ~{ENC_1SW} | In | PA0 (17) | ~{ENC_1SW} |
+| **Rotary encoder 2** | | | | |
+| Channel A | ENC_2A | In | PC2 (15) | ENC_2A |
+| Channel B | ENC_2B | In | PC3 (16) | ENC_2B |
+| Push-button | ENC_2SW | In | PC1 (14) | ENC_2SW |
+| **Temperature sensor** | | | | |
+| Analog output | TEMP_SENSE | ADC in | PB13 (33) | TEMP_SENSE |
+| **Buzzer** | | | | |
+| Drive signal (3.3 V logic) | BUZZER | PWM out | PB12 (32) | BUZZER |
+| **Status LEDs** | | | | |
+| Power LED | LED_PWR | Out | PA6 (23) | LED_PWR |
+| Status LED | LED_STATUS | Out | PA5 (22) | LED_STATUS |
+| **SWD / debug** | | | | |
+| SWO | SWO | Out | PA7 (24) | SWO |
+| SWDIO | SWDIO | Bidir | PA8 (36)* | SWDIO |
+| SWCLK | SWCLK | In | PB15 (35)* | SWCLK |
+| Reset sense | ~{RST} | In | PC15 (5)* | ~{RST} |
+| **Misc** | | | | |
+| External reset (NRST) | — | — | pin 12 | hardware only |
+
+*See §3.3 note regarding SWD pin conflict with PCAP04 and ~{RST} on PC15.
 
 ### 4.2 Peripheral Allocation
 
-| Peripheral | Assignment |
-|---|---|
-| SPI1 | Display (dedicated, write-only) |
-| SPI2 | SCL3300 (dedicated bus) |
-| I2C1 | PCAP04 #1 + 24LC256 EEPROM (shared bus) |
-| I2C2 | PCAP04 #2 (dedicated bus) |
-| USART1 | RN4871 BLE module (115200 baud, 8N1) |
-| USB FS | USB-C (charging + HID + DFU); clock from HSI48 + CRS |
-| ADC | Vbat sense (PB0/IN8) + LM35 temperature (PB1/IN9) |
-| TIM1_CH2 | Buzzer PWM (PB3, 4 kHz) |
-| TIM3_CH1 | VCOM toggle for display (~30 Hz, optional hardware) |
-| EXTI0–7 | Rotary encoder inputs + PCAP04 interrupts |
+| Peripheral | Assignment | Pins |
+|---|---|---|
+| SPI (TBD) | SCL3300 inclinometer | PB3/PB4/PB5/PB6 |
+| SPI (TBD) | Display LS027B7DH01 | PB0/PB10/PB11 (bit-bang or AF, verify) |
+| I2C (TBD) | PCAP04 #1 | PC8/PA15 |
+| I2C (TBD) | PCAP04 #2 | PC14/PC13 |
+| I2C (TBD) | EEPROM (U10) | PA4/PA3 — dedicated bus |
+| USART2 | RN4871 BLE module, 115200 baud | PD5/PD6 |
+| USART (TBD) | Debug UART to J4 | PD8/PD9 |
+| USB FS | USB-C (charging + HID + DFU); HSI48 + CRS | PA9/PC6 |
+| ADC | BATTERY_SENSE, TEMP_SENSE | PB14, PB13 |
+| Timer (PWM) | BUZZER (3.3 V drive to U8) | PB12 |
+| Timer (PWM) | DISP_VCOM toggle (≥ 1 Hz) | PB1 |
+
+> All SPI and I2C peripheral assignments require verification against the STM32G0B1RET6 alternate function table.  
+> PCAP04 P2/P3 GPIO lines and RN4871 GPIO lines will be assigned to specific functions during firmware development.
 
 ---
 
@@ -297,12 +333,12 @@ Full 400×240 monochrome framebuffer = 12,000 bytes. STM32G0B1 has 144 KB RAM �
 
 UART at 115200 baud, 8N1
 
-| Signal | STM32 Pin | Direction | Notes |
+| Signal | STM32 Pin (phys.) | Direction | Notes |
 |---|---|---|---|
-| UART_TX | PB6 (pin 60), USART1_TX AF0 | STM32 → RN4871 | 3.3V logic |
-| UART_RX | PB7 (pin 61), USART1_RX AF0 | RN4871 → STM32 | 3.3V logic |
-| RESET | PA15 (pin 47) | STM32 → RN4871 | Active low, 100 Ω series |
-| STATUS / RX_IND | PC8 (pin 48) | RN4871 → STM32 | Status indication |
+| UART TX (MCU→BLE) | PD6 (56), USART2_TX | STM32 → RN4871 | 3.3V logic |
+| UART RX (BLE→MCU) | PD5 (55), USART2_RX | RN4871 → STM32 | 3.3V logic |
+| ~{BLE_RST} | PD4 (54) | STM32 → RN4871 | Active low hardware reset |
+| GPIO P0_2–P3_6 | PD2/PD3/PD0/PC9/PD1 | TBD | Optional; usage determined in firmware |
 
 ### 6.3 GATT Service
 
@@ -342,20 +378,22 @@ Separate small PCB (~30×25mm) with:
 - 6-pin FFC connector (same physical standard as PCAP04 boards)
 - Mounted to cast iron base via brass M3 standoffs, 4 corners
 
-**Pinout of 6-pin FFC connector (SCL3300 board):**
+**Pinout of J3 (6-pin FFC, 1.0 mm pitch, main board side):**
 
-| Pin | Signal |
-|---|---|
-| 1 | GND |
-| 2 | +3.3V_DBOARD |
-| 3 | SCK |
-| 4 | MOSI |
-| 5 | MISO |
-| 6 | CS |
+| Pin | Signal | Description |
+|---|---|---|
+| 1 | 3V3_Sensors | 3.3 V supply (from U4 LDO) |
+| 2 | SCL3300_CS | SPI chip select (active-low) |
+| 3 | SCL3300_SCK | SPI clock |
+| 4 | SCL3300_MISO | SPI data out (SCL3300 → MCU) |
+| 5 | SCL3300_MOSI | SPI data in (MCU → SCL3300) |
+| 6 | GND | Ground |
+
+Connector: J3 (JUSHUO AFA07 or equivalent 6-pin 1.0 mm FFC ZIF).
 
 ### 7.3 Main Board Connection
 
-3 identical 6-pin ZIF FFC connectors on main board (one per daughter board). All same physical part, different signal assignments per connector type.
+J3 (SCL3300 FFC) is the only 6-pin FFC on the main board for sensor connections. J5 and J6 are 10-pin FFCs for PCAP04 #1 and #2 respectively.
 
 **SPI timing:** Use SPI Mode 0, recommended clock 2–4 MHz per datasheet for best noise performance.
 
@@ -377,31 +415,38 @@ Separate small PCB (~30×25mm) with:
 
 ### 8.2 I2C Configuration
 
-Each PCAP04 board has a dedicated I2C bus:
+Each PCAP04 board has a dedicated I2C bus. I2C (not SPI) is used in this design.
 
-**I2C1 (SDA1/SCL1) — PCAP04 #1 + EEPROM:**
-- PCAP04 #1: address pin LOW → I2C address 0x48 (verify in PCAP04 datasheet)
-- 24LC256 EEPROM: A0=A1=A2=GND → I2C address 0x50
-- 4.7kΩ pull-up on SDA1 and SCL1 to 3.3V
+**PCAP04 #1 (J5) — SCL=PC8, SDA=PA15:**
+- PCAP04 #1 I2C address: verify from PCAP04 datasheet (address depends on ADDR pin)
+- Pull-ups on SCL/SDA to 3V3_Sensors on the daughter board
 
-**I2C2 (SDA2/SCL2) — PCAP04 #2:**
-- PCAP04 #2: address pin HIGH → I2C address 0x49 (existing hardware; address is irrelevant for disambiguation on a dedicated bus)
-- 4.7kΩ pull-up on SDA2 and SCL2 to 3.3V
+**PCAP04 #2 (J6) — SCL=PC14, SDA=PC13:**
+- PCAP04 #2 I2C address: verify from PCAP04 datasheet
+- Pull-ups on SCL/SDA to 3V3_Sensors on the daughter board
 
-### 8.3 Existing Boards
+**EEPROM (U10) — SCL=PA4, SDA=PA3 (separate dedicated I2C bus)**
 
-Two prototype PCAP04 boards already exist. Pinout of 6-pin FFC connector:
+> EEPROM is on its own I2C bus, separate from both PCAP04 buses.
 
-| Pin | Signal |
-|---|---|
-| 1 | SDA |
-| 2 | SCL |
-| 3 | GND |
-| 4 | RESET (active low) |
-| 5 | +3.3V_DBOARD |
-| 6 | INT (interrupt, active low) |
+### 8.3 PCAP04 Daughter Boards (v2)
 
-**FFC pitch:** 1.0 mm (confirmed from existing PCAP04 prototype boards).
+The PCAP04 v2 daughter boards are used. They expose both I2C and SPI interfaces but **only I2C is used**. Connector: 10-pin FFC.
+
+**Pinout of J5 / J6 (10-pin FFC, main board side):**
+
+| Pin | Signal | Description |
+|---|---|---|
+| 1 | 3V3_Sensors | 3.3 V supply |
+| 2 | PCAP04_x_SCL | I2C clock |
+| 3 | PCAP04_x_SDA | I2C data |
+| 4–7 | GND / NC | Ground / no-connect |
+| 8 | PCAP04_x_P3 | GPIO P3 (optional, usage TBD) |
+| 9 | PCAP04_x_P2 | GPIO P2 (optional, usage TBD) |
+| 10 | PCAP04_x_INT | Interrupt output (active-low) |
+
+> **Compatibility note:** These 10-pin FFC connectors are **not compatible** with the old 6-pin FFC prototype boards.  
+> New v2 daughter boards are required for use with this main board.
 
 ### 8.4 Mechanical Design (Pendulum Sensor)
 
@@ -504,15 +549,19 @@ Output pin → STM32 PB1 (pin 28, ADC_IN9) via 100 Ω series resistor and 10 nF 
 
 ### 12.2 Drive
 
-Driven directly from STM32 TIM1_CH2 on PB3 (pin 57, AF1). No driver transistor or series resistor required — the piezo transducer is a capacitive load and 5 mA max is within STM32 GPIO capability.
+BZ1 is driven at **5 V** via the 74AHCT244 buffer (U8):
 
-PWM frequency: 4000 Hz (resonant frequency) for maximum SPL. Duty cycle 50% for continuous tone; shorter bursts for click feedback.
+1. MCU PB12 (pin 32) outputs 3.3 V PWM signal (`BUZZER` net)
+2. U8 (74AHCT244) level-shifts 3.3 V → 5 V (`BUZZER_5V` net)
+3. 5 V signal drives BZ1
+
+PWM frequency: buzzer resonant frequency (typically ~4 kHz). Duty cycle 50% for continuous tone. Shorter bursts for click feedback.
 
 ### 12.3 Connections
 
 | Buzzer Pin | Net | Notes |
 |---|---|---|
-| + (signal) | BUZZER | STM32 PB3 (pin 57), TIM1_CH2 AF1 PWM output |
+| + (signal) | BUZZER_5V | U8 (74AHCT244) output, 5 V |
 | − (GND) | GND | |
 
 ### 12.4 Usage
@@ -532,14 +581,13 @@ PWM frequency: 4000 Hz (resonant frequency) for maximum SPL. Duty cycle 50% for 
 
 Two mechanical rotary encoders with integral push-button switches.
 
-**Debouncing:** RC filter followed by 74HC14 Schmitt trigger inverter on each of 6 lines. All 6 signals connect to STM32 EXTI-capable GPIO pins (PA0–PA3, PC4, PC5).
+**Debouncing:** RC filters only (no Schmitt trigger inverter). All 6 signals connect to STM32 GPIO pins with internal pull-ups. Additional software debounce (≥ 5 ms) required in firmware.
 
-- Encoder A/B signals (4 lines): 10 kΩ + 100 nF (τ = 1 ms)
-- Encoder switch signals (2 lines): 100 kΩ + 100 nF (τ = 10 ms)
+RC filter values (from schematic):
+- Encoder A/B signals (4 lines): 33 kΩ + 10 nF (τ = 330 µs)
+- Encoder switch signals (2 lines): 68 kΩ + 100 nF (τ = 6.8 ms)
 
 **Encoder part:** Bourns PEC11R-4215F-S0024. JLCPCB: C143790. Incremental, 24 detents/rev, integrated push-button switch, 15 mm shaft, SMD.
-
-**74HC14 device:** SN74HC14PWR hex Schmitt trigger inverter, TSSOP-14 (TI). JLCPCB: C6821
 
 **Encoder assignments:**
 - Encoder 1: Navigation / value adjustment
@@ -573,9 +621,9 @@ Implemented directly by STM32G0B1 internal USB peripheral (Full Speed, 12 Mbps).
 
 **USB clock:** HSI48 internal 48 MHz RC oscillator locked to USB SOF via CRS (Clock Recovery System). No crystal required for USB operation.
 
-**Series resistors:** 22 Ω on D+ and D− between USB-C connector and STM32 PA12/PA11 (pins 44/43).
+**USB pin assignment:** D+ = PA9 (pin 37), D− = PC6 (pin 38). These are alternate USB pin positions on STM32G0B1 — verify AF table support before implementing USB driver.
 
-**VBUS detection:** PA10 (pin 42) optionally senses VBUS for cable presence detection.
+**VBUS detection:** PC7 (pin 39) senses VBUS for cable presence detection.
 
 ### 13.3 USB Device Classes
 
@@ -593,18 +641,17 @@ Implemented directly by STM32G0B1 internal USB peripheral (Full Speed, 12 Mbps).
 
 ### 14.1 Connector Summary
 
-| Connector | Type | Pins | Pitch | Part | Purpose |
-|---|---|---|---|---|---|
-| Battery | JST-PH | 2 | 2.0mm | B2B-PH-K | LiPo cell |
-| USB-C | USB-C receptacle | — | — | Standard SMD | Charging + data |
-| SWD | STDC14 header | 14 | 1.27mm | 2×7 SMD/THT | STLINK-V3MINIE debug |
-| Display | ZIF FPC | 10 | 0.5mm | Hirose FH12-10S-0.5SH | LS027B7DH01 |
-| SCL3300 FFC | ZIF FFC | 6 | 1.0mm | Standard ZIF | SCL3300 daughter board |
-| PCAP04 #1 FFC | ZIF FFC | 6 | 1.0mm | Standard ZIF | PCAP04 board 1 |
-| PCAP04 #2 FFC | ZIF FFC | 6 | 1.0mm | Standard ZIF | PCAP04 board 2 |
-| Expansion | 100mil header | 7 | 2.54mm | Through-hole, DNP | Future extension |
+| Ref | Type | Pins | Pitch | Purpose |
+|---|---|---|---|---|
+| J2 | USB-C receptacle | — | — | Charging + USB data |
+| J3 | ZIF FFC | 6 | 1.0 mm | SCL3300 inclinometer daughter board |
+| J4 | 2×7 50 mil SMD header | 14 | 1.27 mm | STLINK-V3MINIE SWD debug + debug UART |
+| J5 | ZIF FFC | 10 | TBD | PCAP04 #1 daughter board (v2) |
+| J6 | ZIF FFC | 10 | TBD | PCAP04 #2 daughter board (v2) |
 
-All three 6-pin FFC connectors use 1.0 mm pitch and identical physical parts.
+The display (DS1, LS027B7DH01) FPC is integrated into the DS1 footprint — there is no separate FPC connector designator on the main board.
+
+> J5 and J6 (10-pin FFC) are not compatible with earlier 6-pin FFC PCAP04 daughter boards. V2 daughter boards required.
 
 ### 14.2 Expansion Header (J8)
 
@@ -630,37 +677,34 @@ All three 6-pin FFC connectors on the main board are identical physical parts. T
 
 ## 16. Complete Bill of Materials
 
-| # | Designator | Description | Part Number | Package | JLCPCB # | Qty |
-|---|---|---|---|---|---|---|
-| 1 | U1 | Microcontroller STM32G0B1RET6 | STM32G0B1RET6 | LQFP64-GP | C2829307 | 1 |
-| 2 | U2 | BLE module RN4871 | RN4871-I/RM128 | Castellated | C633941 | 1 |
-| 3 | U3 | LiPo charger | TP4056 | SOP-8 | C382139 | 1 |
-| 4 | U4 | Cell protection IC | DW01A | SOT-23-6 | C85680 | 1 |
-| 5 | Q1, Q2 | Protection FETs | FS8205A | TSSOP-8 | C14212 | 2 |
-| 6 | Q3 | Reverse polarity MOSFET | DMG2305UX-13 | SOT-23 | C144153 | 1 |
-| 7 | U5 | 3.3V LDO — main rail | LP5907MFX-3.3/NOPB | SOT-23-5 | C80670 | 1 |
-| 7B | U5B | 3.3V_DBOARD LDO — daughter boards | LP5907MFX-3.3/NOPB | SOT-23-5 | C80670 | 1 |
-| 8 | U6 | 5V charge pump | SD6210A | SOT-23-6 | C250809 | 1 |
-| 9 | U7 | Logic level shifter | SN74AHCT244DBR | SSOP-20 | C2868870 | 1 |
-| 10 | U8 | Schmitt trigger inverter | SN74HC14PWR | TSSOP-14 | C6821 | 1 |
-| 11 | U9 | EEPROM 32KB | 24LC256-I/ST | TSSOP-8 | C87823 | 1 |
-| 12 | U10 | Temperature sensor | LM35 | SOT-23 | C9900081740 | 1 |
-| 13 | Y1 | Crystal 8MHz | X50328MSB2GI | SMD-5032 | C115962 | 1 |
-| 14 | J1 | Battery connector | JST B2B-PH-K | Through-hole | — | 1 |
-| 15 | J2 | USB-C connector | TYPE-C-31-M-12 | USB-C SMD right-angle | C165948 | 1 |
-| 16 | J3 | SWD debug header | Samtec FTSH-107-01-L-DV-K | SMD 14-pin 2×7 1.27mm | C5307809 | 1 |
-| 17 | J4 | Display ZIF 10-pin | FH12-10S-0.5SH | SMD ZIF | — | 1 |
-| 18 | J5–J7 | FFC ZIF 6-pin ×3 | 6-pin 1.0mm ZIF | SMD ZIF | TBD | 3 |
-| 19 | ENC1, ENC2 | Rotary encoder with switch | Bourns PEC11R-4215F-S0024 | SMD | C143790 | 2 |
-| 20 | LED1 | Power LED green | 0603 green LED | 0603 | — | 1 |
-| 21 | LED2 | Status LED blue | 0603 blue LED | 0603 | — | 1 |
-| 22 | DISP1 | Sharp Memory LCD 2.7" | LS027B7DH01 | FPC panel | C17492463 | 1 |
-| 23 | BZ1 | Passive piezo transducer | CPT-9019A-SMT-TR | SMD 9×9mm | C20181991 | 1 |
-| 24 | J8 | Expansion header 7-pin, DNP | 2.54mm through-hole | Through-hole | — | 1 |
-| — | Various | Resistors 0603 | Various values | 0603 | — | ~30 |
-| — | Various | Capacitors 0603/0805 | 100nF, 1µF (0603); 4.7µF, 10µF (0805/1206) | 0603/0805 | — | ~40 |
+| Ref | Description | Part Number | Package | JLCPCB # | Qty |
+|---|---|---|---|---|---|
+| U6 | MCU STM32G0B1RET6 | STM32G0B1RET6 | LQFP64-GP | C2829307 | 1 |
+| U7 | BLE module RN4871 | RN4871-I/RM128 | Castellated | C633941 | 1 |
+| U1 | LiPo charger | TP4056 | SOP-8 | C382139 | 1 |
+| U2 | 3.3 V LDO — main rail (3V3) | LP5907MFX-3.3/NOPB | SOT-23-5 | C80670 | 1 |
+| U4 | 3.3 V LDO — sensor rail (3V3_Sensors) | LP5907MFX-3.3/NOPB | SOT-23-5 | C80670 | 1 |
+| U5 | 5 V boost converter | SD6210A | SOT-23-6 | C250809 | 1 |
+| U8 | Octal buffer 3.3V→5V (buzzer drive) | 74AHCT244 | SSOP-20 | C2868870 | 1 |
+| U10 | EEPROM 32 KB | 24LC256-I/ST | TSSOP-8 | C87823 | 1 |
+| Q1 | Reverse polarity P-ch MOSFET | DMG2305UX | SOT-23 | C144153 | 1 |
+| Q2 | Cell protection FET | FS8205A | TSSOP-8 | C14212 | 1 |
+| Q3 | Charge control N-ch MOSFET | AO3400A | SOT-23 | C20917 | 1 |
+| Q4 | Sense-divider isolation N-ch MOSFET | AO3400A | SOT-23 | C20917 | 1 |
+| D1–D4 | Schottky diode | BAT54WS | SOD-323 | — | 4 |
+| Y1 (main) | Crystal 8 MHz | X50328MSB2GI | SMD-5032 | C115962 | 1 |
+| Y1 (RTC) | Crystal 32.768 kHz | (TBD) | SMD | — | 1 |
+| J2 | USB-C connector | TYPE-C-31-M-12 | SMD right-angle | C165948 | 1 |
+| J3 | FFC ZIF 6-pin (SCL3300) | JUSHUO AFA07 | SMD ZIF 1.0 mm | — | 1 |
+| J4 | Debug header 2×7 50 mil | (TBD) | SMD | — | 1 |
+| J5, J6 | FFC ZIF 10-pin (PCAP04 ×2) | (TBD) | SMD ZIF | — | 2 |
+| SW1, SW2 | Rotary encoder with switch | Bourns PEC11R-4215F-S0024 | SMD | C143790 | 2 |
+| DS1 | Sharp Memory LCD 2.7" | LS027B7DH01 | FPC | C17492463 | 1 |
+| BZ1 | Passive piezo transducer | CPT-9019A-SMT-TR | SMD 9×9 mm | C20181991 | 1 |
+| — | Resistors 0603 | Various | 0603 | — | ~30 |
+| — | Capacitors | 100 nF, 1 µF (0603); 4.7 µF, 10 µF (0805/1206) | — | — | ~40 |
 
-**Removed from BOM vs. previous revision:** W25Q80DV SPI Flash (U9 — replaced by STM32 ROM DFU bootloader).
+> Components removed vs previous spec: DW01A (cell protection IC replaced by FS8205A alone), SN74HC14PWR Schmitt trigger (no longer used), SPI flash W25Q80DV (replaced by ROM DFU bootloader).
 
 ---
 
@@ -729,7 +773,7 @@ SCL3300 and PCAP04 PCBs mount directly to cast iron via 4× M3 brass standoffs e
 
 ### 18.1 Boot Sequence
 
-1. Check BOOT0 (PA14) state: if HIGH → STM32 ROM DFU bootloader handles firmware update, enumerates USB DFU
+1. Check BOOT0 (PA14, shared with PCAP04_1_P2) state: if HIGH → STM32 ROM DFU bootloader handles firmware update, enumerates USB DFU
 2. Normal boot (BOOT0 LOW): STM32 jumps to user application at `0x08000000`
 3. Firmware initialises all peripherals, starts main loop
 
@@ -737,16 +781,16 @@ SCL3300 and PCAP04 PCBs mount directly to cast iron via 4× M3 brass standoffs e
 
 | Task | Rate | Notes |
 |---|---|---|
-| SCL3300 read | 10 Hz | SPI2, Mode 4 |
-| PCAP04 read | 2–10 Hz | I2C, both devices |
-| Sensor fusion | 10 Hz | Complementary filter: pendulum < 0.5Hz, MEMS > 0.5Hz |
-| BLE notify | On measurement | Send via RN4871 UART |
-| Display update | 10 Hz | Redraw changed regions only |
-| VCOM toggle | 30 Hz | TIM3_CH1 hardware or timer ISR |
-| Vbat ADC | 1 Hz | Software cutoff at 3.6V |
-| Temperature ADC | 0.1 Hz | LM35 via ADC |
-| USB service | As needed | HID + MSD |
-| Encoder service | IOC interrupt | Debounced via 74HC14 |
+| SCL3300 read | 10 Hz | SPI, Mode 0, PB3–PB6 |
+| PCAP04 read | 2–10 Hz | I2C; #1 on PC8/PA15, #2 on PC14/PC13 |
+| Sensor fusion | 10 Hz | Complementary filter: pendulum < 0.5 Hz, MEMS > 0.5 Hz |
+| BLE notify | On measurement | USART2 to RN4871 (PD5/PD6) |
+| Display update | 10 Hz | Redraw changed lines only |
+| VCOM toggle | ≥ 1 Hz | PB1 PWM — must run whenever display is powered |
+| Vbat ADC | 1 Hz | PB14 ADC; software cutoff at 3.6 V |
+| Temperature ADC | 0.1 Hz | PB13 ADC |
+| USB service | As needed | HID + DFU; PA9/PC6 |
+| Encoder service | GPIO interrupt | RC-filtered inputs; software debounce ≥ 5 ms |
 
 ### 18.3 BLE Protocol
 
@@ -764,21 +808,25 @@ Custom GATT service. Measurement notification packet format (to be defined):
 
 | Item | Description | Priority |
 |---|---|---|
-| ~~FFC pitch~~ | ~~Confirmed: 1.0 mm pitch~~ | ~~Resolved~~ |
-| ~~Crystal load caps~~ | ~~Calculated: 33 pF (CL=20 pF, C_stray≈3 pF)~~ | ~~Resolved~~ |
-| ~~STM32 JLCPCB part number~~ | ~~C2829307~~ | ~~Resolved~~ |
-| J3 SWD connector | Samtec FTSH-107-01-L-DV-K (C5307809) — selected, update schematic | Medium — add to schematic |
-| PCAP04 I2C address | Verify exact I2C addresses from PCAP04 datasheet | Medium |
-| LiPo cell dimensions | Select cell fitting enclosure, confirm JST-PH polarity | Medium |
-| ZIF connector selection | Confirm exact ZIF parts for 6-pin FFC connectors | Medium |
-| Custom BLE UUIDs | Define 128-bit UUIDs for measurement and command characteristics | Medium |
-| PCB dimensions | Define main board outline matching enclosure | Medium |
-| ~~Rotary encoder selection~~ | ~~Choose specific encoder part~~ | ~~Resolved: Bourns PEC11R-4215F-S0024 (C143790)~~ |
-| ~~USB-C connector selection~~ | ~~Confirm USB-C part~~ | ~~Resolved: TYPE-C-31-M-12 (C165948), 16-pin SMD right-angle, 5A, 10,000 cycles~~ |
-| 5V rail validation | Verify SD6210A output with LS027B7DH01 load at 3.6V input | Low |
-| SCL3300 daughter board | Design second PCB (out of scope for this document) | Low |
-| TIM3_CH1 VCOM toggle | Decide: hardware TIM3_CH1 (PA6 AF1) vs. simple timer ISR GPIO | Low |
-| STM32 Eagle library | Download STM32G0B1RET6 LQFP64 library from Ultra Librarian | Medium — needed for Fusion 360 |
+| **SWD vs PCAP04_1 pin conflict** | PA13/PA14 used for PCAP04_1_P3/P2 AND are the hardware SWD pins. Schematic shows SWDIO/SWCLK at PA8/PB15 — verify if this is intentional routing or an error. Clarify with designer before firmware implementation. | **High** |
+| **~{RST} on PC15 / RTC crystal** | PC15 carries ~{RST} from J4. PC14/PC15 are also OSC32_IN/OUT for RTC crystal Y1. Clarify: is Y1 fitted? If yes, PCAP04_2 SCL/SDA (PC14/PC13) and ~{RST} (PC15) conflict. Decision: use LSI for RTC or do not populate Y1. | **High** |
+| **USB alternate pin mapping** | USB D+=PA9, D−=PC6 (non-standard). Verify STM32G0B1 AF table supports USB FS on these pins before USB driver development. | **High** |
+| **PCAP04 I2C addresses** | Verify I2C addresses for PCAP04 #1 and #2 from PCAP04 datasheet (ADDR pin configuration). | Medium |
+| **10-pin FFC connector parts** | Select specific parts for J5 and J6 (10-pin FFC ZIF). Confirm pitch (0.5 mm or 1.0 mm) matches v2 PCAP04 daughter boards. | Medium |
+| **J4 debug header part** | Confirm 50-mil 2×7 SMD header part number for J4. | Medium |
+| **RTC crystal Y1** | Select 32.768 kHz crystal if RTC crystal is to be used. Confirm PC14/PC15 are not conflicting. | Medium |
+| **EEPROM I2C address** | Confirm address pin wiring (A0/A1/A2) for U10 in schematic. Default 0x50 assumed. | Low |
+| **Display SPI peripheral** | PB0 (MOSI) and PB10/PB11 (SCK/CS) — verify compatible STM32G0B1 AF or use bit-banged SPI. | Medium |
+| **VCOM timer** | Confirm timer and pin AF for DISP_VCOM (PB1) PWM. Must toggle ≥ 1 Hz continuously when display is on. | Medium |
+| **Buzzer resonant frequency** | Confirm BZ1 resonant frequency and set PWM accordingly on PB12. | Low |
+| **Custom BLE UUIDs** | Define 128-bit UUIDs for measurement notification and command write characteristics. | Medium |
+| **PCB dimensions** | Define main board outline matching enclosure. | Medium |
+| **LiPo cell dimensions** | Select cell fitting enclosure, confirm JST-PH polarity. | Medium |
+| **5V boost validation** | Verify SD6210A output voltage under load (buzzer) at minimum battery (3.6V input). | Low |
+| ~~FFC pitch~~ | ~~Confirmed: J3 = 1.0 mm pitch~~ | ~~Resolved~~ |
+| ~~Crystal load caps~~ | ~~33 pF (CL=20 pF, C_stray≈3 pF)~~ | ~~Resolved~~ |
+| ~~Encoder selection~~ | ~~Bourns PEC11R-4215F-S0024 (C143790)~~ | ~~Resolved~~ |
+| ~~USB-C connector~~ | ~~TYPE-C-31-M-12 (C165948)~~ | ~~Resolved~~ |
 
 ---
 

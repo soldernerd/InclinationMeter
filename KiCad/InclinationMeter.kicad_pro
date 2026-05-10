@@ -632,7 +632,7 @@
         "uuid": "7d35597c-fbf9-4ce7-8410-0e7922679ea3"
       }
     ],
-    "used_designators": "C40,U12",
+    "used_designators": "Y1-3,#PWR1-108,#PWR116-126,C1-39,C44-45,BZ1,R1-31,J1-6,SW1-2,U1-11,D1-8,DS1,Q1-4",
     "variants": []
   },
   "sheets": [
@@ -646,7 +646,7 @@
     ],
     [
       "c7060150-8e88-4322-90f4-a2380d2eedad",
-      "MCU — STM32G0B1"
+      "MCU & BLE"
     ],
     [
       "e3bfb176-0916-4121-bce2-c51ac090cbf3",
