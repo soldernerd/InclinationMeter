@@ -1347,9 +1347,6 @@
 			(embedded_fonts no)
 		)
 		(symbol "sldrnrd:Connector/USB/USB_C"
-			(pin_numbers
-				(hide yes)
-			)
 			(pin_names
 				(offset 1.016)
 			)
@@ -2264,10 +2261,40 @@
 		(uuid "e081491a-0be7-4c59-bbc0-03a291afe391")
 	)
 	(junction
+		(at 290.83 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14d51d0d-77c7-4152-bbf1-22d36c6ff7f7")
+	)
+	(junction
+		(at 320.04 199.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2232867c-3004-485e-b339-54c2a08fed60")
+	)
+	(junction
+		(at 180.34 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2665c30b-7eba-4238-b576-ea40cb908dfb")
+	)
+	(junction
+		(at 193.04 195.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38137efe-e5b4-41f2-a1bd-2e16656051ed")
+	)
+	(junction
 		(at 173.99 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "420c74b4-a162-4722-a47e-d101c7b05b87")
+	)
+	(junction
+		(at 204.47 199.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51061fa0-ae50-48a6-85c7-cc6154b3b23d")
 	)
 	(junction
 		(at 173.99 59.69)
@@ -2294,22 +2321,28 @@
 		(uuid "6859c26d-4053-472f-84a0-b3977d5673ad")
 	)
 	(junction
+		(at 204.47 207.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7234db0c-71f6-4094-966e-9033a7a8886d")
+	)
+	(junction
 		(at 78.74 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7cb5a864-47b7-437f-93ae-033495ec969d")
 	)
 	(junction
-		(at 194.31 191.77)
+		(at 320.04 207.01)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "922be712-a20e-4469-a2a7-c949d1175405")
+		(uuid "88b32092-ca83-457d-b875-0d4497c8a1dc")
 	)
 	(junction
-		(at 309.88 191.77)
+		(at 303.53 195.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a800fd00-fa89-4892-9fca-8478e42cc957")
+		(uuid "92123c63-f4a7-46f9-8bef-de551a37f127")
 	)
 	(junction
 		(at 119.38 49.53)
@@ -2377,16 +2410,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 207.01) (xy 203.2 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1500459a-e6d6-4742-98ee-407b10947582")
-	)
-	(wire
-		(pts
 			(xy 82.55 64.77) (xy 82.55 68.58)
 		)
 		(stroke
@@ -2427,6 +2450,26 @@
 	)
 	(wire
 		(pts
+			(xy 285.75 218.44) (xy 332.74 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a3f9191-a478-481d-a64f-cc0f91a6ed78")
+	)
+	(wire
+		(pts
+			(xy 290.83 187.96) (xy 332.74 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b3b523c-1e92-44fb-b9ef-b0209f6884e0")
+	)
+	(wire
+		(pts
 			(xy 50.8 67.31) (xy 50.8 80.01)
 		)
 		(stroke
@@ -2447,23 +2490,33 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 184.15) (xy 196.85 226.06)
+			(xy 204.47 168.91) (xy 204.47 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fe96043-fc28-4f33-b63f-89ea85e6c451")
+	)
+	(wire
+		(pts
+			(xy 320.04 199.39) (xy 332.74 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21ce7f41-3eda-4902-83dc-979d8d906a7f")
+	)
+	(wire
+		(pts
+			(xy 210.82 191.77) (xy 210.82 233.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2221c931-ccfd-4a4e-9121-c3000612ceca")
-	)
-	(wire
-		(pts
-			(xy 300.99 187.96) (xy 318.77 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2285ebb9-6a48-40c4-8e3d-def33de43d7f")
 	)
 	(wire
 		(pts
@@ -2497,16 +2550,6 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 191.77) (xy 309.88 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "258cc7a4-0e0f-4e97-9825-c4ed1dd9c445")
-	)
-	(wire
-		(pts
 			(xy 66.04 193.04) (xy 77.47 193.04)
 		)
 		(stroke
@@ -2517,6 +2560,26 @@
 	)
 	(wire
 		(pts
+			(xy 320.04 207.01) (xy 320.04 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b1049ce-2b51-4f4a-bc17-7eb03b4e21fd")
+	)
+	(wire
+		(pts
+			(xy 175.26 214.63) (xy 213.36 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c943cf8-1baa-4820-a2aa-58a335581fa0")
+	)
+	(wire
+		(pts
 			(xy 173.99 54.61) (xy 173.99 43.18)
 		)
 		(stroke
@@ -2524,6 +2587,16 @@
 			(type default)
 		)
 		(uuid "2f8e7937-945b-4613-a8ad-906ee93deebb")
+	)
+	(wire
+		(pts
+			(xy 290.83 184.15) (xy 290.83 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "322c75d7-4489-4277-b5b7-99474949e134")
 	)
 	(wire
 		(pts
@@ -2547,26 +2620,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 180.34) (xy 203.2 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39e5e2f6-c39b-404e-8197-43ae8523d0c3")
-	)
-	(wire
-		(pts
-			(xy 299.72 214.63) (xy 318.77 214.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39f4c842-90d3-44da-a901-60b049bda7b1")
-	)
-	(wire
-		(pts
 			(xy 119.38 66.04) (xy 119.38 69.85)
 		)
 		(stroke
@@ -2574,16 +2627,6 @@
 			(type default)
 		)
 		(uuid "3ade778d-9f50-484b-962e-fae052b1243c")
-	)
-	(wire
-		(pts
-			(xy 194.31 191.77) (xy 194.31 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c9e953a-28bb-4fa9-a6f0-4c87a913daf3")
 	)
 	(wire
 		(pts
@@ -2614,6 +2657,26 @@
 			(type default)
 		)
 		(uuid "43414491-52c7-4ddd-a4e1-0e8fbce8a452")
+	)
+	(wire
+		(pts
+			(xy 175.26 195.58) (xy 193.04 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46c936e1-7c56-4c70-bab8-ccb698a1041b")
+	)
+	(wire
+		(pts
+			(xy 180.34 181.61) (xy 180.34 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46f08c18-7427-4145-bf37-28bb3eb95bc3")
 	)
 	(wire
 		(pts
@@ -2657,6 +2720,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 191.77) (xy 213.36 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "511ef06d-be45-4538-bc1d-1175a3487e3c")
+	)
+	(wire
+		(pts
 			(xy 40.64 52.07) (xy 40.64 67.31)
 		)
 		(stroke
@@ -2697,6 +2770,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 226.06) (xy 204.47 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ec9f670-d126-4fce-a6a1-47014fcd63d5")
+	)
+	(wire
+		(pts
 			(xy 194.31 54.61) (xy 199.39 54.61)
 		)
 		(stroke
@@ -2717,16 +2800,6 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 207.01) (xy 318.77 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "653fd1b1-8a31-4c7f-9473-28f977073b07")
-	)
-	(wire
-		(pts
 			(xy 44.45 57.15) (xy 44.45 58.42)
 		)
 		(stroke
@@ -2734,6 +2807,16 @@
 			(type default)
 		)
 		(uuid "666fe679-6001-4298-beab-2c31cdeba0c8")
+	)
+	(wire
+		(pts
+			(xy 285.75 222.25) (xy 332.74 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66848d5a-ed45-45a3-9297-e1ae6cd17bcb")
 	)
 	(wire
 		(pts
@@ -2767,16 +2850,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 199.39) (xy 194.31 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70985c39-fc11-44dd-a47b-e746f991a0e6")
-	)
-	(wire
-		(pts
 			(xy 119.38 49.53) (xy 119.38 39.37)
 		)
 		(stroke
@@ -2787,7 +2860,7 @@
 	)
 	(wire
 		(pts
-			(xy 318.77 184.15) (xy 312.42 184.15)
+			(xy 332.74 191.77) (xy 330.2 191.77)
 		)
 		(stroke
 			(width 0)
@@ -2807,16 +2880,6 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 180.34) (xy 318.77 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7bc26719-8525-464c-92b4-21b3e500b8ee")
-	)
-	(wire
-		(pts
 			(xy 173.99 67.31) (xy 173.99 78.74)
 		)
 		(stroke
@@ -2824,6 +2887,16 @@
 			(type default)
 		)
 		(uuid "7dfa8571-31af-4238-b861-fa5e2411cfb3")
+	)
+	(wire
+		(pts
+			(xy 303.53 171.45) (xy 303.53 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8536a85e-d92d-4a13-8723-a4e08122f257")
 	)
 	(wire
 		(pts
@@ -2847,23 +2920,13 @@
 	)
 	(wire
 		(pts
-			(xy 318.77 191.77) (xy 309.88 191.77)
+			(xy 193.04 168.91) (xy 193.04 173.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "892078a5-b1c3-44f7-8376-d8a90d7882de")
-	)
-	(wire
-		(pts
-			(xy 203.2 199.39) (xy 194.31 199.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89a84dd1-1c26-48a3-8d34-1a7be83422bf")
+		(uuid "8b277aff-3356-4aca-9105-e09a57ec5323")
 	)
 	(wire
 		(pts
@@ -2887,13 +2950,13 @@
 	)
 	(wire
 		(pts
-			(xy 318.77 199.39) (xy 309.88 199.39)
+			(xy 176.53 187.96) (xy 180.34 187.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "98890051-9b0d-4cb0-a1b3-fd168729445a")
+		(uuid "97969aac-43cc-4ab7-82b9-e545f33dd2d7")
 	)
 	(wire
 		(pts
@@ -2907,13 +2970,23 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 214.63) (xy 203.2 214.63)
+			(xy 204.47 199.39) (xy 213.36 199.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "99e83eaa-0b7d-4224-83ca-22c428f56dae")
+		(uuid "9ac08b15-a531-4284-abaf-1221f0aaec69")
+	)
+	(wire
+		(pts
+			(xy 285.75 187.96) (xy 290.83 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b011839-2ad0-4288-9b27-f7a59742d325")
 	)
 	(wire
 		(pts
@@ -2927,23 +3000,13 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 184.15) (xy 196.85 184.15)
+			(xy 175.26 222.25) (xy 213.36 222.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9e5c3355-660d-4b7d-b31d-489d6b39b67b")
-	)
-	(wire
-		(pts
-			(xy 185.42 187.96) (xy 203.2 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f2bb271-3df5-4883-a7dd-f476222845af")
+		(uuid "9cef7512-fcc8-41cd-a8b8-b1eab8709af5")
 	)
 	(wire
 		(pts
@@ -2964,6 +3027,16 @@
 			(type default)
 		)
 		(uuid "a28f63ab-6921-49a6-a1c5-f020bd991353")
+	)
+	(wire
+		(pts
+			(xy 285.75 214.63) (xy 332.74 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a636afbc-46b0-4d94-b5cf-be26a3efa6c0")
 	)
 	(wire
 		(pts
@@ -3057,6 +3130,16 @@
 	)
 	(wire
 		(pts
+			(xy 290.83 171.45) (xy 290.83 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4ff2c39-ba4b-42ce-841c-2584fa3ca4e5")
+	)
+	(wire
+		(pts
 			(xy 198.12 60.96) (xy 198.12 59.69)
 		)
 		(stroke
@@ -3087,13 +3170,43 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 184.15) (xy 312.42 226.06)
+			(xy 330.2 191.77) (xy 330.2 233.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b9a51f03-2cf5-40b0-bf89-b08f3619db28")
+	)
+	(wire
+		(pts
+			(xy 175.26 218.44) (xy 213.36 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb9615f7-2053-4f90-9a17-a34918d348c1")
+	)
+	(wire
+		(pts
+			(xy 285.75 195.58) (xy 303.53 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbb9c1e3-dd55-4362-8551-333b70afbeee")
+	)
+	(wire
+		(pts
+			(xy 204.47 199.39) (xy 204.47 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbf3ca86-ca32-4eb2-9759-9b33ea4d2a75")
 	)
 	(wire
 		(pts
@@ -3157,6 +3270,26 @@
 	)
 	(wire
 		(pts
+			(xy 303.53 195.58) (xy 332.74 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9edb80b-bec9-4978-98b2-4c66c2036cde")
+	)
+	(wire
+		(pts
+			(xy 204.47 231.14) (xy 204.47 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca53a6be-8de7-4a15-9fa0-01fa9fd19b13")
+	)
+	(wire
+		(pts
 			(xy 74.93 189.23) (xy 74.93 180.34)
 		)
 		(stroke
@@ -3174,6 +3307,26 @@
 			(type default)
 		)
 		(uuid "ce4a8cc4-3791-479c-8c98-ba4478d3bc19")
+	)
+	(wire
+		(pts
+			(xy 193.04 195.58) (xy 213.36 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce9d7546-5a89-4dfe-958b-f91e40309706")
+	)
+	(wire
+		(pts
+			(xy 303.53 184.15) (xy 303.53 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceb4c436-7e48-4b3e-8da1-6948a051764b")
 	)
 	(wire
 		(pts
@@ -3207,13 +3360,23 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 199.39) (xy 309.88 191.77)
+			(xy 320.04 171.45) (xy 320.04 199.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d970d564-3e83-4a8f-a5b8-4d16c3199e44")
+	)
+	(wire
+		(pts
+			(xy 193.04 181.61) (xy 193.04 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9d1005d-c9ac-4d09-b971-88598f4b99c8")
 	)
 	(wire
 		(pts
@@ -3247,26 +3410,6 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 210.82) (xy 318.77 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e707a5bf-d1d6-4ca4-8fdd-7aa3d2d216ff")
-	)
-	(wire
-		(pts
-			(xy 203.2 191.77) (xy 194.31 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7e7284f-aa4e-4003-b606-b85ce0e906d8")
-	)
-	(wire
-		(pts
 			(xy 198.12 52.07) (xy 194.31 52.07)
 		)
 		(stroke
@@ -3284,6 +3427,16 @@
 			(type default)
 		)
 		(uuid "e906f362-1b28-4ab2-bc63-33c2b7c98003")
+	)
+	(wire
+		(pts
+			(xy 180.34 187.96) (xy 213.36 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaefd5d6-fdf4-467e-9491-6123a4ff78e1")
 	)
 	(wire
 		(pts
@@ -3307,6 +3460,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 168.91) (xy 180.34 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eecce87f-4368-4eb7-9c88-2406504fada3")
+	)
+	(wire
+		(pts
 			(xy 119.38 62.23) (xy 119.38 66.04)
 		)
 		(stroke
@@ -3314,6 +3477,16 @@
 			(type default)
 		)
 		(uuid "f1e7d836-977e-4756-8fe9-67a6efe160e9")
+	)
+	(wire
+		(pts
+			(xy 204.47 207.01) (xy 213.36 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f331d87f-8c10-40ae-a89b-7904d1cf6adf")
 	)
 	(wire
 		(pts
@@ -3337,13 +3510,13 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 210.82) (xy 203.2 210.82)
+			(xy 320.04 199.39) (xy 320.04 207.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f80fc096-868d-4f03-a3f0-8271f91acecf")
+		(uuid "fbbaac96-f787-4073-9de6-a16b90653c8b")
 	)
 	(wire
 		(pts
@@ -3354,6 +3527,26 @@
 			(type default)
 		)
 		(uuid "fc2fc27a-b5a4-4e5c-8cc5-39d567d6e507")
+	)
+	(wire
+		(pts
+			(xy 320.04 207.01) (xy 332.74 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fca52825-dd02-4f59-a85f-4b9c898b1a59")
+	)
+	(wire
+		(pts
+			(xy 320.04 231.14) (xy 320.04 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd73ca11-376c-41af-89f1-4ec97675955a")
 	)
 	(wire
 		(pts
@@ -3482,7 +3675,7 @@
 	)
 	(global_label "PCAP04_1_INT"
 		(shape output)
-		(at 184.15 214.63 180)
+		(at 175.26 222.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3491,7 +3684,7 @@
 		)
 		(uuid "3a36aa87-7c50-4094-a164-dc687156703f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 184.15 214.63 0)
+			(at 175.26 222.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3501,7 +3694,7 @@
 			)
 		)
 		(property "Intersheetref" "${INTERSHEET_REFS}"
-			(at 184.15 214.63 0)
+			(at 175.26 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3537,7 +3730,7 @@
 	)
 	(global_label "PCAP04_2_P3"
 		(shape bidirectional)
-		(at 299.72 207.01 180)
+		(at 285.75 214.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3546,7 +3739,7 @@
 		)
 		(uuid "45162a86-c8f8-46a2-9740-6a0e30e9f17a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 299.72 207.01 0)
+			(at 285.75 214.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3556,7 +3749,7 @@
 			)
 		)
 		(property "Intersheetref" "${INTERSHEET_REFS}"
-			(at 299.72 207.01 0)
+			(at 285.75 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3615,7 +3808,7 @@
 	)
 	(global_label "PCAP04_1_SDA"
 		(shape bidirectional)
-		(at 185.42 187.96 180)
+		(at 175.26 195.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3624,7 +3817,7 @@
 		)
 		(uuid "7815b1ba-5d97-4518-ab9b-5aeff2ba2043")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.42 187.96 0)
+			(at 175.26 195.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3634,7 +3827,7 @@
 			)
 		)
 		(property "Intersheetref" "${INTERSHEET_REFS}"
-			(at 185.42 187.96 0)
+			(at 175.26 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3716,7 +3909,7 @@
 	)
 	(global_label "PCAP04_2_SDA"
 		(shape bidirectional)
-		(at 300.99 187.96 180)
+		(at 285.75 195.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3725,7 +3918,7 @@
 		)
 		(uuid "9b1b790c-e6d5-47d6-8fab-de1ce827a553")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 300.99 187.96 0)
+			(at 285.75 195.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3735,7 +3928,7 @@
 			)
 		)
 		(property "Intersheetref" "${INTERSHEET_REFS}"
-			(at 300.99 187.96 0)
+			(at 285.75 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3748,7 +3941,7 @@
 	)
 	(global_label "PCAP04_1_SCL"
 		(shape input)
-		(at 186.69 180.34 180)
+		(at 176.53 187.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3757,7 +3950,7 @@
 		)
 		(uuid "9cc2fab9-09c4-420b-a644-070fec62e70a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.69 180.34 0)
+			(at 176.53 187.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3767,7 +3960,7 @@
 			)
 		)
 		(property "Intersheetref" "${INTERSHEET_REFS}"
-			(at 186.69 180.34 0)
+			(at 176.53 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3826,7 +4019,7 @@
 	)
 	(global_label "PCAP04_2_INT"
 		(shape output)
-		(at 299.72 214.63 180)
+		(at 285.75 222.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3835,7 +4028,7 @@
 		)
 		(uuid "bcbeac14-26c9-4127-91e5-4978c99a3eaf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 299.72 214.63 0)
+			(at 285.75 222.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3845,7 +4038,7 @@
 			)
 		)
 		(property "Intersheetref" "${INTERSHEET_REFS}"
-			(at 299.72 214.63 0)
+			(at 285.75 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3881,7 +4074,7 @@
 	)
 	(global_label "PCAP04_2_P2"
 		(shape bidirectional)
-		(at 299.72 210.82 180)
+		(at 285.75 218.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3890,7 +4083,7 @@
 		)
 		(uuid "ccddc3e6-f545-4005-9bb8-ed2549ae018c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 299.72 210.82 0)
+			(at 285.75 218.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3900,7 +4093,7 @@
 			)
 		)
 		(property "Intersheetref" "${INTERSHEET_REFS}"
-			(at 299.72 210.82 0)
+			(at 285.75 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3913,7 +4106,7 @@
 	)
 	(global_label "PCAP04_1_P2"
 		(shape bidirectional)
-		(at 184.15 210.82 180)
+		(at 175.26 218.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3922,7 +4115,7 @@
 		)
 		(uuid "d65f8cb2-6b2d-4592-8fda-bcaf1e1e634b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 184.15 210.82 0)
+			(at 175.26 218.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3932,7 +4125,7 @@
 			)
 		)
 		(property "Intersheetref" "${INTERSHEET_REFS}"
-			(at 184.15 210.82 0)
+			(at 175.26 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3968,7 +4161,7 @@
 	)
 	(global_label "PCAP04_2_SCL"
 		(shape input)
-		(at 302.26 180.34 180)
+		(at 285.75 187.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3977,7 +4170,7 @@
 		)
 		(uuid "e4b1c007-0979-47cd-a9b2-44e00fd9776f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 302.26 180.34 0)
+			(at 285.75 187.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3987,7 +4180,7 @@
 			)
 		)
 		(property "Intersheetref" "${INTERSHEET_REFS}"
-			(at 302.26 180.34 0)
+			(at 285.75 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4000,7 +4193,7 @@
 	)
 	(global_label "PCAP04_1_P3"
 		(shape bidirectional)
-		(at 184.15 207.01 180)
+		(at 175.26 214.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4009,7 +4202,7 @@
 		)
 		(uuid "f480aeec-ee46-4a39-8744-0f2e7fe9915e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 184.15 207.01 0)
+			(at 175.26 214.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4019,7 +4212,7 @@
 			)
 		)
 		(property "Intersheetref" "${INTERSHEET_REFS}"
-			(at 184.15 207.01 0)
+			(at 175.26 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4042,7 +4235,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00f7a953-7ccd-4fc1-b424-1e16a83af6d9")
-		(property "Reference" "R27"
+		(property "Reference" "R28"
 			(at 80.264 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4106,7 +4299,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "R27")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -4123,7 +4316,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "032c9655-4241-4236-ae3e-f199d3e0e346")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR096"
 			(at 82.55 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4183,7 +4376,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR094")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -4223,7 +4416,7 @@
 			)
 		)
 		(property "Footprint" "sldrnrd:USB_C"
-			(at 64.77 60.96 0)
+			(at 64.77 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4233,8 +4426,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 64.77 60.96 0)
+		(property "Datasheet" "${SLDRNRD_LIB}/datasheets/Connector/USB/TYPE-C-31-M-12.pdf"
+			(at 64.77 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4246,6 +4439,39 @@
 		)
 		(property "Description" ""
 			(at 64.77 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Korean Hroparts Elec"
+			(at 64.77 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TYPE-C-31-M-12"
+			(at 64.77 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C165948"
+			(at 64.77 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4314,6 +4540,83 @@
 	)
 	(symbol
 		(lib_id "sldrnrd:Power/PWR/GND")
+		(at 204.47 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1491e27f-f372-44d2-8819-cb5e33359b63")
+		(property "Reference" "#PWR0108"
+			(at 204.47 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 204.47 237.998 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\", ground"
+			(at 204.47 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ae2724bf-0b33-4fc1-925e-f2d10d9df2d6")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sldrnrd:Power/PWR/GND")
 		(at 88.9 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -4323,7 +4626,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1dd6c82b-0d35-4826-8611-fa1102ad33aa")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR097"
 			(at 88.9 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4383,7 +4686,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR095")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -4401,7 +4704,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2bb0e418-8506-4463-ae93-6983ce1f08dd")
-		(property "Reference" "C38"
+		(property "Reference" "C39"
 			(at 214.63 74.93 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4465,7 +4768,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "C38")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -4482,7 +4785,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3917527b-4a68-47b3-8dd4-8177b097cca1")
-		(property "Reference" "#PWR0100"
+		(property "Reference" "#PWR0102"
 			(at 173.99 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -4542,7 +4845,248 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR0100")
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Capacitor/C_0603_2")
+		(lib_id "sldrnrd:Capacitor/C_0603")
+		(at 204.47 228.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3aae4a91-59a0-4389-ae2c-29e3126eec8c")
+		(property "Reference" "C38"
+			(at 201.93 229.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 207.518 230.886 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sldrnrd:C_0603"
+			(at 204.47 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 204.47 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "23912efd-821d-4220-8e4f-f8c00b977557")
+		)
+		(pin "2"
+			(uuid "c3cba211-3ee8-4c9f-b2da-e3ede68a48bc")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
+					(reference "C38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Resistor/R_0603_6")
+		(lib_id "sldrnrd:Resistor/R_0603")
+		(at 180.34 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3bcacd13-3994-4804-88fe-205e246c5ce2")
+		(property "Reference" "R32"
+			(at 178.054 179.07 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5k1"
+			(at 182.88 180.34 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sldrnrd:R_0603"
+			(at 180.34 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 180.34 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7d0f8eee-cef6-4a4c-bd11-cfa03cb1a298")
+		)
+		(pin "2"
+			(uuid "169040a9-38d5-45b9-ad86-ca723c2ce664")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sldrnrd:Power/PWR/GND")
+		(at 320.04 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "45bef5b3-22a0-4502-af4e-7b0aff46956b")
+		(property "Reference" "#PWR0115"
+			(at 320.04 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 320.04 237.998 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 320.04 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 320.04 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\", ground"
+			(at 320.04 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "51e14dfd-4a04-452b-9512-88cb86d863cc")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -4559,7 +5103,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5c9d0ab8-94f2-425d-8c0d-56d473390825")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR098"
 			(at 93.98 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4619,7 +5163,89 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR096")
+					(reference "#PWR098")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Resistor/R_0603_6")
+		(lib_id "sldrnrd:Resistor/R_0603")
+		(at 303.53 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "632308ce-0f9a-472d-b941-78fdb65059c7")
+		(property "Reference" "R36"
+			(at 301.244 181.61 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5k1"
+			(at 306.07 182.88 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sldrnrd:R_0603"
+			(at 303.53 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 303.53 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 303.53 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e425c533-2527-49db-bc0e-5951a88ce518")
+		)
+		(pin "2"
+			(uuid "c445d439-8983-4356-9c00-5037835be1a8")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -4636,7 +5262,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "63e61218-a323-4b67-a10e-0c458ff30535")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR095"
 			(at 74.93 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -4696,7 +5322,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR093")
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -4714,7 +5340,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6a1e0a52-f2fe-4d39-8e30-0c93d8c5de8f")
-		(property "Reference" "R30"
+		(property "Reference" "R31"
 			(at 117.094 74.93 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4778,7 +5404,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "R30")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -4795,7 +5421,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "726bd59b-9999-4284-a6d4-d1ef8d50956c")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR091"
 			(at 40.64 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -4855,7 +5481,89 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR089")
+					(reference "#PWR091")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Resistor/R_0603_6")
+		(lib_id "sldrnrd:Resistor/R_0603")
+		(at 193.04 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "732e125e-2d47-48af-99e2-24bdb590a2bc")
+		(property "Reference" "R33"
+			(at 190.754 179.07 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5k1"
+			(at 195.58 180.34 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sldrnrd:R_0603"
+			(at 193.04 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ec51f01b-7342-4235-9fae-770f196329b0")
+		)
+		(pin "2"
+			(uuid "5dec7bb4-342b-4cc3-aaa3-1fb9195240a4")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -4873,7 +5581,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77e92edf-bd47-485b-8661-4a38ac48cfda")
-		(property "Reference" "R31"
+		(property "Reference" "R34"
 			(at 214.884 54.61 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4937,7 +5645,89 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "R31")
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Resistor/R_0603_6")
+		(lib_id "sldrnrd:Resistor/R_0603")
+		(at 290.83 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7d317e79-c98d-431a-ba5c-aeb44fc16c62")
+		(property "Reference" "R35"
+			(at 288.544 181.61 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5k1"
+			(at 293.37 182.88 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sldrnrd:R_0603"
+			(at 290.83 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 290.83 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 290.83 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a7206b55-827b-4071-bf1a-3cf6bf735fcf")
+		)
+		(pin "2"
+			(uuid "ed8f6646-9d80-41a2-97db-998033201cd4")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -4954,7 +5744,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "84f6ec82-ff36-458e-bf77-cd7b7248cc22")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR093"
 			(at 48.26 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -5014,7 +5804,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR091")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -5032,7 +5822,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8b477ee8-2c25-4d25-895e-b97d7d17da3c")
-		(property "Reference" "R28"
+		(property "Reference" "R29"
 			(at 96.774 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5096,7 +5886,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "R28")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -5114,7 +5904,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8ec210ac-c793-4540-a98a-aa570989681f")
-		(property "Reference" "R29"
+		(property "Reference" "R30"
 			(at 117.094 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5178,7 +5968,84 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "R29")
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sldrnrd:Power/PWR/3V3")
+		(at 290.83 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "91770972-7540-4a28-8732-186a6f26e475")
+		(property "Reference" "#PWR0112"
+			(at 290.83 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_Sensors"
+			(at 290.83 167.132 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 290.83 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 290.83 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"3V3\", 3.3V supply"
+			(at 290.83 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5bcbd58e-668f-4630-b3c2-dbdb9ba6b648")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -5186,7 +6053,7 @@
 	)
 	(symbol
 		(lib_id "sldrnrd:Connector/FFC/Header_FFC_1.0mm_10")
-		(at 208.28 198.12 0)
+		(at 218.44 205.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5197,7 +6064,7 @@
 		(fields_autoplaced yes)
 		(uuid "932e8c8d-7ea3-4df5-8175-5d3e4630a6c6")
 		(property "Reference" "J5"
-			(at 214.63 196.2149 0)
+			(at 224.79 203.8349 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5208,7 +6075,7 @@
 			)
 		)
 		(property "Value" "Header_FFC_1.0mm_10"
-			(at 214.63 198.7549 0)
+			(at 224.79 206.3749 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5219,7 +6086,7 @@
 			)
 		)
 		(property "Footprint" "sldrnrd:Header_FFC_1.0mm_10"
-			(at 208.28 222.25 0)
+			(at 218.44 229.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5230,7 +6097,7 @@
 			)
 		)
 		(property "Datasheet" "${SLDRNRD_LIB}/datasheets/Connector/FFC/AFA07.pdf"
-			(at 208.28 224.79 0)
+			(at 218.44 232.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5241,7 +6108,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 208.28 198.12 0)
+			(at 218.44 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5252,7 +6119,7 @@
 			)
 		)
 		(property "Manufacturer" "JUSHUO"
-			(at 208.28 227.33 0)
+			(at 218.44 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5263,7 +6130,7 @@
 			)
 		)
 		(property "MPN" "Header_FFC_1.0mm_10"
-			(at 208.28 229.87 0)
+			(at 218.44 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5274,7 +6141,7 @@
 			)
 		)
 		(property "LCSC" "C52162"
-			(at 208.28 232.41 0)
+			(at 218.44 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5324,6 +6191,83 @@
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sldrnrd:Power/PWR/3V3")
+		(at 303.53 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "933c7382-3b6c-4ad4-a4ea-f3010767e661")
+		(property "Reference" "#PWR0113"
+			(at 303.53 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_Sensors"
+			(at 303.53 167.132 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 303.53 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 303.53 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"3V3\", 3.3V supply"
+			(at 303.53 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d36ff3ba-10f8-46e8-898c-c7efa3769ff2")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -5422,7 +6366,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "95ff4600-1c01-4b37-bd32-1265e75d346b")
-		(property "Reference" "#PWR099"
+		(property "Reference" "#PWR0101"
 			(at 119.38 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -5482,7 +6426,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR099")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -5499,7 +6443,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "97a71b24-0c22-4d64-9536-a585d58cfdad")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR099"
 			(at 99.06 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -5559,7 +6503,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR097")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -5567,7 +6511,7 @@
 	)
 	(symbol
 		(lib_id "sldrnrd:Power/PWR/GND")
-		(at 196.85 226.06 0)
+		(at 210.82 233.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5576,8 +6520,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9e293b31-585f-40b5-accf-055b7ffe6566")
-		(property "Reference" "#PWR0103"
-			(at 196.85 232.41 0)
+		(property "Reference" "#PWR0109"
+			(at 210.82 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5588,7 +6532,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 196.85 230.378 0)
+			(at 210.82 237.998 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5598,7 +6542,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 226.06 0)
+			(at 210.82 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5609,7 +6553,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 226.06 0)
+			(at 210.82 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5620,7 +6564,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\", ground"
-			(at 196.85 226.06 0)
+			(at 210.82 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5636,7 +6580,84 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR0103")
+					(reference "#PWR0109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sldrnrd:Power/PWR/3V3")
+		(at 180.34 168.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9ed97b88-a552-4243-a97c-e954999052a3")
+		(property "Reference" "#PWR0104"
+			(at 180.34 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_Sensors"
+			(at 180.34 164.592 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"3V3\", 3.3V supply"
+			(at 180.34 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8e2b1343-a7db-462f-9f1b-941166449636")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -5644,7 +6665,7 @@
 	)
 	(symbol
 		(lib_id "sldrnrd:Connector/FFC/Header_FFC_1.0mm_10")
-		(at 323.85 198.12 0)
+		(at 337.82 205.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5655,7 +6676,7 @@
 		(fields_autoplaced yes)
 		(uuid "a8887557-1abb-4859-92c2-d90df4938973")
 		(property "Reference" "J6"
-			(at 330.2 196.2149 0)
+			(at 344.17 203.8349 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5666,7 +6687,7 @@
 			)
 		)
 		(property "Value" "Header_FFC_1.0mm_10"
-			(at 330.2 198.7549 0)
+			(at 344.17 206.3749 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5677,7 +6698,7 @@
 			)
 		)
 		(property "Footprint" "sldrnrd:Header_FFC_1.0mm_10"
-			(at 323.85 222.25 0)
+			(at 337.82 229.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5688,7 +6709,7 @@
 			)
 		)
 		(property "Datasheet" "${SLDRNRD_LIB}/datasheets/Connector/FFC/AFA07.pdf"
-			(at 323.85 224.79 0)
+			(at 337.82 232.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5699,7 +6720,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 323.85 198.12 0)
+			(at 337.82 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5710,7 +6731,7 @@
 			)
 		)
 		(property "Manufacturer" "JUSHUO"
-			(at 323.85 227.33 0)
+			(at 337.82 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5721,7 +6742,7 @@
 			)
 		)
 		(property "MPN" "Header_FFC_1.0mm_10"
-			(at 323.85 229.87 0)
+			(at 337.82 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5732,7 +6753,7 @@
 			)
 		)
 		(property "LCSC" "C52162"
-			(at 323.85 232.41 0)
+			(at 337.82 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5798,7 +6819,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ab833e25-4ab9-425b-8c5e-652ba82a2614")
-		(property "Reference" "#PWR0101"
+		(property "Reference" "#PWR0103"
 			(at 173.99 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5858,7 +6879,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR0101")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -5875,7 +6896,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ad6bcec2-d437-4c1f-a4f6-15359057e18b")
-		(property "Reference" "#PWR0106"
+		(property "Reference" "#PWR0111"
 			(at 217.17 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5935,7 +6956,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR0106")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -5943,7 +6964,7 @@
 	)
 	(symbol
 		(lib_id "sldrnrd:Power/PWR/GND")
-		(at 312.42 226.06 0)
+		(at 330.2 233.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5952,8 +6973,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b0ba80a7-8d28-4e2f-ae9d-c83c64ff6c90")
-		(property "Reference" "#PWR0108"
-			(at 312.42 232.41 0)
+		(property "Reference" "#PWR0116"
+			(at 330.2 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5964,7 +6985,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 312.42 230.378 0)
+			(at 330.2 237.998 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5974,7 +6995,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 312.42 226.06 0)
+			(at 330.2 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5985,7 +7006,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 312.42 226.06 0)
+			(at 330.2 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5996,7 +7017,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\", ground"
-			(at 312.42 226.06 0)
+			(at 330.2 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6012,7 +7033,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR0108")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -6029,7 +7050,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b3343f67-60c3-4f8c-bd32-d273b2fa6c09")
-		(property "Reference" "#PWR0105"
+		(property "Reference" "#PWR0110"
 			(at 217.17 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -6089,7 +7110,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR0105")
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -6097,7 +7118,7 @@
 	)
 	(symbol
 		(lib_id "sldrnrd:Power/PWR/3V3")
-		(at 194.31 171.45 0)
+		(at 204.47 168.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6106,8 +7127,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b47ba4a2-2622-4c80-ae35-c54b33215449")
-		(property "Reference" "#PWR0102"
-			(at 194.31 175.26 0)
+		(property "Reference" "#PWR0107"
+			(at 204.47 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6117,8 +7138,8 @@
 				)
 			)
 		)
-		(property "Value" "3V3"
-			(at 194.31 167.132 0)
+		(property "Value" "3V3_Sensors"
+			(at 204.47 162.052 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6128,7 +7149,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 171.45 0)
+			(at 204.47 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6139,7 +7160,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 171.45 0)
+			(at 204.47 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6150,7 +7171,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"3V3\", 3.3V supply"
-			(at 194.31 171.45 0)
+			(at 204.47 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6166,7 +7187,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR0102")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -6183,7 +7204,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b967ea41-8d76-4f3b-b46a-b6f402904458")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR094"
 			(at 74.93 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -6243,7 +7264,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR092")
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -6260,7 +7281,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cc6877ff-0e6b-4175-a3bf-c76ff95ff346")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR092"
 			(at 44.45 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -6320,7 +7341,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR090")
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -6452,7 +7473,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d76abf5b-8eff-46b1-8239-d34dcc751d7e")
-		(property "Reference" "#PWR0104"
+		(property "Reference" "#PWR0106"
 			(at 198.12 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -6512,7 +7533,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR0104")
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -6530,7 +7551,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "db496779-b7b8-4357-8e33-6c386ddc8e38")
-		(property "Reference" "R26"
+		(property "Reference" "R27"
 			(at 38.354 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6594,7 +7615,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "R26")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -6733,6 +7754,88 @@
 		)
 	)
 	(symbol
+		(lib_name "Capacitor/C_0603_2")
+		(lib_id "sldrnrd:Capacitor/C_0603")
+		(at 320.04 228.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e1b5052a-b614-48ff-beca-fbf341da20ac")
+		(property "Reference" "C40"
+			(at 317.5 229.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 323.088 230.886 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sldrnrd:C_0603"
+			(at 320.04 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 320.04 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 320.04 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "27c0a79a-e877-40ef-8edf-f33bff813bf3")
+		)
+		(pin "2"
+			(uuid "75133b34-8b71-4a7c-81d5-f2d9908ce292")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "sldrnrd:Power/PWR/VCC")
 		(at 119.38 39.37 0)
 		(unit 1)
@@ -6743,7 +7846,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eb0027b0-ca3d-49b5-91fc-ae31cdeea1f4")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR0100"
 			(at 119.38 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -6803,7 +7906,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR098")
+					(reference "#PWR0100")
 					(unit 1)
 				)
 			)
@@ -6811,7 +7914,7 @@
 	)
 	(symbol
 		(lib_id "sldrnrd:Power/PWR/3V3")
-		(at 309.88 171.45 0)
+		(at 193.04 168.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6819,9 +7922,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "fd00347a-4fe7-4148-83a8-05cb76c49773")
-		(property "Reference" "#PWR0107"
-			(at 309.88 175.26 0)
+		(uuid "f5beba29-98be-44d4-897c-663a5f1c7970")
+		(property "Reference" "#PWR0105"
+			(at 193.04 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6831,8 +7934,8 @@
 				)
 			)
 		)
-		(property "Value" "3V3"
-			(at 309.88 167.132 0)
+		(property "Value" "3V3_Sensors"
+			(at 193.04 164.592 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6842,7 +7945,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 309.88 171.45 0)
+			(at 193.04 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6853,7 +7956,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 309.88 171.45 0)
+			(at 193.04 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6864,7 +7967,84 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"3V3\", 3.3V supply"
-			(at 309.88 171.45 0)
+			(at 193.04 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dab71d29-cf79-4a74-b9a2-14bb10511582")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sldrnrd:Power/PWR/3V3")
+		(at 320.04 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fd00347a-4fe7-4148-83a8-05cb76c49773")
+		(property "Reference" "#PWR0114"
+			(at 320.04 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3_Sensors"
+			(at 320.04 167.132 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 320.04 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 320.04 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"3V3\", 3.3V supply"
+			(at 320.04 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6880,7 +8060,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/7286337d-4cd5-4f95-b550-04c2e962fc51"
-					(reference "#PWR0107")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
