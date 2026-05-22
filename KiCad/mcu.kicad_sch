@@ -10,402 +10,6 @@
 		(rev "0.1")
 	)
 	(lib_symbols
-		(symbol "Capacitor/C_0603_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "C_0603"
-				(at -2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "sldrnrd:C_0603"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Capacitor/C_0603_1_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Capacitor/C_0603_1_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Capacitor/C_0603_2"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "C_0603"
-				(at -2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "sldrnrd:C_0603"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Capacitor/C_0603_2_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Capacitor/C_0603_2_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Capacitor/C_0603_3"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "C_0603"
-				(at -2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "sldrnrd:C_0603"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Capacitor/C_0603_3_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Capacitor/C_0603_3_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+5V"
 			(power global)
 			(pin_names
@@ -778,13 +382,139 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "sldrnrd:Crystal/Q13FC1350000400"
+		(symbol "sldrnrd:Capacitor/C_0603"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
+				(offset 0)
 				(hide yes)
 			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "C_0603"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "sldrnrd:C_0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Capacitor/C_0603_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Capacitor/C_0603_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "sldrnrd:Crystal/Q13FC1350000400"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -6510,7 +6240,7 @@
 			)
 		)
 		(property "Footprint" "sldrnrd:RN4871"
-			(at 317.5 147.32 0)
+			(at 317.5 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6543,7 +6273,7 @@
 			)
 		)
 		(property "Manufacturer" "Microchip"
-			(at 317.5 152.4 0)
+			(at 317.5 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6866,7 +6596,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_2")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 88.9 139.7 270)
 		(unit 1)
@@ -6910,7 +6639,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 88.9 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -6921,7 +6650,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitor"
 			(at 88.9 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -7102,7 +6831,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_1")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 88.9 106.68 270)
 		(unit 1)
@@ -7146,7 +6874,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 88.9 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7157,7 +6885,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitor"
 			(at 88.9 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7217,7 +6945,7 @@
 			)
 		)
 		(property "Footprint" "sldrnrd:LQFP-64"
-			(at 160.02 127 0)
+			(at 165.1 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7228,7 +6956,7 @@
 			)
 		)
 		(property "Datasheet" "${SLDRNRD_LIB}/datasheets/Microcontroller/STM/STM32G0B1.pdf"
-			(at 160.02 127 0)
+			(at 173.99 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7239,7 +6967,18 @@
 			)
 		)
 		(property "Description" "STM32G0B1RET6 ARM Cortex-M0+ 64MHz 512KB Flash"
-			(at 160.02 127 0)
+			(at 173.99 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2829307"
+			(at 162.56 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7528,7 +7267,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_2")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 88.9 116.84 270)
 		(unit 1)
@@ -7572,7 +7310,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 88.9 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -7583,7 +7321,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitor"
 			(at 88.9 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -7610,7 +7348,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_1")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 71.12 133.35 0)
 		(unit 1)
@@ -7654,7 +7391,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 71.12 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -7665,7 +7402,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitor"
 			(at 71.12 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -7692,7 +7429,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_1")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 373.38 143.51 0)
 		(unit 1)
@@ -7736,7 +7472,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 373.38 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -7747,7 +7483,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitor"
 			(at 373.38 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -7851,7 +7587,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_1")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 88.9 129.54 270)
 		(unit 1)
@@ -7895,7 +7630,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 88.9 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7906,7 +7641,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitor"
 			(at 88.9 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -8124,7 +7859,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_3")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 52.07 133.35 0)
 		(unit 1)
@@ -8168,7 +7902,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 52.07 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -8179,7 +7913,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitor"
 			(at 52.07 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -8206,7 +7940,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_1")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 62.23 133.35 0)
 		(unit 1)
@@ -8250,7 +7983,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 62.23 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -8261,7 +7994,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitor"
 			(at 62.23 133.35 0)
 			(hide yes)
 			(show_name no)

@@ -10,270 +10,6 @@
 		(rev "0.1")
 	)
 	(lib_symbols
-		(symbol "Capacitor/C_0603_2"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "C_0603"
-				(at -2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "sldrnrd:C_0603"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Capacitor/C_0603_2_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Capacitor/C_0603_2_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Capacitor/C_0603_5"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "C_0603"
-				(at -2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "sldrnrd:C_0603"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Capacitor/C_0603_5_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Capacitor/C_0603_5_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "GND_1"
 			(power global)
 			(pin_numbers
@@ -368,620 +104,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "InputDevice/RotaryEncoder/PEC11R-4215F-S0024_1"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 0 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "PEC11R-4215F-S0024"
-				(at 0 -8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "sldrnrd:RotaryEncoder_PEC11R"
-				(at 0 -11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "${SLDRNRD_LIB}/datasheets/InputDevice/RotaryEncoder/PEC11R.pdf"
-				(at 0 -13.97 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "Bourns"
-				(at 0 -16.51 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "PEC11R-4215F-S0024"
-				(at 0 -19.05 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC" "C143790"
-				(at 0 -21.59 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Rotary Encoder 24PPR momentary push switch through-hole"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "InputDevice/RotaryEncoder/PEC11R-4215F-S0024_1_0_1"
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -7.62)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center -6.35 6.35)
-					(radius 0.38)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "COM"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "SW1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "SW2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "InputDevice/RotaryEncoder/PEC11R-4215F-S0024_1_1_1"
-				(pin unspecified line
-					(at 10.16 -1.27 180)
-					(length 2.54)
-					(name "PAD1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 10.16 -3.81 180)
-					(length 2.54)
-					(name "PAD2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Resistor/R_0603_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_0603"
-				(at -2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "sldrnrd:R_0603"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Resistor/R_0603_1_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Resistor/R_0603_1_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Resistor/R_0603_2"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_0603"
-				(at -2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "sldrnrd:R_0603"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Resistor/R_0603_2_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Resistor/R_0603_2_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Resistor/R_0603_6"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_0603"
-				(at -2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "sldrnrd:R_0603"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Resistor/R_0603_6_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Resistor/R_0603_6_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1137,7 +259,142 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "sldrnrd:Capacitor/C_0603"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "C_0603"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "sldrnrd:C_0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Capacitor/C_0603_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Capacitor/C_0603_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "sldrnrd:Capacitor/C_0805"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -1178,7 +435,7 @@
 					)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1914,7 +1171,7 @@
 					)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2008,6 +1265,183 @@
 				)
 			)
 			(symbol "LED/LED_Green_0603_1_1"
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "sldrnrd:LED/LED_Yellow_0603"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED_Yellow_0603"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "sldrnrd:LED_0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "KENTO"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "KT-0603Y"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C2287"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED/LED_Yellow_0603_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED/LED_Yellow_0603_1_1"
 				(pin passive line
 					(at 3.81 0 180)
 					(length 2.54)
@@ -3583,6 +3017,552 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "sldrnrd:Resistor/R0603_1k"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1k"
+				(at -2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "sldrnrd:R_0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "1k Resistor, 0603, 1%, 75V, 100mW"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Uni-Royal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0603WAF1001T5E"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C21190"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Resistor/R0603_1k_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Resistor/R0603_1k_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "sldrnrd:Resistor/R_0603"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_0603"
+				(at -2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "sldrnrd:R_0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Resistor/R_0603_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Resistor/R_0603_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "sldrnrd:Sensor/BME280"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BME280"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "sldrnrd:LGA-8_2.5x2.5mm_P0.65mm"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${SLDRNRD_LIB}/datasheets/Sensor/BME280.pdf"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Humidity, Pressure, Temperature Sensor, LGA-8"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Bosch Sensortec"
+				(at 0 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "BME280"
+				(at 0 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C92489"
+				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "humidity pressure temperature sensor I2C SPI MEMS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Sensor/BME280_0_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -3.81 6.35)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Sensor/BME280_1_1"
+				(pin power_in line
+					(at 7.62 6.35 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "CSB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 -1.27 180)
+					(length 2.54)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 -5.08 180)
+					(length 2.54)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -7.62 -5.08 0)
+					(length 2.54)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 -1.27 0)
+					(length 2.54)
+					(name "VDDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 6.35 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "sldrnrd:Sensor/LM35"
 			(pin_names
 				(offset 1.016)
@@ -3612,7 +3592,7 @@
 					)
 				)
 			)
-			(property "Footprint" "sldrnrd:SOT-23"
+			(property "Footprint" "sldrnrd:SOT-23-3"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3753,6 +3733,19 @@
 			(type none)
 		)
 		(uuid "3dd03100-2b1a-499e-991a-6a35735a235f")
+	)
+	(polyline
+		(pts
+			(xy 179.705 220.345) (xy 273.355 220.055) (xy 273.355 279.745) (xy 179.705 280.035) (xy 179.54 221.47)
+		)
+		(stroke
+			(width 0.254)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "6fa21b3d-fa6e-4c69-a259-bbf5c7f1e3a9")
 	)
 	(polyline
 		(pts
@@ -3900,7 +3893,18 @@
 		)
 		(uuid "8b99203f-04ef-4c81-99df-9f6e0049d175")
 	)
-	(text "24LC256 EEPROM (U9)"
+	(text "Environmental sensor BME280"
+		(exclude_from_sim no)
+		(at 179.794 218.93 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e1a6110-d656-4d78-b8b2-47914772733b")
+	)
+	(text "24LC256 EEPROM"
 		(exclude_from_sim no)
 		(at 81.534 218.44 0)
 		(effects
@@ -3973,6 +3977,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "10126611-ca35-4ead-a8b6-c204abd6a7e1")
+	)
+	(junction
+		(at 212.09 232.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10ce26e6-8a07-4a7f-b9ff-ca12273c6a1b")
 	)
 	(junction
 		(at 60.96 162.56)
@@ -4057,6 +4067,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ec91900-e652-4f55-b4ee-4ea310ab000d")
+	)
+	(junction
+		(at 212.09 252.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5f6d29a6-9786-4b97-8254-e67ffe5f715c")
+	)
+	(junction
+		(at 212.09 241.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63b6f23d-43fc-4fe5-8edf-efbce7b799f5")
 	)
 	(junction
 		(at 252.73 171.45)
@@ -4153,6 +4175,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e6845967-ea8a-4e45-a26b-3fbba33b6ec4")
+	)
+	(junction
+		(at 212.09 248.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8fc82df-bb2d-4461-9913-e602006e0b7f")
 	)
 	(junction
 		(at 139.7 254)
@@ -4294,6 +4322,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 241.3) (xy 238.76 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e917c61-78fc-4cc5-9990-e4e7d816c1e4")
+	)
+	(wire
+		(pts
 			(xy 64.77 64.77) (xy 69.85 64.77)
 		)
 		(stroke
@@ -4394,6 +4432,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 252.73) (xy 241.3 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17cd0a25-5940-4a41-8a4e-1bfa8514b774")
+	)
+	(wire
+		(pts
 			(xy 133.35 162.56) (xy 137.16 162.56)
 		)
 		(stroke
@@ -4451,6 +4499,16 @@
 			(type default)
 		)
 		(uuid "1a8f4036-e1d1-4315-aff4-935295659e3f")
+	)
+	(wire
+		(pts
+			(xy 212.09 252.73) (xy 212.09 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d6b67bf-712b-44f4-9d15-ea58efdd0127")
 	)
 	(wire
 		(pts
@@ -4681,6 +4739,16 @@
 			(type default)
 		)
 		(uuid "42171d72-874a-4db7-8e3d-e22050a8f028")
+	)
+	(wire
+		(pts
+			(xy 234.95 241.3) (xy 238.76 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42938e9d-9fd6-4d87-bf75-8a582aa92d45")
 	)
 	(wire
 		(pts
@@ -4944,6 +5012,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 248.92) (xy 212.09 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59eec807-13b9-4509-9214-02e1485fccac")
+	)
+	(wire
+		(pts
 			(xy 180.34 62.23) (xy 180.34 72.39)
 		)
 		(stroke
@@ -4981,6 +5059,16 @@
 			(type default)
 		)
 		(uuid "5c895e2d-ed14-4a48-a1f2-a041db2a1a7d")
+	)
+	(wire
+		(pts
+			(xy 212.09 241.3) (xy 212.09 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fabb54a-9646-47b8-8ad2-c9f70f402628")
 	)
 	(wire
 		(pts
@@ -5064,6 +5152,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 248.92) (xy 219.71 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69eee8bf-8316-42c4-9564-d3af650a977a")
+	)
+	(wire
+		(pts
 			(xy 195.58 77.47) (xy 195.58 90.17)
 		)
 		(stroke
@@ -5104,6 +5202,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 245.11) (xy 200.66 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71fb6111-93ae-4b6b-9fb5-445bc91081be")
+	)
+	(wire
+		(pts
 			(xy 54.61 170.18) (xy 68.58 170.18)
 		)
 		(stroke
@@ -5111,6 +5219,26 @@
 			(type default)
 		)
 		(uuid "73cf3897-82b4-43b3-88f4-bd39361680b7")
+	)
+	(wire
+		(pts
+			(xy 200.66 245.11) (xy 219.71 245.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78238fa0-06c8-490c-9789-8031de5ee43f")
+	)
+	(wire
+		(pts
+			(xy 212.09 232.41) (xy 236.22 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "788a1853-f3de-42e3-b6fb-04fe8ee6ad4c")
 	)
 	(wire
 		(pts
@@ -5274,6 +5402,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 245.11) (xy 236.22 245.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c406e46-4a1c-456e-96cd-11d47aab4ead")
+	)
+	(wire
+		(pts
 			(xy 50.8 57.15) (xy 69.85 57.15)
 		)
 		(stroke
@@ -5404,6 +5542,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 271.78) (xy 212.09 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a08b941b-8832-47d5-9080-b31edab90dc8")
+	)
+	(wire
+		(pts
 			(xy 60.96 264.16) (xy 60.96 270.51)
 		)
 		(stroke
@@ -5491,6 +5639,16 @@
 			(type default)
 		)
 		(uuid "a5f4c16a-0472-4a29-bca8-97b3268c1f10")
+	)
+	(wire
+		(pts
+			(xy 212.09 228.6) (xy 212.09 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a90b1654-5f9b-4c34-a04e-db73961d1f99")
 	)
 	(wire
 		(pts
@@ -5594,6 +5752,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 232.41) (xy 212.09 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "befa4b0d-95f5-4d1b-9a5f-9269e8089bdd")
+	)
+	(wire
+		(pts
 			(xy 312.42 158.75) (xy 340.36 158.75)
 		)
 		(stroke
@@ -5621,6 +5789,16 @@
 			(type default)
 		)
 		(uuid "c277222e-66d6-4879-b370-b19a1ecfb2ee")
+	)
+	(wire
+		(pts
+			(xy 212.09 252.73) (xy 219.71 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c40a539d-2c86-4fbe-bc20-40ccfd34ae0c")
 	)
 	(wire
 		(pts
@@ -5691,6 +5869,16 @@
 			(type default)
 		)
 		(uuid "cf2c9c29-f101-4df1-b3fb-34cdd1242123")
+	)
+	(wire
+		(pts
+			(xy 236.22 245.11) (xy 236.22 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf5d169a-c8ac-4367-a9f1-dc5d00ae0fdc")
 	)
 	(wire
 		(pts
@@ -5934,6 +6122,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 241.3) (xy 219.71 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f433a6c6-2764-490d-8428-da0d43af24ac")
+	)
+	(wire
+		(pts
 			(xy 344.17 66.04) (xy 346.71 66.04)
 		)
 		(stroke
@@ -6011,6 +6209,16 @@
 			(type default)
 		)
 		(uuid "fd1b38c4-4d99-4e1e-ba14-7996fc210f21")
+	)
+	(wire
+		(pts
+			(xy 234.95 248.92) (xy 241.3 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feb2f491-b05a-4c38-97b2-03cc25ebe330")
 	)
 	(wire
 		(pts
@@ -6591,6 +6799,38 @@
 			)
 		)
 	)
+	(global_label "EEPROM_SCL"
+		(shape input)
+		(at 241.3 252.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a509a193-7cbc-42b8-ba84-96cfb0eedef6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 241.3 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Intersheetref" "${INTERSHEET_REFS}"
+			(at 241.3 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "~{ENC_2B_RAW}"
 		(shape input)
 		(at 369.57 158.75 0)
@@ -7032,6 +7272,38 @@
 			)
 		)
 	)
+	(global_label "EEPROM_SDA"
+		(shape bidirectional)
+		(at 241.3 248.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e909b9bb-86af-41aa-bc8b-15c2aa6401a9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 241.3 248.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Intersheetref" "${INTERSHEET_REFS}"
+			(at 241.3 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "BUZZER"
 		(shape input)
 		(at 105.41 64.77 0)
@@ -7210,7 +7482,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_5")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 60.96 175.26 0)
 		(unit 1)
@@ -7254,7 +7525,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 60.96 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -7292,7 +7563,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_2")
 		(lib_id "sldrnrd:Resistor/R_0603")
 		(at 217.17 146.05 0)
 		(unit 1)
@@ -7336,7 +7606,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 217.17 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -7495,7 +7765,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 171.45 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7565,7 +7835,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "sldrnrd:SOT-23"
+		(property "Footprint" "sldrnrd:SOT-23-3"
 			(at 354.33 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7576,7 +7846,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "${SLDRNRD_LIB}/datasheets/Sensor/LM35.pdf"
 			(at 354.33 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7587,7 +7857,18 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LM35 Analog Temperature Sensor 10mV/C"
+			(at 354.33 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C9900081740"
 			(at 354.33 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7772,7 +8053,84 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_2")
+		(lib_id "sldrnrd:Power/PWR/GND")
+		(at 238.76 271.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d08350b-5617-4455-8009-9d5a066c0b9a")
+		(property "Reference" "#PWR0120"
+			(at 238.76 278.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 238.76 276.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\", ground"
+			(at 238.76 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2bb134c6-69be-4d4f-9ff9-7c74dabee48e")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
+					(reference "#PWR0120")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "sldrnrd:Resistor/R_0603")
 		(at 92.71 146.05 0)
 		(unit 1)
@@ -7816,7 +8174,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 92.71 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -7932,8 +8290,7 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_1")
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_1k")
 		(at 368.3 63.5 270)
 		(unit 1)
 		(body_style 1)
@@ -7976,7 +8333,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 368.3 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7987,7 +8344,40 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1k Resistor, 0603, 1%, 75V, 100mW"
+			(at 368.3 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 368.3 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 368.3 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
 			(at 368.3 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -8170,7 +8560,6 @@
 		)
 	)
 	(symbol
-		(lib_name "InputDevice/RotaryEncoder/PEC11R-4215F-S0024_1")
 		(lib_id "sldrnrd:InputDevice/RotaryEncoder/PEC11R-4215F-S0024")
 		(at 106.68 167.64 0)
 		(unit 1)
@@ -8299,7 +8688,83 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_6")
+		(lib_id "sldrnrd:Power/PWR/3V3")
+		(at 212.09 228.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2e400a17-d7da-4e7c-a3af-6d6a8791ff6f")
+		(property "Reference" "#PWR0122"
+			(at 212.09 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3V3"
+			(at 212.09 224.282 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"3V3\", 3.3V supply"
+			(at 212.09 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c2d61071-e9c2-4cef-abb3-6a1ae2aa1d6c")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
+					(reference "#PWR0122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "sldrnrd:Resistor/R_0603")
 		(at 147.32 238.76 0)
 		(unit 1)
@@ -8343,7 +8808,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 147.32 238.76 0)
 			(hide yes)
 			(show_name no)
@@ -8354,7 +8819,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 147.32 238.76 0)
 			(hide yes)
 			(show_name no)
@@ -8460,7 +8925,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_5")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 200.66 175.26 0)
 		(unit 1)
@@ -8504,7 +8968,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 200.66 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -8773,7 +9237,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_2")
 		(lib_id "sldrnrd:Resistor/R_0603")
 		(at 224.79 146.05 0)
 		(unit 1)
@@ -8817,7 +9280,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 224.79 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -8855,7 +9318,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_2")
 		(lib_id "sldrnrd:Resistor/R_0603")
 		(at 208.28 162.56 90)
 		(unit 1)
@@ -8899,7 +9361,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 208.28 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -9133,7 +9595,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 46.99 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -9204,8 +9666,7 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_2")
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_1k")
 		(at 46.99 250.19 0)
 		(unit 1)
 		(body_style 1)
@@ -9248,7 +9709,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 46.99 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -9259,7 +9720,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1k Resistor, 0603, 1%, 75V, 100mW"
+			(at 46.99 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 46.99 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 46.99 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
 			(at 46.99 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -9363,7 +9857,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_2")
 		(lib_id "sldrnrd:Resistor/R_0603")
 		(at 256.54 144.78 0)
 		(unit 1)
@@ -9407,7 +9900,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 256.54 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -9445,7 +9938,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_2")
 		(lib_id "sldrnrd:Resistor/R_0603")
 		(at 76.2 162.56 90)
 		(unit 1)
@@ -9489,7 +9981,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 76.2 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -9521,6 +10013,137 @@
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sldrnrd:Sensor/BME280")
+		(at 227.33 247.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a29da0d-11fc-403f-bbe2-db478999be16")
+		(property "Reference" "U12"
+			(at 227.33 234.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BME280"
+			(at 227.33 237.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "sldrnrd:LGA-8_2.5x2.5mm_P0.65mm"
+			(at 227.33 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${SLDRNRD_LIB}/datasheets/Sensor/BME280.pdf"
+			(at 227.33 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Humidity, Pressure, Temperature Sensor, LGA-8"
+			(at 227.33 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Bosch Sensortec"
+			(at 227.33 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BME280"
+			(at 227.33 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C92489"
+			(at 227.33 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8c9c0102-22b7-423c-9050-2bd0ab31acb1")
+		)
+		(pin "8"
+			(uuid "9ad01ec3-7756-4137-ba40-4ff45cb3cfdc")
+		)
+		(pin "7"
+			(uuid "d0cff068-4ccd-4d49-8740-e44fbe6a0418")
+		)
+		(pin "1"
+			(uuid "9d0ba4b8-a6e0-4e16-a862-6f93e990d15b")
+		)
+		(pin "3"
+			(uuid "fb21b09c-14d4-4ff1-a031-a79ec93a55f4")
+		)
+		(pin "5"
+			(uuid "4289f44e-f77e-4fb5-8f45-73eecb9d3734")
+		)
+		(pin "6"
+			(uuid "27e89666-d9a8-47e1-9609-a52beccec8b4")
+		)
+		(pin "4"
+			(uuid "4600d43c-39ad-4c2f-b8bf-945cb1d8c2ca")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -9606,6 +10229,84 @@
 		)
 	)
 	(symbol
+		(lib_id "sldrnrd:Power/PWR/GND")
+		(at 200.66 271.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "646e59e7-40fc-4333-80d4-14e8408585c3")
+		(property "Reference" "#PWR0119"
+			(at 200.66 278.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 276.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\", ground"
+			(at 200.66 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6cb2d66e-9cca-490e-a4a3-df1b20e51c64")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
+					(reference "#PWR0119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "sldrnrd:Audio/CPT-9019A-SMT-TR")
 		(at 285.75 69.85 0)
 		(unit 1)
@@ -9639,7 +10340,7 @@
 			)
 		)
 		(property "Footprint" "sldrnrd:CPT-9019A"
-			(at 285.75 69.85 0)
+			(at 285.75 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9650,7 +10351,7 @@
 			)
 		)
 		(property "Datasheet" "${SLDRNRD_LIB}/datasheets/Audio/CPT-9019A.pdf"
-			(at 285.75 69.85 0)
+			(at 285.75 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9662,6 +10363,39 @@
 		)
 		(property "Description" ""
 			(at 285.75 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "CUI"
+			(at 285.75 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CPT-9019A-SMT-TR"
+			(at 285.75 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C20181991"
+			(at 285.75 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9920,7 +10654,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_2")
 		(lib_id "sldrnrd:Resistor/R_0603")
 		(at 121.92 144.78 0)
 		(unit 1)
@@ -9964,7 +10697,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 121.92 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -10079,7 +10812,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_5")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 270.51 176.53 0)
 		(unit 1)
@@ -10123,7 +10855,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 270.51 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -10322,7 +11054,7 @@
 			)
 		)
 		(property "Footprint" "sldrnrd:TSSOP-8"
-			(at 118.11 252.73 0)
+			(at 118.11 266.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10332,8 +11064,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 118.11 252.73 0)
+		(property "Datasheet" "${SLDRNRD_LIB}/datasheets/Memory/EEPROM/24LC256.pdf"
+			(at 118.11 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10345,6 +11077,39 @@
 		)
 		(property "Description" ""
 			(at 118.11 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Microchip"
+			(at 118.11 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "24LC256-I/ST"
+			(at 118.11 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C87823"
+			(at 118.11 276.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10388,7 +11153,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_2")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 180.34 74.93 0)
 		(unit 1)
@@ -10432,7 +11196,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 180.34 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -10443,7 +11207,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitor"
 			(at 180.34 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -10548,7 +11312,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_5")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 193.04 175.26 0)
 		(unit 1)
@@ -10592,7 +11355,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 193.04 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -10630,7 +11393,83 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_2")
+		(lib_id "sldrnrd:Power/PWR/GND")
+		(at 212.09 271.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8461172c-6f42-49a7-bd6a-ec797028dba4")
+		(property "Reference" "#PWR0121"
+			(at 212.09 278.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 212.09 275.844 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\", ground"
+			(at 212.09 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "88c88f49-0b36-4e00-9009-fa81e67eea75")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
+					(reference "#PWR0121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 337.82 69.85 0)
 		(unit 1)
@@ -10674,7 +11513,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 337.82 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -10685,7 +11524,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitor"
 			(at 337.82 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -10712,7 +11551,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_2")
 		(lib_id "sldrnrd:Resistor/R_0603")
 		(at 262.89 162.56 90)
 		(unit 1)
@@ -10756,7 +11594,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 262.89 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -10794,7 +11632,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_6")
 		(lib_id "sldrnrd:Resistor/R_0603")
 		(at 139.7 238.76 0)
 		(unit 1)
@@ -10838,7 +11675,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 139.7 238.76 0)
 			(hide yes)
 			(show_name no)
@@ -10849,7 +11686,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 139.7 238.76 0)
 			(hide yes)
 			(show_name no)
@@ -10984,7 +11821,7 @@
 			)
 		)
 		(property "Footprint" "sldrnrd:SSOP-20"
-			(at 81.28 63.5 0)
+			(at 81.28 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10995,7 +11832,7 @@
 			)
 		)
 		(property "Datasheet" "${SLDRNRD_LIB}/datasheets/Logic/74/SN74AHCT244.pdf"
-			(at 81.28 63.5 0)
+			(at 81.28 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11198,7 +12035,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_2")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 101.6 83.82 0)
 		(unit 1)
@@ -11242,7 +12078,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 101.6 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -11253,7 +12089,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitor"
 			(at 101.6 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -11358,7 +12194,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_2")
 		(lib_id "sldrnrd:Resistor/R_0603")
 		(at 208.28 170.18 90)
 		(unit 1)
@@ -11402,7 +12237,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 208.28 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -11754,7 +12589,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_2")
 		(lib_id "sldrnrd:Resistor/R_0603")
 		(at 76.2 170.18 90)
 		(unit 1)
@@ -11798,7 +12632,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 76.2 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -11915,7 +12749,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_2")
 		(lib_id "sldrnrd:Resistor/R_0603")
 		(at 85.09 146.05 0)
 		(unit 1)
@@ -11959,7 +12792,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 85.09 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -11997,7 +12830,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_2")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 92.71 264.16 0)
 		(unit 1)
@@ -12041,7 +12873,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 92.71 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -12052,7 +12884,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitor"
 			(at 92.71 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -12079,7 +12911,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:LED/LED_Green_0603")
+		(lib_id "sldrnrd:LED/LED_Yellow_0603")
 		(at 60.96 260.35 90)
 		(unit 1)
 		(body_style 1)
@@ -12121,7 +12953,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 60.96 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -12143,7 +12975,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "EVERLIGHT"
+		(property "Manufacturer" "KENTO"
 			(at 60.96 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -12154,7 +12986,7 @@
 				)
 			)
 		)
-		(property "MPN" "19-217/GHC-YR1S2/3T"
+		(property "MPN" "KT-0603Y"
 			(at 60.96 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -12165,7 +12997,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C72043"
+		(property "LCSC" "C2287"
 			(at 60.96 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -12192,7 +13024,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_2")
 		(lib_id "sldrnrd:Resistor/R_0603")
 		(at 129.54 162.56 90)
 		(unit 1)
@@ -12236,7 +13067,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 129.54 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -12351,8 +13182,7 @@
 		)
 	)
 	(symbol
-		(lib_name "Resistor/R_0603_2")
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_1k")
 		(at 60.96 250.19 0)
 		(unit 1)
 		(body_style 1)
@@ -12395,7 +13225,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 60.96 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -12406,7 +13236,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1k Resistor, 0603, 1%, 75V, 100mW"
+			(at 60.96 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 60.96 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 60.96 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
 			(at 60.96 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -12809,7 +13672,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_5")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 68.58 175.26 0)
 		(unit 1)
@@ -12853,7 +13715,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 68.58 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -13047,7 +13909,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_5")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 364.49 176.53 0)
 		(unit 1)
@@ -13091,7 +13952,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 364.49 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -13364,7 +14225,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_5")
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 137.16 176.53 0)
 		(unit 1)
@@ -13408,7 +14268,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 137.16 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -13558,7 +14418,7 @@
 			)
 		)
 		(property "Footprint" "sldrnrd:TSSOP-14"
-			(at 350.52 158.75 0)
+			(at 350.52 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13568,8 +14428,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 350.52 158.75 0)
+		(property "Datasheet" "${SLDRNRD_LIB}/datasheets/Logic/74/SN74HC14.pdf"
+			(at 350.52 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13581,6 +14441,39 @@
 		)
 		(property "Description" ""
 			(at 350.52 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TI"
+			(at 350.52 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SN74HC14PWR"
+			(at 350.52 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C6821"
+			(at 350.52 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13719,7 +14612,87 @@
 		)
 	)
 	(symbol
-		(lib_name "Capacitor/C_0603_2")
+		(lib_id "sldrnrd:Capacitor/C_0603")
+		(at 212.09 264.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fee806c2-0d66-4c69-be7d-d933590d52cf")
+		(property "Reference" "C42"
+			(at 209.296 265.684 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 215.138 266.446 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sldrnrd:C_0603"
+			(at 212.09 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Capacitor"
+			(at 212.09 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "50002006-3e43-4081-b4b7-f75d80ab7e58")
+		)
+		(pin "2"
+			(uuid "383930ad-0775-4d87-aef0-0bccedcb0731")
+		)
+		(instances
+			(project "InclinationMeter"
+				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
+					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "sldrnrd:Capacitor/C_0603")
 		(at 195.58 74.93 0)
 		(unit 1)
@@ -13763,7 +14736,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 195.58 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -13774,7 +14747,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitor"
 			(at 195.58 74.93 0)
 			(hide yes)
 			(show_name no)
