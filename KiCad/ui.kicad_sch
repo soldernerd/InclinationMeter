@@ -3169,6 +3169,158 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "sldrnrd:Resistor/R0603_5k1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "5k1"
+				(at -2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "sldrnrd:R_0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "5.1k Resistor, 0603, 1%, 75V, 100mW"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Uni-Royal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0603WAF5101T5E"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C23186"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Resistor/R0603_5k1_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Resistor/R0603_5k1_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "sldrnrd:Resistor/R_0603"
 			(pin_numbers
 				(hide yes)
@@ -7415,7 +7567,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "02aa8145-22c2-4382-8f76-806494915d7e")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR088"
 			(at 275.59 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -7475,7 +7627,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR084")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -7813,7 +7965,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "11f58116-8f36-4d0c-b7e7-7bb614265ae8")
-		(property "Reference" "U11"
+		(property "Reference" "U12"
 			(at 353.248 57.404 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7891,7 +8043,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "U11")
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -8064,7 +8216,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d08350b-5617-4455-8009-9d5a066c0b9a")
-		(property "Reference" "#PWR0120"
+		(property "Reference" "#PWR084"
 			(at 238.76 278.13 0)
 			(hide yes)
 			(show_name no)
@@ -8124,7 +8276,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR0120")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -8223,7 +8375,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "243ccca9-87c9-4bc3-8e88-f082bc97e812")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR090"
 			(at 337.82 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -8283,7 +8435,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR086")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -8698,7 +8850,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2e400a17-d7da-4e7c-a3af-6d6a8791ff6f")
-		(property "Reference" "#PWR0122"
+		(property "Reference" "#PWR079"
 			(at 212.09 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -8758,14 +8910,14 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR0122")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_5k1")
 		(at 147.32 238.76 0)
 		(unit 1)
 		(body_style 1)
@@ -8776,25 +8928,23 @@
 		(dnp no)
 		(uuid "2ee9b5aa-a99e-44c3-a8ef-437a393c87cf")
 		(property "Reference" "R19"
-			(at 145.034 240.03 90)
+			(at 149.352 238.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "5k1"
-			(at 149.86 241.3 90)
+			(at 145.288 238.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "sldrnrd:R_0603"
@@ -8819,7 +8969,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "5.1k Resistor, 0603, 1%, 75V, 100mW"
+			(at 147.32 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 147.32 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF5101T5E"
+			(at 147.32 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23186"
 			(at 147.32 238.76 0)
 			(hide yes)
 			(show_name no)
@@ -9486,7 +9669,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "47ec8cfa-28d6-4166-9f2d-f8a8c1b46174")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR081"
 			(at 217.17 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -9546,7 +9729,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR078")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -9790,7 +9973,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "49a78885-ee4a-4db4-a086-eee00636014d")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR091"
 			(at 337.82 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -9850,7 +10033,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR087")
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -10030,7 +10213,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a29da0d-11fc-403f-bbe2-db478999be16")
-		(property "Reference" "U12"
+		(property "Reference" "U10"
 			(at 227.33 234.95 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10143,7 +10326,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "U12")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -10161,7 +10344,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5ee7ee8a-ddae-4787-9096-1d3b0994236b")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR082"
 			(at 222.25 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -10222,7 +10405,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR079")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -10240,7 +10423,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "646e59e7-40fc-4333-80d4-14e8408585c3")
-		(property "Reference" "#PWR0119"
+		(property "Reference" "#PWR077"
 			(at 200.66 278.13 0)
 			(hide yes)
 			(show_name no)
@@ -10300,7 +10483,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR0119")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -10431,7 +10614,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "65d38788-7c21-4d7e-9edc-2258fc6cafd0")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR083"
 			(at 224.79 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -10491,7 +10674,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR080")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -10587,7 +10770,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "678cf6fe-6b54-4f41-b5ce-32617761fcb3")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR093"
 			(at 364.49 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -10647,7 +10830,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR089")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -10822,7 +11005,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "70d434c7-26f2-4cd0-b8f4-f4a2172b955b")
-		(property "Reference" "C34"
+		(property "Reference" "C35"
 			(at 267.97 178.054 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10886,7 +11069,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "C34")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -11403,7 +11586,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8461172c-6f42-49a7-bd6a-ec797028dba4")
-		(property "Reference" "#PWR0121"
+		(property "Reference" "#PWR080"
 			(at 212.09 278.13 0)
 			(hide yes)
 			(show_name no)
@@ -11463,7 +11646,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR0121")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -11480,7 +11663,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8556fa21-250f-4247-bf0a-d41afc54802a")
-		(property "Reference" "C35"
+		(property "Reference" "C36"
 			(at 335.026 71.374 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11544,7 +11727,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "C35")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -11632,7 +11815,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_5k1")
 		(at 139.7 238.76 0)
 		(unit 1)
 		(body_style 1)
@@ -11643,25 +11826,23 @@
 		(dnp no)
 		(uuid "8a5cd858-f2c7-4cc9-b97e-cbc0e306b62f")
 		(property "Reference" "R18"
-			(at 137.414 240.03 90)
+			(at 141.732 238.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "5k1"
-			(at 142.24 241.3 90)
+			(at 137.668 238.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "sldrnrd:R_0603"
@@ -11686,7 +11867,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "5.1k Resistor, 0603, 1%, 75V, 100mW"
+			(at 139.7 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 139.7 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF5101T5E"
+			(at 139.7 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23186"
 			(at 139.7 238.76 0)
 			(hide yes)
 			(show_name no)
@@ -11967,7 +12181,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8f1e0785-2418-49f5-bf0c-ade8de914468")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR089"
 			(at 335.28 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -12028,7 +12242,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR085")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -12443,7 +12657,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a3d1558a-d3b2-4e3c-ac60-d76547280353")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR094"
 			(at 364.49 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -12504,7 +12718,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR090")
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -12681,7 +12895,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aa5d50f0-1be3-4350-bd99-7f52b679bb8f")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR085"
 			(at 252.73 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -12742,7 +12956,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR081")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -13450,7 +13664,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ca3efbb9-b7f0-4960-b79e-e69be170bd39")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR086"
 			(at 256.54 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -13510,7 +13724,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR082")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -13605,7 +13819,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d655d3be-f0d7-47e3-8e78-fb9ae13619f6")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR092"
 			(at 344.17 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -13665,7 +13879,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR088")
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -13919,7 +14133,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e7528092-6808-4829-9834-53fc2271b2dc")
-		(property "Reference" "C36"
+		(property "Reference" "C37"
 			(at 361.95 178.054 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13983,7 +14197,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "C36")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -14157,7 +14371,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e8b6742b-36e5-42d4-9383-40b72e0997c5")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR087"
 			(at 270.51 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -14218,7 +14432,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR083")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -14395,7 +14609,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f972ee11-6a86-4509-88b6-384a4c72514a")
-		(property "Reference" "U10"
+		(property "Reference" "U11"
 			(at 350.52 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14528,7 +14742,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "U10")
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -14545,7 +14759,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fa53c90c-28aa-439d-9a5d-eb04c7deaa7f")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR078"
 			(at 201.93 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -14605,7 +14819,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "#PWR077")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -14622,7 +14836,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fee806c2-0d66-4c69-be7d-d933590d52cf")
-		(property "Reference" "C42"
+		(property "Reference" "C34"
 			(at 209.296 265.684 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14686,7 +14900,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/e3bfb176-0916-4121-bce2-c51ac090cbf3"
-					(reference "C42")
+					(reference "C34")
 					(unit 1)
 				)
 			)
