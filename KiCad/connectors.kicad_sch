@@ -10,7 +10,7 @@
 		(rev "0.1")
 	)
 	(lib_symbols
-		(symbol "sldrnrd:Capacitor/C_0603"
+		(symbol "sldrnrd:Capacitor/C0603_100n"
 			(pin_numbers
 				(hide yes)
 			)
@@ -33,7 +33,7 @@
 					)
 				)
 			)
-			(property "Value" "C_0603"
+			(property "Value" "100n"
 				(at -2.54 0 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -65,7 +65,7 @@
 					)
 				)
 			)
-			(property "Description" "Capacitor"
+			(property "Description" "100nF Capacitor, 0603"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -76,7 +76,62 @@
 					)
 				)
 			)
-			(symbol "Capacitor/C_0603_0_1"
+			(property "LCSC" "C14663"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Dielectric" "X7R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage" "50V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Yageo"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "CC0603KRX7R9BB104"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Capacitor/C0603_100n_0_1"
 				(polyline
 					(pts
 						(xy -1.524 0.508) (xy 1.524 0.508)
@@ -102,7 +157,7 @@
 					)
 				)
 			)
-			(symbol "Capacitor/C_0603_1_1"
+			(symbol "Capacitor/C0603_100n_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
@@ -5635,7 +5690,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Capacitor/C_0603")
+		(lib_id "sldrnrd:Capacitor/C0603_100n")
 		(at 345.44 66.04 0)
 		(unit 1)
 		(body_style 1)
@@ -5646,25 +5701,23 @@
 		(dnp no)
 		(uuid "180ded77-7124-4423-bf4f-0748afa63cd6")
 		(property "Reference" "C43"
-			(at 342.9 67.31 90)
+			(at 347.98 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "100n"
-			(at 348.488 68.326 90)
+			(at 342.9 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "sldrnrd:C_0603"
@@ -5689,7 +5742,62 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
+		(property "Description" "100nF Capacitor, 0603"
+			(at 345.44 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 345.44 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 345.44 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 345.44 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 345.44 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 345.44 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -5871,7 +5979,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Capacitor/C_0603")
+		(lib_id "sldrnrd:Capacitor/C0603_100n")
 		(at 217.17 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -5882,25 +5990,23 @@
 		(dnp no)
 		(uuid "2bb0e418-8506-4463-ae93-6983ce1f08dd")
 		(property "Reference" "C41"
-			(at 214.63 74.93 90)
+			(at 219.71 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "100n"
-			(at 220.218 75.946 90)
+			(at 214.63 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "sldrnrd:C_0603"
@@ -5925,7 +6031,62 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
+		(property "Description" "100nF Capacitor, 0603"
+			(at 217.17 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 217.17 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 217.17 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 217.17 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 217.17 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 217.17 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6029,7 +6190,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Capacitor/C_0603")
+		(lib_id "sldrnrd:Capacitor/C0603_100n")
 		(at 204.47 228.6 0)
 		(unit 1)
 		(body_style 1)
@@ -6040,25 +6201,23 @@
 		(dnp no)
 		(uuid "3aae4a91-59a0-4389-ae2c-29e3126eec8c")
 		(property "Reference" "C40"
-			(at 201.93 229.87 90)
+			(at 207.01 228.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "100n"
-			(at 207.518 230.886 90)
+			(at 201.93 228.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "sldrnrd:C_0603"
@@ -6083,7 +6242,62 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
+		(property "Description" "100nF Capacitor, 0603"
+			(at 204.47 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 204.47 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 204.47 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 204.47 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 204.47 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 204.47 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -7333,7 +7547,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Capacitor/C_0603")
+		(lib_id "sldrnrd:Capacitor/C0603_100n")
 		(at 69.85 210.82 0)
 		(unit 1)
 		(body_style 1)
@@ -7344,25 +7558,23 @@
 		(dnp no)
 		(uuid "7fa465f9-e9ed-4fdf-a0da-49db3bd15823")
 		(property "Reference" "C38"
-			(at 67.31 212.09 90)
+			(at 72.39 210.82 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "100n"
-			(at 72.898 213.106 90)
+			(at 67.31 210.82 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "sldrnrd:C_0603"
@@ -7387,7 +7599,62 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
+		(property "Description" "100nF Capacitor, 0603"
+			(at 69.85 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 69.85 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 69.85 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 69.85 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 69.85 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 69.85 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -7983,7 +8250,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Capacitor/C_0603")
+		(lib_id "sldrnrd:Capacitor/C0603_100n")
 		(at 88.9 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -7994,25 +8261,23 @@
 		(dnp no)
 		(uuid "93d394a9-776e-4c2e-ad9b-309091775043")
 		(property "Reference" "C39"
-			(at 86.36 73.66 90)
+			(at 91.44 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "100n"
-			(at 91.948 74.676 90)
+			(at 86.36 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "sldrnrd:C_0603"
@@ -8037,7 +8302,62 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
+		(property "Description" "100nF Capacitor, 0603"
+			(at 88.9 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 88.9 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 88.9 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 88.9 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 88.9 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 88.9 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -9964,7 +10284,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Capacitor/C_0603")
+		(lib_id "sldrnrd:Capacitor/C0603_100n")
 		(at 320.04 228.6 0)
 		(unit 1)
 		(body_style 1)
@@ -9975,25 +10295,23 @@
 		(dnp no)
 		(uuid "e1b5052a-b614-48ff-beca-fbf341da20ac")
 		(property "Reference" "C42"
-			(at 317.5 229.87 90)
+			(at 322.58 228.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "100n"
-			(at 323.088 230.886 90)
+			(at 317.5 228.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "sldrnrd:C_0603"
@@ -10018,7 +10336,62 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
+		(property "Description" "100nF Capacitor, 0603"
+			(at 320.04 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 320.04 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 320.04 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 320.04 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 320.04 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 320.04 228.6 0)
 			(hide yes)
 			(show_name no)
