@@ -342,6 +342,193 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "sldrnrd:Capacitor/C0603_10n"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "10n"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "sldrnrd:C_0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "10nF Capacitor, 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C57112"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Dielectric" "X7R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage" "50V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Fenghua"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0603B103K500NT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Capacitor/C0603_10n_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Capacitor/C0603_10n_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "sldrnrd:Capacitor/C0805_2u2"
 			(pin_numbers
 				(hide yes)
@@ -490,138 +677,6 @@
 				)
 			)
 			(symbol "Capacitor/C0805_2u2_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "sldrnrd:Capacitor/C_0603"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "C_0603"
-				(at -2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "sldrnrd:C_0603"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Capacitor/C_0603_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Capacitor/C_0603_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
@@ -3307,6 +3362,310 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "sldrnrd:Resistor/R0603_2k"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "2k"
+				(at -2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "sldrnrd:R_0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "2k Resistor, 0603, 1%, 75V, 100mW"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Uni-Royal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0603WAF2001T5E"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C22975"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Resistor/R0603_2k_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Resistor/R0603_2k_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "sldrnrd:Resistor/R0603_33k"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "33k"
+				(at -2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "sldrnrd:R_0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Uni-Royal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0603WAF3302T5E"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C4216"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Resistor/R0603_33k_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Resistor/R0603_33k_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "sldrnrd:Resistor/R0603_5k1"
 			(pin_numbers
 				(hide yes)
@@ -3420,125 +3779,6 @@
 				)
 			)
 			(symbol "Resistor/R0603_5k1_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "sldrnrd:Resistor/R_0603"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_0603"
-				(at -2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "sldrnrd:R_0603"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Resistor/R_0603_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Resistor/R_0603_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -5122,7 +5362,7 @@
 	)
 	(wire
 		(pts
-			(xy 372.11 63.5) (xy 381 63.5)
+			(xy 372.11 63.5) (xy 375.92 63.5)
 		)
 		(stroke
 			(width 0)
@@ -6756,7 +6996,7 @@
 	)
 	(global_label "TEMP_SENSE"
 		(shape output)
-		(at 373.06 63.5 0)
+		(at 375.92 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6765,7 +7005,7 @@
 		)
 		(uuid "3b5008a3-62b2-490f-b776-637269d67875")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 373.06 63.5 0)
+			(at 375.92 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6775,7 +7015,7 @@
 			)
 		)
 		(property "Intersheetref" "${INTERSHEET_REFS}"
-			(at 373.06 63.5 0)
+			(at 375.92 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7772,7 +8012,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Capacitor/C_0603")
+		(lib_id "sldrnrd:Capacitor/C0603_10n")
 		(at 60.96 175.26 0)
 		(unit 1)
 		(body_style 1)
@@ -7783,7 +8023,7 @@
 		(dnp no)
 		(uuid "02d93400-4cd7-43cc-bad4-cf0b043d3eb0")
 		(property "Reference" "C24"
-			(at 58.42 176.784 90)
+			(at 63.5 175.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7792,8 +8032,8 @@
 				)
 			)
 		)
-		(property "Value" "C_0603"
-			(at 63.754 177.8 90)
+		(property "Value" "10n"
+			(at 58.42 175.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7824,7 +8064,62 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
+		(property "Description" "10nF Capacitor, 0603"
+			(at 60.96 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C57112"
+			(at 60.96 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 60.96 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 60.96 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Fenghua"
+			(at 60.96 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603B103K500NT"
 			(at 60.96 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -7851,7 +8146,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_33k")
 		(at 217.17 146.05 0)
 		(unit 1)
 		(body_style 1)
@@ -7862,7 +8157,7 @@
 		(dnp no)
 		(uuid "0375fdff-9637-4afe-bbc4-59bd0705c5de")
 		(property "Reference" "R22"
-			(at 215.138 148.082 90)
+			(at 219.202 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7871,8 +8166,8 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 219.456 147.32 90)
+		(property "Value" "33k"
+			(at 215.138 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7903,7 +8198,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
+			(at 217.17 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 217.17 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3302T5E"
+			(at 217.17 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4216"
 			(at 217.17 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -8468,7 +8796,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_33k")
 		(at 92.71 146.05 0)
 		(unit 1)
 		(body_style 1)
@@ -8479,7 +8807,7 @@
 		(dnp no)
 		(uuid "2413162e-1034-459e-9bd3-1e9e533fb8d9")
 		(property "Reference" "R15"
-			(at 90.678 148.082 90)
+			(at 94.742 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8488,8 +8816,8 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 94.996 147.32 90)
+		(property "Value" "33k"
+			(at 90.678 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8520,7 +8848,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
+			(at 92.71 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 92.71 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3302T5E"
+			(at 92.71 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4216"
 			(at 92.71 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -8625,7 +8986,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R0603_1k")
+		(lib_id "sldrnrd:Resistor/R0603_2k")
 		(at 368.3 63.5 270)
 		(unit 1)
 		(body_style 1)
@@ -8636,7 +8997,7 @@
 		(dnp no)
 		(uuid "26ee18e2-2d0e-4447-8059-e28fb3c65a2c")
 		(property "Reference" "R26"
-			(at 367.03 61.468 90)
+			(at 368.3 65.532 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8645,8 +9006,8 @@
 				)
 			)
 		)
-		(property "Value" "1k"
-			(at 367.284 65.786 90)
+		(property "Value" "2k"
+			(at 368.3 61.468 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8677,7 +9038,7 @@
 				)
 			)
 		)
-		(property "Description" "1k Resistor, 0603, 1%, 75V, 100mW"
+		(property "Description" "2k Resistor, 0603, 1%, 75V, 100mW"
 			(at 368.3 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -8699,7 +9060,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603WAF1001T5E"
+		(property "MPN" "0603WAF2001T5E"
 			(at 368.3 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -8710,7 +9071,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C22975"
 			(at 368.3 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9285,7 +9646,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Capacitor/C_0603")
+		(lib_id "sldrnrd:Capacitor/C0603_10n")
 		(at 200.66 175.26 0)
 		(unit 1)
 		(body_style 1)
@@ -9296,7 +9657,7 @@
 		(dnp no)
 		(uuid "30f8d35f-7ba6-4f60-8b33-6dda783a553c")
 		(property "Reference" "C33"
-			(at 198.12 176.784 90)
+			(at 203.2 175.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9305,8 +9666,8 @@
 				)
 			)
 		)
-		(property "Value" "C_0603"
-			(at 203.454 177.8 90)
+		(property "Value" "10n"
+			(at 198.12 175.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9337,7 +9698,62 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
+		(property "Description" "10nF Capacitor, 0603"
+			(at 200.66 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C57112"
+			(at 200.66 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 200.66 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 200.66 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Fenghua"
+			(at 200.66 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603B103K500NT"
 			(at 200.66 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -9595,7 +10011,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_33k")
 		(at 224.79 146.05 0)
 		(unit 1)
 		(body_style 1)
@@ -9606,7 +10022,7 @@
 		(dnp no)
 		(uuid "3f9e73f6-2ca9-4aec-8022-bd7314955291")
 		(property "Reference" "R23"
-			(at 222.758 148.082 90)
+			(at 226.822 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9615,8 +10031,8 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 227.076 147.32 90)
+		(property "Value" "33k"
+			(at 222.758 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9647,7 +10063,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
+			(at 224.79 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 224.79 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3302T5E"
+			(at 224.79 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4216"
 			(at 224.79 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -9674,7 +10123,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_33k")
 		(at 208.28 162.56 90)
 		(unit 1)
 		(body_style 1)
@@ -9685,7 +10134,7 @@
 		(dnp no)
 		(uuid "4490444d-303c-485a-8149-b852a35ca896")
 		(property "Reference" "R20"
-			(at 210.312 164.592 90)
+			(at 208.28 160.528 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9694,8 +10143,8 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 209.55 160.274 90)
+		(property "Value" "33k"
+			(at 208.28 164.592 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9726,7 +10175,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
+			(at 208.28 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 208.28 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3302T5E"
+			(at 208.28 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4216"
 			(at 208.28 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -10208,7 +10690,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_33k")
 		(at 256.54 144.78 0)
 		(unit 1)
 		(body_style 1)
@@ -10219,7 +10701,7 @@
 		(dnp no)
 		(uuid "4e74208f-e582-46c1-a20c-f9fe14eebbec")
 		(property "Reference" "R24"
-			(at 254.508 146.812 90)
+			(at 258.572 144.78 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10228,8 +10710,8 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 258.826 146.05 90)
+		(property "Value" "33k"
+			(at 254.508 144.78 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10260,7 +10742,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
+			(at 256.54 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 256.54 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3302T5E"
+			(at 256.54 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4216"
 			(at 256.54 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -10287,7 +10802,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_33k")
 		(at 76.2 162.56 90)
 		(unit 1)
 		(body_style 1)
@@ -10298,7 +10813,7 @@
 		(dnp no)
 		(uuid "5789fac1-c9ac-420f-a351-9783fb8a162d")
 		(property "Reference" "R12"
-			(at 78.232 164.592 90)
+			(at 76.2 160.528 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10307,8 +10822,8 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 77.47 160.274 90)
+		(property "Value" "33k"
+			(at 76.2 164.592 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10339,7 +10854,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3302T5E"
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4216"
 			(at 76.2 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -10995,7 +11543,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_33k")
 		(at 121.92 144.78 0)
 		(unit 1)
 		(body_style 1)
@@ -11006,7 +11554,7 @@
 		(dnp no)
 		(uuid "6a15d4a1-fe3b-4996-a5a8-51112e24999b")
 		(property "Reference" "R16"
-			(at 119.888 146.812 90)
+			(at 123.952 144.78 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11015,8 +11563,8 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 124.206 146.05 90)
+		(property "Value" "33k"
+			(at 119.888 144.78 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11047,7 +11595,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
+			(at 121.92 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 121.92 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3302T5E"
+			(at 121.92 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4216"
 			(at 121.92 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -11755,7 +12336,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Capacitor/C_0603")
+		(lib_id "sldrnrd:Capacitor/C0603_10n")
 		(at 193.04 175.26 0)
 		(unit 1)
 		(body_style 1)
@@ -11766,7 +12347,7 @@
 		(dnp no)
 		(uuid "840af5b6-7f83-4c62-af50-ebba1ddff889")
 		(property "Reference" "C31"
-			(at 190.5 176.784 90)
+			(at 195.58 175.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11775,8 +12356,8 @@
 				)
 			)
 		)
-		(property "Value" "C_0603"
-			(at 195.834 177.8 90)
+		(property "Value" "10n"
+			(at 190.5 175.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11807,7 +12388,62 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
+		(property "Description" "10nF Capacitor, 0603"
+			(at 193.04 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C57112"
+			(at 193.04 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 193.04 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 193.04 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Fenghua"
+			(at 193.04 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603B103K500NT"
 			(at 193.04 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -12045,7 +12681,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_33k")
 		(at 262.89 162.56 90)
 		(unit 1)
 		(body_style 1)
@@ -12056,7 +12692,7 @@
 		(dnp no)
 		(uuid "86ff2ef6-a996-4761-b06c-b9a89d2b768e")
 		(property "Reference" "R25"
-			(at 264.922 164.592 90)
+			(at 262.89 160.528 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12065,8 +12701,8 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 264.16 160.274 90)
+		(property "Value" "33k"
+			(at 262.89 164.592 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12097,7 +12733,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
+			(at 262.89 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 262.89 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3302T5E"
+			(at 262.89 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4216"
 			(at 262.89 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -12768,7 +13437,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_33k")
 		(at 208.28 170.18 90)
 		(unit 1)
 		(body_style 1)
@@ -12779,7 +13448,7 @@
 		(dnp no)
 		(uuid "99ddea42-a2f6-4baa-85d0-57f2b877ce06")
 		(property "Reference" "R21"
-			(at 210.312 172.212 90)
+			(at 208.28 168.148 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12788,8 +13457,8 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 209.55 167.894 90)
+		(property "Value" "33k"
+			(at 208.28 172.212 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12820,7 +13489,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
+			(at 208.28 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 208.28 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3302T5E"
+			(at 208.28 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4216"
 			(at 208.28 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -13157,7 +13859,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_33k")
 		(at 76.2 170.18 90)
 		(unit 1)
 		(body_style 1)
@@ -13168,7 +13870,7 @@
 		(dnp no)
 		(uuid "a874cbcf-19de-4881-bd9a-d76332dcdb0b")
 		(property "Reference" "R13"
-			(at 78.232 172.212 90)
+			(at 76.2 168.148 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13177,8 +13879,8 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 77.47 167.894 90)
+		(property "Value" "33k"
+			(at 76.2 172.212 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13209,7 +13911,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
+			(at 76.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 76.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3302T5E"
+			(at 76.2 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4216"
 			(at 76.2 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -13313,7 +14048,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_33k")
 		(at 85.09 146.05 0)
 		(unit 1)
 		(body_style 1)
@@ -13324,7 +14059,7 @@
 		(dnp no)
 		(uuid "ab55780c-15f5-4699-8265-21c5cf7fd18b")
 		(property "Reference" "R14"
-			(at 83.058 148.082 90)
+			(at 87.122 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13333,8 +14068,8 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 87.376 147.32 90)
+		(property "Value" "33k"
+			(at 83.058 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13365,7 +14100,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
+			(at 85.09 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 85.09 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3302T5E"
+			(at 85.09 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4216"
 			(at 85.09 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -13638,7 +14406,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_33k")
 		(at 129.54 162.56 90)
 		(unit 1)
 		(body_style 1)
@@ -13649,7 +14417,7 @@
 		(dnp no)
 		(uuid "b99b71ae-27f2-4d34-a4e3-8314145aa5bb")
 		(property "Reference" "R17"
-			(at 131.572 164.592 90)
+			(at 129.54 160.528 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13658,8 +14426,8 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 130.81 160.274 90)
+		(property "Value" "33k"
+			(at 129.54 164.592 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13690,7 +14458,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
+			(at 129.54 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 129.54 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3302T5E"
+			(at 129.54 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4216"
 			(at 129.54 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -14280,7 +15081,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Capacitor/C_0603")
+		(lib_id "sldrnrd:Capacitor/C0603_10n")
 		(at 68.58 175.26 0)
 		(unit 1)
 		(body_style 1)
@@ -14291,7 +15092,7 @@
 		(dnp no)
 		(uuid "dc7906a5-3a25-4c57-acca-fc0beeaaddaa")
 		(property "Reference" "C25"
-			(at 66.04 176.784 90)
+			(at 71.12 175.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14300,8 +15101,8 @@
 				)
 			)
 		)
-		(property "Value" "C_0603"
-			(at 71.374 177.8 90)
+		(property "Value" "10n"
+			(at 66.04 175.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14332,7 +15133,62 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
+		(property "Description" "10nF Capacitor, 0603"
+			(at 68.58 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C57112"
+			(at 68.58 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 68.58 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 68.58 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Fenghua"
+			(at 68.58 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603B103K500NT"
 			(at 68.58 175.26 0)
 			(hide yes)
 			(show_name no)
