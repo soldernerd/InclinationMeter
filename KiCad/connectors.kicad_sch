@@ -3020,7 +3020,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "sldrnrd:Resistor/R_0603"
+		(symbol "sldrnrd:Resistor/R0603_68k"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3043,7 +3043,7 @@
 					)
 				)
 			)
-			(property "Value" "R_0603"
+			(property "Value" "68k"
 				(at -2.032 0 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3075,7 +3075,7 @@
 					)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" "68k Resistor, 0603, 1%, 75V, 100mW"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3086,7 +3086,40 @@
 					)
 				)
 			)
-			(symbol "Resistor/R_0603_0_1"
+			(property "Manufacturer" "Uni-Royal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0603WAF6802T5E"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C23231"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Resistor/R0603_68k_0_1"
 				(rectangle
 					(start -1.016 -2.54)
 					(end 1.016 2.54)
@@ -3099,7 +3132,7 @@
 					)
 				)
 			)
-			(symbol "Resistor/R_0603_1_1"
+			(symbol "Resistor/R0603_68k_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -8210,7 +8243,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_68k")
 		(at 119.38 58.42 0)
 		(unit 1)
 		(body_style 1)
@@ -8221,7 +8254,7 @@
 		(dnp no)
 		(uuid "8ec210ac-c793-4540-a98a-aa570989681f")
 		(property "Reference" "R30"
-			(at 117.094 59.69 90)
+			(at 121.412 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8230,8 +8263,8 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 121.92 60.96 90)
+		(property "Value" "68k"
+			(at 117.348 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8262,7 +8295,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "68k Resistor, 0603, 1%, 75V, 100mW"
+			(at 119.38 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 119.38 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF6802T5E"
+			(at 119.38 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23231"
 			(at 119.38 58.42 0)
 			(hide yes)
 			(show_name no)

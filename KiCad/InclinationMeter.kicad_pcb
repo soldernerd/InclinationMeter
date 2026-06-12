@@ -590,7 +590,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "68k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -613,7 +613,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "68k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -629,6 +629,45 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e8324b07-bedb-49f9-8a17-048e8747c511")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ae65c4f-d1bf-4ce4-82fe-9c7df0b58df3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0603WAF6802T5E"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cdbb45ed-3279-461b-b374-7fb7d8f3f19a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C23231"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6950671d-3da5-456f-a2d2-05272ebbf3e0")
 			(effects
 				(font
 					(size 1 1)
@@ -2956,7 +2995,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2979,7 +3018,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -3015,7 +3054,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603WAF6802T5E"
+		(property "MPN" "0603WAF3302T5E"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3028,7 +3067,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23231"
+		(property "LCSC" "C4216"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4093,7 +4132,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -4116,7 +4155,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -8142,7 +8181,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -8165,7 +8204,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -8201,7 +8240,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603WAF6802T5E"
+		(property "MPN" "0603WAF3302T5E"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8214,7 +8253,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23231"
+		(property "LCSC" "C4216"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8789,6 +8828,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5563894"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25e67395-daaa-42c7-ab45-bef1a7f92983")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -10144,7 +10196,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -10167,7 +10219,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -10203,7 +10255,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603WAF6802T5E"
+		(property "MPN" "0603WAF3302T5E"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10216,7 +10268,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23231"
+		(property "LCSC" "C4216"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11062,7 +11114,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -11085,7 +11137,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -11610,7 +11662,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -11633,7 +11685,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12526,7 +12578,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -12549,7 +12601,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -13288,7 +13340,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -13311,7 +13363,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -13347,7 +13399,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603WAF6802T5E"
+		(property "MPN" "0603WAF3302T5E"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13360,7 +13412,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23231"
+		(property "LCSC" "C4216"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14230,7 +14282,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "2k"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -14253,7 +14305,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "2k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -14269,6 +14321,45 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "6136256b-48fd-4e3b-8c97-4e1b2b1cf3ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e3bfb39a-12ee-4cc0-beaa-72e9f12de286")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0603WAF2001T5E"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fbb3a42e-976b-4c10-a1e6-5e716902839b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C22975"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "85cb6a7e-5999-40d0-b0fb-8dfd9ebf3fe4")
 			(effects
 				(font
 					(size 1 1)
@@ -15337,7 +15428,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15360,7 +15451,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15376,6 +15467,45 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "43d5ecf5-442d-4948-a57b-2d91f59e2f0a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9214caf7-a6d3-4b89-a50b-c1ff54339511")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3302T5E"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55b71a67-e81d-4b1e-8316-807add887f3f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C4216"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c066799-e1f3-41fd-afae-302cb7c5488d")
 			(effects
 				(font
 					(size 1 1)
@@ -16142,7 +16272,7 @@
 				)
 			)
 		)
-		(property "Value" "C_0603"
+		(property "Value" "10n"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -16165,7 +16295,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
+		(property "Description" "10nF Capacitor, 0603"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -16366,7 +16496,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "2k"
 			(at 0 1.43 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -16389,7 +16519,7 @@
 				)
 			)
 		)
-		(property "Description" "1k Resistor, 0603, 1%, 75V, 100mW"
+		(property "Description" "2k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -16425,7 +16555,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603WAF1001T5E"
+		(property "MPN" "0603WAF2001T5E"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16438,7 +16568,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C22975"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19754,7 +19884,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -19777,7 +19907,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -20531,7 +20661,7 @@
 				)
 			)
 		)
-		(property "Value" "C_0603"
+		(property "Value" "10n"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -20554,7 +20684,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
+		(property "Description" "10nF Capacitor, 0603"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -21519,7 +21649,7 @@
 				)
 			)
 		)
-		(property "Value" "C_0603"
+		(property "Value" "10n"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -21542,7 +21672,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
+		(property "Description" "10nF Capacitor, 0603"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -22165,7 +22295,7 @@
 				)
 			)
 		)
-		(property "Value" "C_0603"
+		(property "Value" "10n"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -22188,7 +22318,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
+		(property "Description" "10nF Capacitor, 0603"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -22927,7 +23057,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -22950,7 +23080,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -22986,7 +23116,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603WAF6802T5E"
+		(property "MPN" "0603WAF3302T5E"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22999,7 +23129,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23231"
+		(property "LCSC" "C4216"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23846,7 +23976,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "2k"
 			(at 0 1.43 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -23869,7 +23999,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "2k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -25881,7 +26011,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -25904,7 +26034,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -25940,7 +26070,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603WAF6802T5E"
+		(property "MPN" "0603WAF3302T5E"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25953,7 +26083,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23231"
+		(property "LCSC" "C4216"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27352,7 +27482,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -27375,7 +27505,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -27550,7 +27680,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -27573,7 +27703,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -27748,7 +27878,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "33k"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -27771,7 +27901,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -27807,7 +27937,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603WAF6802T5E"
+		(property "MPN" "0603WAF3302T5E"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27820,7 +27950,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23231"
+		(property "LCSC" "C4216"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
