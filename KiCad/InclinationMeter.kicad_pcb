@@ -24174,7 +24174,7 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
+		(property "Value" "2k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24197,7 +24197,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "2k Resistor, 0603, 1%, 75V, 100mW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)

@@ -3390,125 +3390,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "sldrnrd:Resistor/R_0603"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_0603"
-				(at -2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "sldrnrd:R_0603"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Resistor/R_0603_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Resistor/R_0603_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "sldrnrd:Transistor/MosfetN/AO3400A"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -12900,7 +12781,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Resistor/R_0603")
+		(lib_id "sldrnrd:Resistor/R0603_2k")
 		(at 313.69 80.01 90)
 		(unit 1)
 		(body_style 1)
@@ -12911,7 +12792,7 @@
 		(dnp no)
 		(uuid "d6f4217e-cf5c-4f34-91ad-604861fea56e")
 		(property "Reference" "R4"
-			(at 314.96 77.978 90)
+			(at 313.69 77.978 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12920,8 +12801,8 @@
 				)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 315.976 82.55 90)
+		(property "Value" "2k"
+			(at 313.69 82.042 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12952,7 +12833,40 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "2k Resistor, 0603, 1%, 75V, 100mW"
+			(at 313.69 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Uni-Royal"
+			(at 313.69 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF2001T5E"
+			(at 313.69 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22975"
 			(at 313.69 80.01 0)
 			(hide yes)
 			(show_name no)
