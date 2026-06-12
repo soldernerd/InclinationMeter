@@ -3014,7 +3014,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "sldrnrd:Power/PWR/3V3"
+		(symbol "sldrnrd:PowerFlag/3V3"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -3060,7 +3060,7 @@
 					)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3093,7 +3093,7 @@
 					)
 				)
 			)
-			(symbol "Power/PWR/3V3_0_1"
+			(symbol "PowerFlag/3V3_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -3131,7 +3131,7 @@
 					)
 				)
 			)
-			(symbol "Power/PWR/3V3_1_1"
+			(symbol "PowerFlag/3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -3153,7 +3153,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "sldrnrd:Power/PWR/GND"
+		(symbol "sldrnrd:PowerFlag/GND"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -3199,7 +3199,7 @@
 					)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3232,7 +3232,7 @@
 					)
 				)
 			)
-			(symbol "Power/PWR/GND_0_1"
+			(symbol "PowerFlag/GND_0_1"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
@@ -3246,148 +3246,9 @@
 					)
 				)
 			)
-			(symbol "Power/PWR/GND_1_1"
+			(symbol "PowerFlag/GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "sldrnrd:Power/PWR/VCC"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Power/PWR/VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Power/PWR/VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
 					(length 0)
 					(name ""
 						(effects
@@ -6788,7 +6649,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Power/PWR/GND")
+		(lib_id "sldrnrd:PowerFlag/GND")
 		(at 62.23 179.07 0)
 		(unit 1)
 		(body_style 1)
@@ -6798,7 +6659,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0056ec4b-2965-4e2f-85b7-1a6b67470499")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR43"
 			(at 62.23 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -6810,7 +6671,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 62.23 183.388 0)
+			(at 62.23 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6830,7 +6691,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 62.23 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -6858,7 +6719,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/c7060150-8e88-4322-90f4-a2380d2eedad"
-					(reference "#PWR043")
+					(reference "#PWR43")
 					(unit 1)
 				)
 			)
@@ -6883,10 +6744,9 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "RN4871-I_RM128"
+		(property "Value" "RN4871-I/RM128"
 			(at 309.118 149.098 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6894,7 +6754,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "sldrnrd:RN4871"
@@ -7021,7 +6880,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Power/PWR/GND")
+		(lib_id "sldrnrd:PowerFlag/GND")
 		(at 71.12 179.07 0)
 		(unit 1)
 		(body_style 1)
@@ -7031,7 +6890,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "13172f10-cd41-4ec8-a5b7-dea8536b4218")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR44"
 			(at 71.12 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -7043,7 +6902,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 71.12 183.388 0)
+			(at 71.12 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7063,7 +6922,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 71.12 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -7091,14 +6950,14 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/c7060150-8e88-4322-90f4-a2380d2eedad"
-					(reference "#PWR044")
+					(reference "#PWR44")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Power/PWR/GND")
+		(lib_id "sldrnrd:PowerFlag/GND")
 		(at 361.95 154.94 0)
 		(unit 1)
 		(body_style 1)
@@ -7108,7 +6967,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "13c4a9c6-273b-42d5-b84c-e86dfff9d31c")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR48"
 			(at 361.95 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -7120,7 +6979,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 361.95 159.258 0)
+			(at 361.95 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7140,7 +6999,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 361.95 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -7168,14 +7027,14 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/c7060150-8e88-4322-90f4-a2380d2eedad"
-					(reference "#PWR048")
+					(reference "#PWR48")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Power/PWR/VCC")
+		(lib_id "sldrnrd:PowerFlag/3V3")
 		(at 62.23 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -7186,7 +7045,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2188bef3-fe57-4a2d-a75c-f086740fd95c")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR42"
 			(at 62.23 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -7198,14 +7057,13 @@
 			)
 		)
 		(property "Value" "3V3_STANDBY"
-			(at 64.77 74.9299 0)
+			(at 62.23 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7219,7 +7077,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 62.23 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -7230,7 +7088,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
+		(property "Description" "Power symbol creates a global label with name \"3V3\", 3.3V supply"
 			(at 62.23 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -7247,7 +7105,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/c7060150-8e88-4322-90f4-a2380d2eedad"
-					(reference "#PWR042")
+					(reference "#PWR42")
 					(unit 1)
 				)
 			)
@@ -7388,7 +7246,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Power/PWR/GND")
+		(lib_id "sldrnrd:PowerFlag/GND")
 		(at 81.28 179.07 0)
 		(unit 1)
 		(body_style 1)
@@ -7398,7 +7256,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2b297b86-01c7-4935-997d-5fda3cdc9c1f")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR45"
 			(at 81.28 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -7410,7 +7268,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.28 183.388 0)
+			(at 81.28 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7430,7 +7288,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 81.28 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -7458,14 +7316,14 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/c7060150-8e88-4322-90f4-a2380d2eedad"
-					(reference "#PWR045")
+					(reference "#PWR45")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Power/PWR/GND")
+		(lib_id "sldrnrd:PowerFlag/GND")
 		(at 295.91 154.94 0)
 		(unit 1)
 		(body_style 1)
@@ -7475,7 +7333,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "312abd0a-3f4c-4ae9-a0bc-d8489786c9c6")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR47"
 			(at 295.91 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -7487,7 +7345,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 295.91 159.258 0)
+			(at 295.91 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7507,7 +7365,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 295.91 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -7535,7 +7393,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/c7060150-8e88-4322-90f4-a2380d2eedad"
-					(reference "#PWR047")
+					(reference "#PWR47")
 					(unit 1)
 				)
 			)
@@ -7694,7 +7552,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "STM32G0B1RET6"
@@ -7705,7 +7562,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "sldrnrd:LQFP-64"
@@ -7954,7 +7810,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Power/PWR/3V3")
+		(lib_id "sldrnrd:PowerFlag/3V3")
 		(at 373.38 111.76 0)
 		(unit 1)
 		(body_style 1)
@@ -7964,7 +7820,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3ec1f0cf-3cb6-49fe-ac40-23c534a5203b")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR49"
 			(at 373.38 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -7976,7 +7832,7 @@
 			)
 		)
 		(property "Value" "3V3"
-			(at 373.38 107.442 0)
+			(at 373.38 108.204 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7996,7 +7852,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 373.38 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -8024,7 +7880,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/c7060150-8e88-4322-90f4-a2380d2eedad"
-					(reference "#PWR049")
+					(reference "#PWR49")
 					(unit 1)
 				)
 			)
@@ -8433,7 +8289,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Power/PWR/GND")
+		(lib_id "sldrnrd:PowerFlag/GND")
 		(at 52.07 179.07 0)
 		(unit 1)
 		(body_style 1)
@@ -8443,7 +8299,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7bb12c81-be77-4373-9502-d0a3686fa9e0")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR41"
 			(at 52.07 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -8455,7 +8311,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 52.07 183.388 0)
+			(at 52.07 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8475,7 +8331,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 52.07 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -8503,7 +8359,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/c7060150-8e88-4322-90f4-a2380d2eedad"
-					(reference "#PWR041")
+					(reference "#PWR41")
 					(unit 1)
 				)
 			)
@@ -8662,10 +8518,9 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "8MHz"
+		(property "Value" "X50328MSB2GI"
 			(at 101.092 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8673,7 +8528,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "sldrnrd:CRYSTAL-3225"
@@ -8758,7 +8612,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Power/PWR/GND")
+		(lib_id "sldrnrd:PowerFlag/GND")
 		(at 373.38 154.94 0)
 		(unit 1)
 		(body_style 1)
@@ -8768,7 +8622,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "931f5c9c-0301-4997-b8c9-70578ec3319a")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR50"
 			(at 373.38 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -8780,7 +8634,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 373.38 159.258 0)
+			(at 373.38 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8800,7 +8654,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 373.38 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -8828,7 +8682,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/c7060150-8e88-4322-90f4-a2380d2eedad"
-					(reference "#PWR050")
+					(reference "#PWR50")
 					(unit 1)
 				)
 			)
@@ -9103,7 +8957,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Power/PWR/GND")
+		(lib_id "sldrnrd:PowerFlag/GND")
 		(at 116.84 179.07 0)
 		(unit 1)
 		(body_style 1)
@@ -9113,7 +8967,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ea127a10-d2a0-46f9-ae0e-514cdfda72be")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR46"
 			(at 116.84 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -9125,7 +8979,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 116.84 183.388 0)
+			(at 116.84 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9145,7 +8999,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 116.84 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -9173,7 +9027,7 @@
 		(instances
 			(project "InclinationMeter"
 				(path "/7d35597c-fbf9-4ce7-8410-0e7922679ea3/c7060150-8e88-4322-90f4-a2380d2eedad"
-					(reference "#PWR046")
+					(reference "#PWR46")
 					(unit 1)
 				)
 			)
@@ -9198,10 +9052,9 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "32.768kHz"
+		(property "Value" "Q13FC1350000400"
 			(at 101.092 106.426 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9209,7 +9062,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "sldrnrd:CRYSTAL-3215"

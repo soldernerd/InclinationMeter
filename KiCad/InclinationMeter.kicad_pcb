@@ -590,7 +590,7 @@
 				)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "R_0603"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -944,7 +944,7 @@
 				)
 			)
 		)
-		(property "Value" "CPT-9019A"
+		(property "Value" "CPT-9019A-SMT-TR"
 			(at 0 4 270)
 			(layer "F.Fab")
 			(uuid "14203ee8-a5a8-44c2-b225-06493f838323")
@@ -2956,7 +2956,7 @@
 				)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "R_0603"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -4093,7 +4093,7 @@
 				)
 			)
 		)
-		(property "Value" "33k"
+		(property "Value" "R_0603"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -4885,7 +4885,7 @@
 				)
 			)
 		)
-		(property "Value" "RN4871-I_RM128"
+		(property "Value" "RN4871-I/RM128"
 			(at 0 7.244 180)
 			(layer "F.Fab")
 			(uuid "47ec28f7-9733-4622-8762-9056d82048d6")
@@ -5577,7 +5577,7 @@
 				)
 			)
 		)
-		(property "Value" "32.768kHz"
+		(property "Value" "Q13FC1350000400"
 			(at 0 2.5 270)
 			(layer "F.Fab")
 			(uuid "c117e200-4488-4d9b-a6f7-038ff8f6bf09")
@@ -8142,7 +8142,7 @@
 				)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "R_0603"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -9405,7 +9405,7 @@
 				)
 			)
 		)
-		(property "Value" "24LC256-I_ST"
+		(property "Value" "24LC256-I/ST"
 			(at 0 7.2 90)
 			(layer "F.Fab")
 			(uuid "a1230c4c-875c-4875-8122-d7957c4c62ca")
@@ -10144,7 +10144,7 @@
 				)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "R_0603"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -11062,7 +11062,7 @@
 				)
 			)
 		)
-		(property "Value" "33k"
+		(property "Value" "R_0603"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -11260,7 +11260,7 @@
 				)
 			)
 		)
-		(property "Value" "USB-C"
+		(property "Value" "USB_C"
 			(at 0 6 270)
 			(layer "F.Fab")
 			(uuid "7e0ff543-db96-4111-a5f6-d9778160395a")
@@ -11610,7 +11610,7 @@
 				)
 			)
 		)
-		(property "Value" "33k"
+		(property "Value" "R_0603"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12526,7 +12526,7 @@
 				)
 			)
 		)
-		(property "Value" "33k"
+		(property "Value" "R_0603"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -13288,7 +13288,7 @@
 				)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "R_0603"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -13980,7 +13980,7 @@
 				)
 			)
 		)
-		(property "Value" "LM35DGS"
+		(property "Value" "LM35"
 			(at 0 4.95 0)
 			(layer "F.Fab")
 			(uuid "0a9a0720-d9ab-4bf5-a4f0-e95267ee6b02")
@@ -14230,7 +14230,7 @@
 				)
 			)
 		)
-		(property "Value" "2k"
+		(property "Value" "R_0603"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15337,7 +15337,7 @@
 				)
 			)
 		)
-		(property "Value" "33k"
+		(property "Value" "R_0603"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -16142,7 +16142,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "C_0603"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -18704,7 +18704,7 @@
 				)
 			)
 		)
-		(property "Value" "LED_Green_0603"
+		(property "Value" "LED_Yellow_0603"
 			(at 0 1.43 180)
 			(layer "F.Fab")
 			(uuid "11ac7544-f58d-4f03-a67d-cd51868b8c69")
@@ -19754,7 +19754,7 @@
 				)
 			)
 		)
-		(property "Value" "33k"
+		(property "Value" "R_0603"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -20531,7 +20531,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "C_0603"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -21519,7 +21519,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "C_0603"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -22165,7 +22165,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "C_0603"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -22927,7 +22927,7 @@
 				)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "R_0603"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -23346,7 +23346,7 @@
 				)
 			)
 		)
-		(property "Value" "DMG2305UX"
+		(property "Value" "DMG2305UX-13"
 			(at 0 4.95 270)
 			(layer "F.Fab")
 			(uuid "cbb62407-238c-45c8-b3c0-71a7f723a25e")
@@ -23846,7 +23846,7 @@
 				)
 			)
 		)
-		(property "Value" "2k"
+		(property "Value" "R_0603"
 			(at 0 1.43 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -24044,7 +24044,7 @@
 				)
 			)
 		)
-		(property "Value" "2k"
+		(property "Value" "R_0603"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24911,7 +24911,7 @@
 				)
 			)
 		)
-		(property "Value" "DMG2305UX"
+		(property "Value" "DMG2305UX-13"
 			(at 0 4.95 180)
 			(layer "F.Fab")
 			(uuid "b8422f5e-e276-48a4-b24a-ee339eb58c71")
@@ -25881,7 +25881,7 @@
 				)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "R_0603"
 			(at 0 1.43 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -26300,7 +26300,7 @@
 				)
 			)
 		)
-		(property "Value" "8MHz"
+		(property "Value" "X50328MSB2GI"
 			(at 0 4 270)
 			(layer "F.Fab")
 			(uuid "498ba84f-73c1-42a2-9384-17211569ee28")
@@ -27352,7 +27352,7 @@
 				)
 			)
 		)
-		(property "Value" "33k"
+		(property "Value" "R_0603"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -27550,7 +27550,7 @@
 				)
 			)
 		)
-		(property "Value" "33k"
+		(property "Value" "R_0603"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -27748,7 +27748,7 @@
 				)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "R_0603"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
