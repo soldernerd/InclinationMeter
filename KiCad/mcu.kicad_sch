@@ -569,7 +569,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "sldrnrd:Capacitor/C0603_12p5"
+		(symbol "sldrnrd:Capacitor/C0603_15p"
 			(pin_numbers
 				(hide yes)
 			)
@@ -592,7 +592,7 @@
 					)
 				)
 			)
-			(property "Value" "12p5"
+			(property "Value" "15p"
 				(at -2.54 0 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -624,7 +624,18 @@
 					)
 				)
 			)
-			(property "Description" "12.5pF Capacitor, 0603"
+			(property "Description" "15pF Capacitor, 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C1644"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -657,7 +668,29 @@
 					)
 				)
 			)
-			(symbol "Capacitor/C0603_12p5_0_1"
+			(property "Manufacturer" "Samsung Electro-Mechanics"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "CL10C150JB8NNNC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Capacitor/C0603_15p_0_1"
 				(polyline
 					(pts
 						(xy -1.524 0.508) (xy 1.524 0.508)
@@ -683,7 +716,7 @@
 					)
 				)
 			)
-			(symbol "Capacitor/C0603_12p5_1_1"
+			(symbol "Capacitor/C0603_15p_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
@@ -723,7 +756,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "sldrnrd:Capacitor/C0603_20p"
+		(symbol "sldrnrd:Capacitor/C0603_33p"
 			(pin_numbers
 				(hide yes)
 			)
@@ -746,7 +779,7 @@
 					)
 				)
 			)
-			(property "Value" "20p"
+			(property "Value" "33p"
 				(at -2.54 0 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -778,7 +811,7 @@
 					)
 				)
 			)
-			(property "Description" "20pF Capacitor, 0603"
+			(property "Description" "33pF Capacitor, 0603"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -789,7 +822,7 @@
 					)
 				)
 			)
-			(property "LCSC" "C1648"
+			(property "LCSC" "C1663"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -822,7 +855,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "Samsung"
+			(property "Manufacturer" "Samsung Electro-Mechanics"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -833,7 +866,7 @@
 					)
 				)
 			)
-			(property "MPN" "CL10C200JB8NNNC"
+			(property "MPN" "CL10C330JB8NNNC"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -844,7 +877,7 @@
 					)
 				)
 			)
-			(symbol "Capacitor/C0603_20p_0_1"
+			(symbol "Capacitor/C0603_33p_0_1"
 				(polyline
 					(pts
 						(xy -1.524 0.508) (xy 1.524 0.508)
@@ -870,7 +903,7 @@
 					)
 				)
 			)
-			(symbol "Capacitor/C0603_20p_1_1"
+			(symbol "Capacitor/C0603_33p_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
@@ -7221,7 +7254,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Capacitor/C0603_20p")
+		(lib_id "sldrnrd:Capacitor/C0603_33p")
 		(at 88.9 139.7 270)
 		(unit 1)
 		(body_style 1)
@@ -7241,7 +7274,7 @@
 				)
 			)
 		)
-		(property "Value" "20p"
+		(property "Value" "33p"
 			(at 88.9 137.16 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7273,7 +7306,7 @@
 				)
 			)
 		)
-		(property "Description" "20pF Capacitor, 0603"
+		(property "Description" "33pF Capacitor, 0603"
 			(at 88.9 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -7284,7 +7317,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1648"
+		(property "LCSC" "C1663"
 			(at 88.9 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -7317,7 +7350,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 88.9 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -7328,7 +7361,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10C200JB8NNNC"
+		(property "MPN" "CL10C330JB8NNNC"
 			(at 88.9 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -7509,7 +7542,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Capacitor/C0603_12p5")
+		(lib_id "sldrnrd:Capacitor/C0603_15p")
 		(at 88.9 106.68 270)
 		(unit 1)
 		(body_style 1)
@@ -7529,7 +7562,7 @@
 				)
 			)
 		)
-		(property "Value" "12p5"
+		(property "Value" "15p"
 			(at 88.9 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7561,7 +7594,7 @@
 				)
 			)
 		)
-		(property "Description" "12.5pF Capacitor, 0603"
+		(property "Description" "15pF Capacitor, 0603"
 			(at 88.9 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7584,6 +7617,39 @@
 			)
 		)
 		(property "Voltage" "50V"
+			(at 88.9 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1644"
+			(at 88.9 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 88.9 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10C150JB8NNNC"
 			(at 88.9 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7965,7 +8031,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Capacitor/C0603_12p5")
+		(lib_id "sldrnrd:Capacitor/C0603_15p")
 		(at 88.9 116.84 270)
 		(unit 1)
 		(body_style 1)
@@ -7985,7 +8051,7 @@
 				)
 			)
 		)
-		(property "Value" "12p5"
+		(property "Value" "15p"
 			(at 88.9 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8017,7 +8083,7 @@
 				)
 			)
 		)
-		(property "Description" "12.5pF Capacitor, 0603"
+		(property "Description" "15pF Capacitor, 0603"
 			(at 88.9 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -8040,6 +8106,39 @@
 			)
 		)
 		(property "Voltage" "50V"
+			(at 88.9 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1644"
+			(at 88.9 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 88.9 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10C150JB8NNNC"
 			(at 88.9 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -8411,7 +8510,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sldrnrd:Capacitor/C0603_20p")
+		(lib_id "sldrnrd:Capacitor/C0603_33p")
 		(at 88.9 129.54 270)
 		(unit 1)
 		(body_style 1)
@@ -8431,7 +8530,7 @@
 				)
 			)
 		)
-		(property "Value" "20p"
+		(property "Value" "33p"
 			(at 88.9 127 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8463,7 +8562,7 @@
 				)
 			)
 		)
-		(property "Description" "20pF Capacitor, 0603"
+		(property "Description" "33pF Capacitor, 0603"
 			(at 88.9 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -8474,7 +8573,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1648"
+		(property "LCSC" "C1663"
 			(at 88.9 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -8507,7 +8606,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 88.9 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -8518,7 +8617,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10C200JB8NNNC"
+		(property "MPN" "CL10C330JB8NNNC"
 			(at 88.9 129.54 0)
 			(hide yes)
 			(show_name no)
